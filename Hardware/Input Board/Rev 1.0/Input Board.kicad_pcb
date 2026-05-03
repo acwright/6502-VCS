@@ -1154,7 +1154,7 @@
 			(uuid "8c674451-a7eb-4d7c-9469-f9dd17ddae75")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/0702461201.step"
+		(model "${KIPRJMOD}/../../../Models/0702461201.step"
 			(offset
 				(xyz 1.3 -6.4 4.5)
 			)
@@ -1809,7 +1809,7 @@
 			(uuid "c54b42ea-550f-4478-b6c1-f500d5524d67")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/61204021621.step"
+		(model "${KIPRJMOD}/../../../Models/61204021621.step"
 			(offset
 				(xyz 1.25 -24 4.5)
 			)
@@ -7067,7 +7067,7 @@
 			(uuid "6902bb47-22b7-4d83-9076-803e6bdb6a8a")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/KMDGX-6S-BS.step"
+		(model "${KIPRJMOD}/../../../Models/KMDGX-6S-BS.step"
 			(offset
 				(xyz 1.5 8.5 0)
 			)
@@ -7980,7 +7980,7 @@
 			(uuid "0ff6ddf4-295e-4ae9-a623-8d7af1a9ec21")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/0702461201.step"
+		(model "${KIPRJMOD}/../../../Models/0702461201.step"
 			(offset
 				(xyz 1.3 -6.4 4.5)
 			)

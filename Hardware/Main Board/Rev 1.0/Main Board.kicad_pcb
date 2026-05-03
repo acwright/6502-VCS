@@ -1804,7 +1804,7 @@
 			(uuid "b356ee9e-2294-4511-a03f-1598475de6d4")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/HRO_TYPE-C-31-M-12.step"
+		(model "${KIPRJMOD}/../../../Models/HRO_TYPE-C-31-M-12.step"
 			(offset
 				(xyz -4.5 -3.5 0)
 			)
@@ -2790,7 +2790,7 @@
 			(uuid "0b7a2d81-0acb-4bc0-b54c-2bdbebdbb379")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/5-5530843-4.step"
+		(model "${KIPRJMOD}/../../../Models/5-5530843-4.step"
 			(offset
 				(xyz 24.5 2.5 15.5)
 			)
@@ -6638,7 +6638,7 @@
 			(uuid "a656f640-bbd2-4136-9275-e0c423d17af7")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/61204021621.step"
+		(model "${KIPRJMOD}/../../../Models/61204021621.step"
 			(offset
 				(xyz 1.25 -24 4.5)
 			)
@@ -7038,7 +7038,7 @@
 			(uuid "b212a23c-ff1c-46a2-bd27-253c5ae9b19d")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/TS-1187A-B-A-B.step"
+		(model "${KIPRJMOD}/../../../Models/TS-1187A-B-A-B.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15526,7 +15526,7 @@
 			(uuid "d713b747-d4f0-4f87-95d9-b41cd861de56")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Libraries/Models/228-1277-00-0602J.step"
+		(model "${KIPRJMOD}/../../../Models/228-1277-00-0602J.step"
 			(offset
 				(xyz 7.5 -14.5 0)
 			)
