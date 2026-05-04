@@ -1,7 +1,7 @@
 6502-VCS
 ========
 
-![6502-VCS.png](./6502-VCS.png)
+![6502-VCS.png](./Images/6502-VCS.png)
 
 An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 
