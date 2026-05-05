@@ -46,6 +46,14 @@ Unified input board supporting a matrix keyboard, PS/2 keyboard, and Atari 2600-
 
 Combined VGA video output (via Raspberry Pi Pico running [Pico9918](https://github.com/visrealm/pico9918)) and SID audio output (via ARMSID). Provides TMS9918A-compatible graphics modes at 640×480 VGA and 3-voice SID synthesis.
 
+### ROM Cart
+`Hardware/ROM Cart/`
+
+Swappable ROM cartridge for the VCS system. Comes in two versions:
+
+- **Rev 1.0a** — Uses the **28C256** 32KB EEPROM (electrically erasable, no UV eraser required).
+- **Rev 1.0b** — Uses the **27C256** 32KB EPROM (UV-erasable).
+
 ---
 
 ## Firmware
