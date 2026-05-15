@@ -11,9 +11,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 
 The AC6502 ecosystem is a family of open-source, 65C02-based computers sharing a common architecture, memory map, and [BIOS](https://github.com/acwright/6502-BIOS). Each computer in the family is purpose-built for a different use case but runs the same software and firmware.
 
-The **VCS** is a cartridge-based retro gaming console. It features a real 65C02 CPU, swappable ROM cartridges, VGA video output via [Pico9918](https://github.com/visrealm/pico9918), SID audio via ARMSID, and support for PS/2 keyboards, matrix keyboards, and Atari 2600-compatible joysticks. It is the ideal platform for playing and developing retro-style 8-bit games.
-
----
+The **VCS** is a cartridge-based retro gaming console. It features a real 65C02 CPU, swappable ROM cartridges, VGA video output via [Pico9918](https://github.com/visrealm/pico9918), SID audio via ARMSID, and support for PS/2 keyboards, matrix keyboards, and Atari 2600-compatible joysticks.
 
 ## Architecture
 
@@ -25,7 +23,25 @@ All AC6502 computers share:
 - **Bus**: 16-bit address bus, 8-bit bidirectional data bus, standard 65C02 control signals (RW, PHI2, RESET, IRQ, NMI, RDY, SYNC)
 - **BIOS**: A common [BIOS](https://github.com/acwright/6502-BIOS) provides the kernel, monitor, and BASIC interpreter across all systems
 
----
+## Systems
+
+| Project | Description |
+|---------|-------------|
+| [6502-ACE](https://github.com/acwright/6502-ACE) | All-in-one Computer Experience — A single board computer |
+| [6502-COB](https://github.com/acwright/6502-COB) | Computer On a Backplane — Modular desktop computer with expandable card slots |
+| [6502-DEV](https://github.com/acwright/6502-DEV) | Development Environment Vehicle — Emulation-based dev system |
+| [6502-KIM](https://github.com/acwright/6502-KIM) | Keyboard Input Monitor - KIM-1 inspired minimal computer |
+| [6502-VCS](https://github.com/acwright/6502-VCS) | Video Computer System — Cartridge-based retro gaming console (YOU ARE HERE) |
+
+## Software
+
+| Project | Description |
+|---------|-------------|
+| [6502-BIOS](https://github.com/acwright/6502-BIOS) | The shared BIOS (kernel, monitor, BASIC) for all AC6502 computers |
+| [6502-PRG](https://github.com/acwright/6502-PRG) | Template project for writing assembly language programs |
+| [6502-CRT](https://github.com/acwright/6502-CRT) | Template project for writing assembly language cartridges |
+| [6502-EMULATOR](https://github.com/acwright/6502-EMULATOR) | Node.js-based AC6502 emulator |
+| [6502-WEBULATOR](https://github.com/acwright/6502-WEBULATOR) | Web-based AC6502 emulator |
 
 ## Hardware
 
@@ -54,8 +70,6 @@ Swappable ROM cartridge for the VCS system. Comes in two versions:
 - **Rev 1.0a** — Uses the **28C256** 32KB EEPROM (electrically erasable, no UV eraser required).
 - **Rev 1.0b** — Uses the **27C256** 32KB EPROM (UV-erasable).
 
----
-
 ## Firmware
 
 This repository contains [PlatformIO](https://platformio.org/)-based firmware for the Input Board.
@@ -72,59 +86,25 @@ Firmware for the ATmega1284p on the Input Board. Provides:
 
 See [Firmware/IB Controller/README.md](./Firmware/IB%20Controller/README.md) for setup and usage instructions.
 
----
-
 ## CAD
 `CAD/`
 
 3D-printable enclosure parts and laser-cut top panels for the VCS system.
-
----
 
 ## Production
 `Production/`
 
 JLCPCB-ready Gerber files and BOM/CPL for PCB fabrication and assembly.
 
----
-
 ## Schematics
 `Schematics/`
 
 PDF schematics for each board.
 
----
-
 ## Libraries
 `Libraries/`
 
 Shared KiCad symbol and footprint libraries used across all AC6502 hardware projects.
-
----
-
-## AC6502 Projects
-
-| Project | Description |
-|---------|-------------|
-| [6502-BIOS](https://github.com/acwright/6502-BIOS) | The shared BIOS (kernel, monitor, BASIC) for all AC6502 computers |
-| [6502-PRG](https://github.com/acwright/6502-PRG) | Template for writing assembly language programs |
-| [6502-CRT](https://github.com/acwright/6502-CRT) | Template for writing assembly language cartridges |
-| [6502-EMULATOR](https://github.com/acwright/6502-EMULATOR) | Node.js-based AC6502 emulator |
-| [6502-WEBULATOR](https://github.com/acwright/6502-WEBULATOR) | Web-based AC6502 emulator |
-
----
-
-## AC6502 Systems
-
-| Project | Description |
-|---------|-------------|
-| [6502-ACE](https://github.com/acwright/6502-ACE) | All-in-one single-PCB computer — the COB experience without the backplane |
-| [6502-COB](https://github.com/acwright/6502-COB) | Computer on a Backplane — modular desktop computer with expandable card slots |
-| [6502-DEV](https://github.com/acwright/6502-DEV) | Development Environment Vehicle — emulation-based dev system |
-| [6502-KIM](https://github.com/acwright/6502-KIM) | KIM-1 inspired minimal computer |
-| [6502-VCS](https://github.com/acwright/6502-VCS) | Video Computer System — cartridge-based retro gaming console (you are here) |
-
----
 
 ## License
 
