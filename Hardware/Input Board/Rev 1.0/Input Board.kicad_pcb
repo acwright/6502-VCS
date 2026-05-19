@@ -2859,7 +2859,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x08_Odd_Even"
+		(property "Value" "IO SELECT"
 			(at 1.27 20.16 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6403,7 +6403,7 @@
 			(uuid "0238576b-19c0-4df9-88f1-4a4bc149ae3e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6432,7 +6432,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "1N914"
 			(at 3.81 2.12 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8009,7 +8009,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Bridged"
+		(property "Value" "IRQ"
 			(at 0 1.9 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8740,7 +8740,7 @@
 			(uuid "b7bac4db-7c76-42d5-9566-9e97747b7e42")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8962,7 +8962,7 @@
 			(uuid "771cabfa-f16b-4cc5-acaa-ebfb62095cc4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
 			(offset
 				(xyz 0 0 0)
 			)

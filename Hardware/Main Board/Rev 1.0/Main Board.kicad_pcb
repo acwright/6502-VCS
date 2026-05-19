@@ -173,6 +173,12 @@
 		(path "/00000000-0000-0000-0000-00006061126a")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -343,6 +349,12 @@
 		(path "/00000000-0000-0000-0000-000060683d2a")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -513,6 +525,12 @@
 		(path "/00000000-0000-0000-0000-0000606877b0")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -683,6 +701,12 @@
 		(path "/00000000-0000-0000-0000-0000606842ac")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -853,6 +877,12 @@
 		(path "/00000000-0000-0000-0000-000060687e76")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1011,6 +1041,12 @@
 		(path "/00000000-0000-0000-0000-0000605cd975")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1450,6 +1486,14 @@
 		(path "/00000000-0000-0000-0000-0000605bbb99")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "SH" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
+					"A6" "B6" "A8" "B8"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1774,6 +1818,9 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(uuid "227a59df-c1ab-4f2e-965f-a266d7ebb6e4")
 		)
 		(pad "SH" thru_hole oval
@@ -1783,6 +1830,9 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(uuid "b9ecdddc-b8ac-4d57-801c-d5aece01ed91")
 		)
 		(pad "SH" thru_hole oval
@@ -1792,6 +1842,9 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(uuid "4e95b8a5-4e03-4092-a0c2-1705527adb77")
 		)
 		(pad "SH" thru_hole oval
@@ -1801,6 +1854,9 @@
 			(property pad_prop_mechanical)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "SHIELD_SH")
+			(pintype "passive")
 			(uuid "b356ee9e-2294-4511-a03f-1598475de6d4")
 		)
 		(embedded_fonts no)
@@ -1900,7 +1956,13 @@
 		(path "/00000000-0000-0000-0000-0000605f1a70")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.6 -2.75)
@@ -2187,7 +2249,16 @@
 		(path "/00000000-0000-0000-0000-0000606013a2")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "9" "11" "13" "15" "17" "19" "21" "23" "25" "27"
+					"29" "31" "33" "35" "37" "39" "2" "4" "6" "8" "10" "12" "14" "16" "18"
+					"20" "22" "24" "26" "28" "30" "32" "34" "36" "38" "40"
+				)
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 52.959 2.312)
@@ -2861,8 +2932,14 @@
 		(path "/00000000-0000-0000-0000-0000606639c0")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -0.15 -0.75)
@@ -3145,6 +3222,12 @@
 		(path "/00000000-0000-0000-0000-0000605c225d")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3315,6 +3398,12 @@
 		(path "/00000000-0000-0000-0000-0000605cc395")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3485,6 +3574,12 @@
 		(path "/00000000-0000-0000-0000-00006060d2d3")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3655,6 +3750,12 @@
 		(path "/00000000-0000-0000-0000-000060622dfa")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3825,6 +3926,12 @@
 		(path "/00000000-0000-0000-0000-00006060ad8a")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "5" "4" "8" "1" "3" "7" "6")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4194,8 +4301,14 @@
 		(path "/00000000-0000-0000-0000-0000605f2ede")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -0.15 -0.75)
@@ -4720,7 +4833,13 @@
 		(path "/00000000-0000-0000-0000-00006061424a")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.05 -0.2)
@@ -5007,6 +5126,12 @@
 		(path "/00000000-0000-0000-0000-0000605c2d15")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5177,6 +5302,12 @@
 		(path "/00000000-0000-0000-0000-000060641b66")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5789,7 +5920,13 @@
 		(path "/00000000-0000-0000-0000-00006065de21")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.05 -0.2)
@@ -6063,7 +6200,16 @@
 		(path "/00000000-0000-0000-0000-000060603b6e")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "9" "11" "13" "15" "17" "19" "21" "23" "25" "27"
+					"29" "31" "33" "35" "37" "39" "2" "4" "6" "8" "10" "12" "14" "16" "18"
+					"20" "22" "24" "26" "28" "30" "32" "34" "36" "38" "40"
+				)
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 4.572 21.59)
@@ -6719,6 +6865,12 @@
 		(path "/00000000-0000-0000-0000-000060613878")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7134,6 +7286,12 @@
 		(path "/00000000-0000-0000-0000-000060627419")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7278,7 +7436,13 @@
 		(path "/5a1a1c58-5822-4cac-9f00-0eeec0ab9c0b")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.7 -0.7)
@@ -7399,7 +7563,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "6502 EN"
 			(at 0 4.87 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7454,7 +7618,13 @@
 		(path "/8ddf9c3a-a8a9-4f7a-b6ae-bd81e8aeb3ad")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -7706,6 +7876,12 @@
 		(path "/9c58332f-5317-43bb-8e23-79775970e66c")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8074,7 +8250,13 @@
 		(path "/458716a3-a58e-492e-a965-f22d2e7c8304")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.7 -0.7)
@@ -8262,6 +8444,28 @@
 		(path "/65181e09-bad1-4740-b0f4-b7e9b9ef036a")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+			(unit
+				(name "B")
+				(pins "4" "5" "6")
+			)
+			(unit
+				(name "C")
+				(pins "9" "10" "8")
+			)
+			(unit
+				(name "D")
+				(pins "12" "13" "11")
+			)
+			(unit
+				(name "E")
+				(pins "14" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8704,6 +8908,28 @@
 		(path "/e02eae0f-d0f7-476b-8e56-973ba091923e")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+			(unit
+				(name "B")
+				(pins "4" "5" "6")
+			)
+			(unit
+				(name "C")
+				(pins "9" "10" "8")
+			)
+			(unit
+				(name "D")
+				(pins "12" "13" "11")
+			)
+			(unit
+				(name "E")
+				(pins "14" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9121,8 +9347,14 @@
 		(path "/2c800e2f-8646-4ce4-ad7d-5e897f5c95fd")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -0.15 -0.75)
@@ -10255,6 +10487,12 @@
 		(path "/b6560e84-d7fe-4583-91c3-ecb6de524542")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10425,6 +10663,12 @@
 		(path "/731f9341-a868-4cb6-8751-408f51d23be7")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10595,6 +10839,12 @@
 		(path "/adcdfa42-bb47-43fe-bf7b-a53d3a2a7085")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10765,6 +11015,12 @@
 		(path "/ae23210e-4804-40ae-8a3a-685e8e358450")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10935,6 +11191,12 @@
 		(path "/7afc4f72-e5cb-4e9a-b7f3-b212f0d290ed")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11105,6 +11367,28 @@
 		(path "/c8dbcadf-59f8-4dff-bd76-752093f1cbff")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+			(unit
+				(name "B")
+				(pins "4" "5" "6")
+			)
+			(unit
+				(name "C")
+				(pins "9" "10" "8")
+			)
+			(unit
+				(name "D")
+				(pins "12" "13" "11")
+			)
+			(unit
+				(name "E")
+				(pins "14" "7")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11535,6 +11819,12 @@
 		(path "/1811541d-fbc2-4d07-aa49-771ccc160d27")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11835,6 +12125,12 @@
 		(path "/b59f12a8-be06-4963-b6ee-d4d662509224")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11938,7 +12234,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x05_Odd_Even"
+		(property "Value" "EXP EN"
 			(at 1.27 12.49 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11992,7 +12288,13 @@
 		(path "/2f58c262-f00d-4f6f-a7ac-d5ecfaf32683")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "9" "2" "4" "6" "8" "10")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.92 -1.38)
@@ -12353,6 +12655,12 @@
 		(path "/09644e69-057a-45b5-b8ce-0c03b297c148")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12456,7 +12764,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x01"
+		(property "Value" "ROM WE"
 			(at 0 4.87 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12510,7 +12818,13 @@
 		(path "/86d4087c-8157-447d-b5ea-a3d7573bd2b7")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 3.92)
@@ -12738,8 +13052,14 @@
 		(path "/11fab853-bb89-499f-b8b8-c3b5a4f1455e")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -0.15 -0.75)
@@ -13327,6 +13647,12 @@
 		(path "/7cf3bbbc-5cc4-4882-85c0-1078deb78066")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13497,6 +13823,12 @@
 		(path "/5f5eeb85-a8df-460e-9976-2d6fe0e0af8c")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13667,6 +13999,12 @@
 		(path "/408d0045-9ed4-42cb-96d1-221ae36e65cd")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13811,7 +14149,13 @@
 		(path "/e94a259a-527c-4fe3-962f-a25c16fe7c29")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.7 -0.7)
@@ -13999,6 +14343,12 @@
 		(path "/83b1159c-f21a-4b6c-8854-c61eb8f384ff")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14169,6 +14519,12 @@
 		(path "/f5b567cb-444b-4f78-b7fd-a846bba4b531")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14314,8 +14670,14 @@
 		(path "/8a22ae12-ee57-419f-b437-e749944aebd7")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -0.15 -0.75)
@@ -14585,8 +14947,14 @@
 		(path "/3d7449f9-3978-4f17-9755-df444e8f85a5")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(zone_connect 1)
-		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+		(attr exclude_from_bom allow_soldermask_bridges)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -0.15 -0.75)
@@ -14862,7 +15230,15 @@
 		(path "/e6570e7c-c188-401f-9553-6ced7006d759")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "28"
+					"27" "26" "25" "24" "23" "22" "21" "20" "19" "18" "17" "16" "15"
+				)
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -4.95 1.27)
@@ -15622,6 +15998,12 @@
 		(path "/2d0cfdc3-3e47-47c0-9b9c-823d7333e9ba")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15777,7 +16159,15 @@
 		(path "/a137ca7d-12dc-4ddf-8bad-5b6aa4c4cb53")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "28"
+					"27" "26" "25" "24" "23" "22" "21" "20" "19" "18" "17" "16" "15"
+				)
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 13.68 -1.33)
@@ -16279,7 +16669,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x02_Odd_Even"
+		(property "Value" "HRDB EN"
 			(at 1.27 4.87 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16333,7 +16723,13 @@
 		(path "/79bab36d-de6a-4b9a-856b-3c8dbba0714e")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2" "4")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -16613,7 +17009,16 @@
 		(path "/1f1d2edd-3a66-429d-8192-b54501bac74f")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19" "20" "40" "39" "38" "37" "36" "35" "34" "33" "32"
+					"31" "30" "29" "28" "27" "26" "25" "24" "23" "22" "21"
+				)
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 13.68 49.59)
@@ -17289,7 +17694,13 @@
 		(path "/77e5eb91-2d25-469f-9726-379adf3b8c8a")
 		(sheetname "/")
 		(sheetfile "Main Board.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "14" "7" "8")
+			)
+		)
+		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.83 -9.51)
