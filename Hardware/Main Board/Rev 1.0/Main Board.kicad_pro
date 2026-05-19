@@ -1081,14 +1081,14 @@
         },
         {
           "group_by": false,
-          "label": "Mouser",
-          "name": "Mouser",
+          "label": "Digikey",
+          "name": "Digikey",
           "show": true
         },
         {
           "group_by": false,
-          "label": "Digikey",
-          "name": "Digikey",
+          "label": "Mouser",
+          "name": "Mouser",
           "show": true
         },
         {
@@ -1102,6 +1102,12 @@
           "label": "Note",
           "name": "Note",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Other",
+          "name": "Other",
+          "show": true
         }
       ],
       "filter_string": "",

@@ -18110,6 +18110,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 36.83 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "A12"
 			(uuid "3d44ce91-afa3-4ca1-bf2d-85bb9e888084")
 		)
@@ -18324,6 +18335,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 55.88 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "84a6d2ac-8a3d-4b0c-bd4c-d9cfbc25025c")
 		)
@@ -18406,6 +18428,17 @@
 			)
 		)
 		(property "LCSC" "C27834"
+			(at 63.5 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 63.5 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -18663,6 +18696,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 87.63 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0442fa91-543a-4736-a30e-32e77c62d3ba")
 		)
@@ -18746,6 +18790,17 @@
 		)
 		(property "LCSC" "C2297"
 			(at 87.63 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 87.63 35.56 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18847,6 +18902,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 64.77 19.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d7fd862b-8e46-4f11-b526-fd198739b205")
 		)
@@ -18868,7 +18934,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -18917,6 +18983,17 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 66.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 66.04 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -19018,6 +19095,17 @@
 			)
 		)
 		(property "Digikey" "A31723-ND"
+			(at 39.37 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 39.37 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -19211,6 +19299,17 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 77.47 219.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ"
 			(at 77.47 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -19425,6 +19524,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 186.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "357e11c6-d8de-4489-8f52-a0c211f29c1e")
 		)
@@ -19535,6 +19645,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 160.02 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "12513b81-f499-4a1d-a6e8-a30cd9b0c616")
 		)
@@ -19617,6 +19738,17 @@
 			)
 		)
 		(property "LCSC" "C49678"
+			(at 160.02 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 160.02 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -19719,6 +19851,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 146.05 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "22148f85-4328-423c-9397-1b1a5764130d")
 		)
@@ -19799,6 +19942,17 @@
 			)
 		)
 		(property "Digikey" "455-2247-ND"
+			(at 132.08 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 132.08 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -19978,6 +20132,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 205.74 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bfea8d81-2191-4ec1-b10f-b49e90d5ca52")
 		)
@@ -20060,6 +20225,17 @@
 			)
 		)
 		(property "LCSC" "C7171"
+			(at 205.74 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 205.74 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20162,6 +20338,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 228.6 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "edf526ad-e3d9-4d41-bef6-4a40c15e61bc")
 		)
@@ -20254,6 +20441,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 151.13 198.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9e554a9-2f65-4f90-add8-b2ba6b45276f")
 		)
@@ -20275,7 +20473,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -20324,6 +20522,17 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 152.4 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 152.4 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -20424,6 +20633,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 40.64 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f644a95a-f901-4008-8d17-131e42d21459")
 		)
@@ -20505,6 +20725,17 @@
 		)
 		(property "LCSC" "C49678"
 			(at 78.74 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 78.74 189.23 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20604,6 +20835,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 40.64 254 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3cd7b52f-b5c4-4a7d-a35e-9320ad5297cf")
 		)
@@ -20685,6 +20927,17 @@
 		)
 		(property "LCSC" "C49678"
 			(at 78.74 254 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 78.74 254 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20939,6 +21192,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 121.92 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dc7c164-ac17-4de5-bcf4-ac372712ffcb")
 		)
@@ -21067,6 +21331,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 223.52 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2c47c6f4-4362-4d3b-809a-221ecfa56c83")
 		)
@@ -21147,6 +21422,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 121.92 127 0)
 			(hide yes)
 			(show_name no)
@@ -21283,6 +21569,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 53.34 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5fb95a9c-4bde-46af-9a54-f3af4abe9009")
 		)
@@ -21340,7 +21637,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -21389,6 +21686,17 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 101.6 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 101.6 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -21490,6 +21798,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 78.74 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1a8b0993-542f-414a-a34e-53c603873805")
 		)
@@ -21572,6 +21891,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 210.82 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 210.82 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -21688,6 +22018,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 297.18 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 297.18 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "955-W65C02S6TPG-14"
 			(at 297.18 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -21902,6 +22254,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 168.91 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "deda138f-a9e0-4d94-adc6-bbe4597ba24e")
 		)
@@ -21959,7 +22322,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -22008,6 +22371,17 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 101.6 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 101.6 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -22099,6 +22473,17 @@
 		)
 		(property "LCSC" "C17513"
 			(at 372.11 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 372.11 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22200,6 +22585,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 234.95 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bfb52555-f6b6-437c-9831-8006e2794d1a")
 		)
@@ -22273,7 +22669,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x05_Odd_Even"
+		(property "Value" "EXP EN"
 			(at 312.42 198.12 0)
 			(hide yes)
 			(show_name no)
@@ -22307,6 +22703,17 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 311.15 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472"
 			(at 311.15 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -22433,6 +22840,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 257.81 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "73462bbf-cb1a-4360-8879-a656a07e94d9")
 		)
@@ -22549,6 +22967,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 99.06 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 99.06 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -22693,7 +23122,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -22742,6 +23171,17 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 369.57 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 369.57 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22844,6 +23284,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 246.38 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ab384114-40dd-407b-8a44-a2aba3080aa1")
 		)
@@ -22925,6 +23376,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 246.38 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a42b0b50-e06b-4711-8691-8b1611955bb7")
 		)
@@ -22993,6 +23455,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 146.05 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 146.05 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -23169,6 +23642,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 214.63 45.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "69394b21-c2f8-4bd2-abc3-4de435e80015")
 		)
@@ -23249,6 +23733,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 147.32 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 147.32 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -23462,6 +23957,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 372.11 152.4 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "57fa38fa-d493-4ecb-bbe3-d090aac85456")
 		)
@@ -23542,6 +24048,28 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 135.89 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "X937-ND"
+			(at 135.89 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "14"
 			(uuid "dce71e36-53a5-490e-9a80-a48e0d778327")
 		)
@@ -23584,7 +24112,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x02_Odd_Even"
+		(property "Value" "HRDB EN"
 			(at 101.6 147.9296 0)
 			(hide yes)
 			(show_name no)
@@ -23618,6 +24146,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 100.33 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472"
 			(at 100.33 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -23714,6 +24253,17 @@
 			)
 		)
 		(property "LCSC" "C49678"
+			(at 311.15 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 311.15 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -23892,6 +24442,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 372.11 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e2ae8d60-39f2-4b89-9de6-948988f4a62a")
 		)
@@ -23984,6 +24545,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 384.81 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41b2129f-7893-47d4-af0d-c24143a510d1")
 		)
@@ -24020,7 +24592,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x01"
+		(property "Value" "ROM WE"
 			(at 369.57 36.1696 0)
 			(hide yes)
 			(show_name no)
@@ -24064,6 +24636,17 @@
 				)
 			)
 		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 368.3 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3ea4f5b6-e57f-4d47-895e-e602cae09b78")
 		)
@@ -24085,7 +24668,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -24144,6 +24727,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 398.78 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ecdc2662-2cb1-4aa9-9e06-f8f7655e34b4")
 		)
@@ -24180,7 +24774,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "6502 EN"
 			(at 386.0799 200.66 90)
 			(hide yes)
 			(show_name no)
@@ -24227,6 +24821,17 @@
 		)
 		(property "Note" "Jumper for orginal 6502"
 			(at 368.808 204.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 384.81 205.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24327,6 +24932,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 226.06 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b05399d5-adff-4b4c-90ca-832beda49bd2")
 		)
@@ -24399,6 +25015,39 @@
 			)
 		)
 		(property "Description" ""
+			(at 298.45 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 298.45 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1450-1033-ND"
+			(at 298.45 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "913-AS6C62256-55PCN"
 			(at 298.45 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -24577,6 +25226,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 369.57 93.98 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c28cf47b-615e-48d2-aa60-defa8f2b9db6")
 		)
@@ -24659,6 +25319,17 @@
 			)
 		)
 		(property "LCSC" "C49678"
+			(at 199.39 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 199.39 208.28 0)
 			(hide yes)
 			(show_name no)
@@ -24761,6 +25432,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 64.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "920e3fcf-dc9c-425d-bf93-0645e22481f8")
 		)
@@ -24851,6 +25533,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 372.11 167.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2214e578-d958-4244-a2c3-bf0b9d4289b7")
 		)
@@ -24931,6 +25624,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 99.06 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 99.06 127 0)
 			(hide yes)
 			(show_name no)
@@ -25067,6 +25771,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 153.67 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e9195c4b-fa43-49e7-ac3e-65a03295bdb2")
 		)
@@ -25183,6 +25898,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 175.26 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 175.26 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -25319,6 +26045,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c0f4cd64-1dcb-4a30-bb58-481f3c837dda")
 		)
@@ -25435,6 +26172,17 @@
 			)
 		)
 		(property "LCSC" "C5586"
+			(at 76.2 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
 			(at 76.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -25571,6 +26319,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 76.2 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "e114b388-9c98-4dc3-8cea-82128be9f254")
 		)
@@ -25676,6 +26435,39 @@
 			)
 		)
 		(property "Description" ""
+			(at 355.6 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 355.6 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "AT28C256-15PU-ND"
+			(at 355.6 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "556-AT28C25615PU"
 			(at 355.6 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -25845,6 +26637,17 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 92.71 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4e003287-a1d8-4fe8-bd03-9f3185f5542c")
 		)
@@ -25923,6 +26726,17 @@
 		)
 		(property "LCSC" "C17513"
 			(at 372.11 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 372.11 160.02 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

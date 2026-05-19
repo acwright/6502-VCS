@@ -13704,7 +13704,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x08_Odd_Even"
+		(property "Value" "IO SELECT"
 			(at 142.24 151.7396 0)
 			(hide yes)
 			(show_name no)
@@ -13748,7 +13748,18 @@
 				)
 			)
 		)
-		(property "Other" ""
+		(property "Other" "https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472"
+			(at 140.97 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 140.97 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -13881,7 +13892,29 @@
 				)
 			)
 		)
-		(property "Other" ""
+		(property "Other" "https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
+			(at 228.6 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 228.6 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "2057-BHR-12-VUA-ND"
 			(at 228.6 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -13958,7 +13991,7 @@
 				)
 			)
 		)
-		(property "Value" "D_Schottky"
+		(property "Value" "1N914"
 			(at 98.7425 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -14003,6 +14036,28 @@
 			)
 		)
 		(property "Other" ""
+			(at 99.06 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 99.06 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "1N914FS-ND"
 			(at 99.06 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -14107,6 +14162,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 111.76 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 111.76 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -14338,6 +14404,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 124.46 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0d532eb1-150b-4337-918a-a4372b17383d")
 		)
@@ -14429,6 +14506,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 30.48 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 30.48 50.8 90)
 			(hide yes)
 			(show_name no)
@@ -14540,6 +14628,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 81.28 163.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "489055d0-908e-4bbb-8d70-0e0d4686e6c9")
 		)
@@ -14641,6 +14740,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 124.46 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "97834436-213f-4731-ab51-ad9a27ba267f")
 		)
@@ -14721,6 +14831,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 50.8 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "955-W65C22N6TPG-14"
 			(at 50.8 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -14946,6 +15067,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 44.45 193.04 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9bfd35a8-1273-4fcf-99be-3baa526ad78b")
 		)
@@ -15037,6 +15169,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 175.26 27.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 175.26 27.94 90)
 			(hide yes)
 			(show_name no)
@@ -15207,7 +15350,29 @@
 				)
 			)
 		)
-		(property "Other" ""
+		(property "Other" "https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2"
+			(at 228.6 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 228.6 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "2057-BHR-12-VUA-ND"
 			(at 228.6 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15349,6 +15514,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 44.45 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8501e24a-9e58-4c61-98dc-dc8f24ba11cd")
 		)
@@ -15433,6 +15609,28 @@
 			)
 		)
 		(property "Other" ""
+			(at 162.56 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "556-ATMEGA1284-PU"
+			(at 162.56 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "ATMEGA1284-PU-ND"
 			(at 162.56 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -15737,6 +15935,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 143.51 123.19 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8fb6f75e-99c0-492f-b04a-63100ceae64c")
 		)
@@ -15839,6 +16048,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 215.9 158.75 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 215.9 158.75 90)
 			(hide yes)
 			(show_name no)
@@ -16081,7 +16301,18 @@
 				)
 			)
 		)
-		(property "Other" ""
+		(property "Other" "https://www.amazon.com/dp/B08GS3QL7T"
+			(at 229.87 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "806-KMDGX-6S-BS"
 			(at 229.87 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -16207,6 +16438,17 @@
 				)
 			)
 		)
+		(property "Mouser" ""
+			(at 143.51 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a9dfd32b-60e2-4ce0-944a-e4f8324c413e")
 		)
@@ -16306,7 +16548,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -16321,7 +16563,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Bridged"
+		(property "Value" "IRQ"
 			(at 99.06 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -16366,6 +16608,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 99.06 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -16612,6 +16865,17 @@
 			)
 		)
 		(property "Other" "https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ"
+			(at 43.18 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 43.18 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -16907,6 +17171,17 @@
 			)
 		)
 		(property "Other" ""
+			(at 130.81 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
 			(at 130.81 49.53 90)
 			(hide yes)
 			(show_name no)

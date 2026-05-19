@@ -1,4 +1,4 @@
-"Reference","Qty","Value","Description","Footprint"
-"C1,C2","2","100nF","","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-"U1","1","AT28C256","","Package_DIP:DIP-28_W15.24mm_Socket_LongPads"
-"U2","1","74HC138","3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16","Package_DIP:DIP-16_W7.62mm_Socket_LongPads"
+"Reference","Qty","Value","Description","Footprint","Digikey","Mouser","Other"
+"C1,C2","2","100nF","","Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm","478-5732-ND","","https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+"U1","1","AT28C256","","Package_DIP:DIP-28_W15.24mm_Socket_LongPads","AT28C256-15PU-ND","556-AT28C25615PU",""
+"U2","1","74HC138","3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16","Package_DIP:DIP-16_W7.62mm_Socket_LongPads","296-1575-5-ND","595-SN74HC138N",""
