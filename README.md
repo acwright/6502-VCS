@@ -154,7 +154,8 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J9 | 1 | 6502 Card Connector | Card Edge 2×20 | | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
 | J10 | 1 | 6502 Bus | Bus Connector 2×20 | | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
 | Q1 | 1 | SS8050 | NPN Transistor SOT-23 | [C2150](https://www.lcsc.com/search?q=C2150) | | | |
-| R1, R4, R9–R14 | 8 | 1k | Resistor | [C17513](https://www.lcsc.com/search?q=C17513) | | | |
+| R1, R4, R9 | 3 | 1k | Resistor | [C17513](https://www.lcsc.com/search?q=C17513) | | | |
+| R10–R14 | 5 | 10k | Resistor | [C2930231](https://www.lcsc.com/search?q=C2930231) | | | |
 | R2 | 1 | 1M | Resistor | [C17514](https://www.lcsc.com/search?q=C17514) | | | |
 | R3 | 1 | 47k | Resistor | [C17713](https://www.lcsc.com/search?q=C17713) | | | |
 | R5, R6 | 2 | 5.1k | Resistor | [C27834](https://www.lcsc.com/search?q=C27834) | | | |
