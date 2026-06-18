@@ -10,7 +10,7 @@
 	(title_block
 		(title "6502 Main Board")
 		(date "2024-06-19")
-		(rev "1.0")
+		(rev "1.1")
 		(company "A.C. Wright Design")
 	)
 	(layers
@@ -118,7 +118,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -162,6 +162,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a23c1b00-294a-4fb9-b503-cadb44c6fe06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a13a13b-cd81-4785-815b-7931418c9609")
 			(effects
 				(font
 					(size 1 1)
@@ -294,7 +307,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -338,6 +351,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1bcb1432-ca10-4d4f-a3b5-9f05817420a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "139c1129-8e94-4e6c-b70e-3d5b0f024d6a")
 			(effects
 				(font
 					(size 1 1)
@@ -470,7 +496,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -514,6 +540,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5fddebe4-e6f5-4a65-bc16-8dc089bcbaff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75fb8d5d-daea-4744-8cd2-439a143f2c66")
 			(effects
 				(font
 					(size 1 1)
@@ -646,7 +685,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -690,6 +729,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0811c46-f883-4175-be68-1f48834a8d3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f897d7ac-8423-4bd0-a488-a5fcebacecec")
 			(effects
 				(font
 					(size 1 1)
@@ -822,7 +874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -866,6 +918,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c422ff5a-033b-40f8-9273-881a79c3ac01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6703cb40-5a06-4c22-857e-7503cc305ad0")
 			(effects
 				(font
 					(size 1 1)
@@ -998,7 +1063,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1030,6 +1095,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "58a11034-7620-4dfe-b932-00705420f99d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2297"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7fe1068e-fbda-438a-904d-5aa5e9c8ac51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e02219f-e172-49f6-b10d-80ffc693c8a3")
 			(effects
 				(font
 					(size 1 1)
@@ -1482,6 +1573,19 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9becd6cd-a7a1-485c-8d1a-887f9144b004")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/00000000-0000-0000-0000-0000605bbb99")
 		(sheetname "/")
@@ -1901,7 +2005,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1945,6 +2049,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "71b21c22-9951-4e90-aa5a-b12128e9814f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "876d207c-3ee7-4804-8745-828353db39a8")
 			(effects
 				(font
 					(size 1 1)
@@ -2206,7 +2323,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2238,6 +2355,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "15d72bdd-bb0b-4345-a950-c00ec94a80c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "A31723-ND"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8be66c2-e42a-4c88-8bd7-83f554e48ef9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91917df1-940b-4aca-b0a6-966b9ec9488d")
 			(effects
 				(font
 					(size 1 1)
@@ -2902,7 +3045,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2924,6 +3067,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "410570ab-5281-4e0b-bcb2-0644c5f535f4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3179,7 +3335,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3211,6 +3367,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0f4e3331-e723-47cd-b9bc-6703a4a70db3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C27834"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22b40b89-bf8a-426c-9f13-d96f5216aa59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d74076d-f85f-471f-9a4c-1671b16ce761")
 			(effects
 				(font
 					(size 1 1)
@@ -3343,7 +3525,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3387,6 +3569,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "12802748-9d1b-4a6a-9ce5-bf9ba59e5402")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "544ded88-cb4b-43f4-ab0d-6c8b6334d4bf")
 			(effects
 				(font
 					(size 1 1)
@@ -3519,7 +3714,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3563,6 +3758,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "333aad55-1eb8-4535-a4af-155e6bbe5cff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea36ac7a-da70-46a5-b83a-84492fae5ac0")
 			(effects
 				(font
 					(size 1 1)
@@ -3695,7 +3903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3739,6 +3947,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5fc00e51-2ef4-47ba-bd6e-6fdb00849bca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d3de2e5-4d17-470d-8ea2-2f4ecc17c43b")
 			(effects
 				(font
 					(size 1 1)
@@ -3915,6 +4136,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "990aaf49-836d-4b44-b0b1-c73b16450a7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6c8829f-f09a-4a74-89a2-74a603830703")
 			(effects
 				(font
 					(size 1 1)
@@ -4271,7 +4505,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4293,6 +4527,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b6ed0dc-cda1-44c5-aa78-509bb87e565c")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4778,7 +5025,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4822,6 +5069,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ff64a2ad-f4e2-47e2-9c3b-257d539c3a19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db5e8c3b-c491-4c39-87d1-81670217bde1")
 			(effects
 				(font
 					(size 1 1)
@@ -5083,7 +5343,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5115,6 +5375,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "aada567d-76e5-46e6-822a-f138403c3a5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C27834"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1f2c4c3-0a2b-40aa-8004-05a8db3a0702")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d5d66e4-6b42-4ecc-8378-79db5165f677")
 			(effects
 				(font
 					(size 1 1)
@@ -5247,7 +5533,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5291,6 +5577,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d360ea36-9f2e-4215-a331-d99f0474a96d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "435d6f11-824c-4658-bfaf-27dae5c51d61")
 			(effects
 				(font
 					(size 1 1)
@@ -5865,7 +6164,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5909,6 +6208,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5e5d4ce2-8871-440f-ad5f-37f7b8c6b851")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a072c8f1-08f5-4767-9a66-c93fa6c28dc9")
 			(effects
 				(font
 					(size 1 1)
@@ -6170,7 +6482,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6192,6 +6504,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5799b989-0763-453a-91bd-168772e55786")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6823,7 +7148,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6855,6 +7180,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6d0b6222-0fac-4c64-9ef3-fb0c473c8a1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d966925-cfa8-4764-9b8b-49a62c19a933")
 			(effects
 				(font
 					(size 1 1)
@@ -7231,7 +7569,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7275,6 +7613,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e2550f40-2848-4f7c-a650-6ada39aaed98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50aa940a-a11a-4b42-b19f-6eaea147a45e")
 			(effects
 				(font
 					(size 1 1)
@@ -7406,7 +7757,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7428,6 +7779,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d9d88e8-a59b-4fc9-ab24-44b09579d07d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7575,7 +7939,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7607,6 +7971,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1f04b841-8953-4c5b-b500-61aa9e0ee064")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Note" "Jumper for orginal 6502"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "512c2f73-1848-46d7-b789-18e707cd797a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12723136-3b0a-4964-b203-b5597be6b694")
 			(effects
 				(font
 					(size 1 1)
@@ -7822,7 +8212,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7866,6 +8256,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90b5e438-9240-4799-b103-831a1de3ac46")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18360aa0-7fc3-4118-a54d-a3310f14d952")
 			(effects
 				(font
 					(size 1 1)
@@ -8220,7 +8623,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8242,6 +8645,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "528f74e5-8619-466a-9d46-ac5971534265")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8433,6 +8849,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "31908fb9-404a-4d8b-ab77-d77d4783010d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dce8e82a-ca8d-47d6-8440-8f390b74328e")
 			(effects
 				(font
 					(size 1 1)
@@ -8904,6 +9333,19 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6bbac9c-97fd-46a0-aa7b-405b9b983e7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14*")
 		(path "/e02eae0f-d0f7-476b-8e56-973ba091923e")
 		(sheetname "/")
@@ -9317,7 +9759,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9330,7 +9772,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9339,6 +9781,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd46611a-2f89-4825-b199-fe936951e741")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10420,7 +10875,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.65 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10432,7 +10887,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10470,12 +10925,25 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3c814cd9-b32b-4293-9c9e-8f4f4c0c0868")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a145cc7-b638-4634-a951-9ce2c71ffe56")
 			(effects
 				(font
 					(size 1 1)
@@ -10596,7 +11064,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10608,7 +11076,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10646,12 +11114,25 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d51d2830-874b-4d4d-9dcd-35226b3078c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da2cd980-ee53-4209-a9ec-4fa5c67f7119")
 			(effects
 				(font
 					(size 1 1)
@@ -10784,7 +11265,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10797,7 +11278,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10828,6 +11309,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "91df11f2-8bc3-4d76-8e5f-5fa4a556e812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f37b689b-e0e3-4d46-843d-117cfcda9ae4")
 			(effects
 				(font
 					(size 1 1)
@@ -10960,7 +11454,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10973,7 +11467,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11004,6 +11498,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9091ad7b-2db0-4a1b-adde-7ceace09a6f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f39a19f6-ea5f-40bb-8764-cdf0fad01a58")
 			(effects
 				(font
 					(size 1 1)
@@ -11136,7 +11643,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11149,7 +11656,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11180,6 +11687,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8668f64d-0f57-475e-abea-6e89e108f8d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a14cffcf-44e4-45d4-828b-fb379dc5ba3a")
 			(effects
 				(font
 					(size 1 1)
@@ -11356,6 +11876,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "471539f5-a0b5-4de1-b624-3aa07fc2559d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f61886b5-b154-49a7-b250-fbd30b943d96")
 			(effects
 				(font
 					(size 1 1)
@@ -11815,6 +12348,19 @@
 				)
 			)
 		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0bc895ca-8422-4c08-92fb-f2180d92002b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "D*DO?41*")
 		(path "/1811541d-fbc2-4d07-aa49-771ccc160d27")
 		(sheetname "/")
@@ -12070,7 +12616,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12114,6 +12660,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0b9e2fca-36eb-4366-acc7-2d27f039139f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c311b06-539a-4251-b2b4-0079584cf7a8")
 			(effects
 				(font
 					(size 1 1)
@@ -12246,7 +12805,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12277,6 +12836,19 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5182315d-8aff-47f8-8e4d-4cdf0623e372")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0235e127-f2b1-4909-b4a1-1709ec99cf65")
 			(effects
 				(font
 					(size 1 1)
@@ -12600,7 +13172,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12613,7 +13185,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12644,6 +13216,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "09fd6bf5-9e40-4ab9-be3a-6e354e73b247")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec5bf2ee-387d-4c16-831a-6bf94866e937")
 			(effects
 				(font
 					(size 1 1)
@@ -12776,7 +13361,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12807,6 +13392,19 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "77fa7a9f-d2be-430d-ad2f-f155760d0b27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b96d1d18-9add-45e4-9fc9-aa2cd2f3b70b")
 			(effects
 				(font
 					(size 1 1)
@@ -13022,7 +13620,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13035,7 +13633,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13044,6 +13642,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a362e46-e417-48aa-ba1e-9e839c191a18")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13580,7 +14191,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.65 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -13592,7 +14203,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13630,12 +14241,25 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "55ab2319-dcd0-4521-a7b4-442bea978f7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77e78620-52fc-4437-9cd1-9c62dfadc1f0")
 			(effects
 				(font
 					(size 1 1)
@@ -13768,7 +14392,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13812,6 +14436,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "de381010-0a6a-400d-a780-bece73d46916")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cce1da09-1c15-4042-885c-345acfe79a2f")
 			(effects
 				(font
 					(size 1 1)
@@ -13944,7 +14581,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13957,7 +14594,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13988,6 +14625,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e1ea1d96-a442-413d-91e7-e5f35d1df3fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6070e010-0d4f-4765-9451-f39ee149e30e")
 			(effects
 				(font
 					(size 1 1)
@@ -14119,7 +14769,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14141,6 +14791,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "660e91b5-326a-4beb-a773-0f9155736d17")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14288,7 +14951,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14332,6 +14995,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a0ed002d-00ad-46eb-9e55-37994921aac4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33ab8cce-04fa-43af-bb4d-37f5e89206be")
 			(effects
 				(font
 					(size 1 1)
@@ -14452,7 +15128,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14464,7 +15140,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14502,12 +15178,25 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "eaeffd21-5fc0-4830-aa5f-e806f611353f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2532a884-bdf4-4a4e-a579-5c8048350af6")
 			(effects
 				(font
 					(size 1 1)
@@ -14640,7 +15329,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14662,6 +15351,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cccb3d4c-632a-422b-a378-2fc5ee18260d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14917,7 +15619,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14930,7 +15632,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Solder Jumper, 2-pole, open"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14939,6 +15641,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef1905e5-ebcd-4d74-9553-7375f729f113")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -15220,6 +15935,45 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ddb03222-ed15-4c44-8255-500ba3965927")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5eef5ce-ed7d-45b3-85a7-4439385638f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "AT28C256-15PU-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "326b0421-cd97-48b5-8f54-0f0d0597e670")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "556-AT28C25615PU"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db7ebbd0-b645-44a6-8792-586f42af006e")
 			(effects
 				(font
 					(size 1 1)
@@ -15931,7 +16685,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.65 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -15943,7 +16697,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15981,12 +16735,25 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d9712cae-5c52-4f2a-b45f-f388dc96a0c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b640bad-4d24-4fa0-adf2-800f616a8e4b")
 			(effects
 				(font
 					(size 1 1)
@@ -16149,6 +16916,45 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3f55cff8-0e64-4405-b89e-1f57b74dd8ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "197e4f19-c298-4341-a5eb-903b9983005e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "1450-1033-ND"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8c20fb0-7b7a-4cbf-a1e6-6e0c862692a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "913-AS6C62256-55PCN"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fb486a2e-923b-41dd-8e42-f40dd205d04d")
 			(effects
 				(font
 					(size 1 1)
@@ -16681,7 +17487,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16712,6 +17518,19 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f5b9e272-d217-4546-9194-2f6d3c098e4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56e00152-4ad7-4cbc-8adf-ce27b2bd6cd6")
 			(effects
 				(font
 					(size 1 1)
@@ -16999,6 +17818,32 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "88ebedf7-533e-4450-af9a-4f3606622af0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6759fd8-6fcf-4c66-8cc3-6e935fad9303")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "955-W65C02S6TPG-14"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1f08a6d-2f09-4bea-ad83-a1b705e4ffaf")
 			(effects
 				(font
 					(size 1 1)
@@ -17686,6 +18531,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad9fe996-05af-46b4-8405-5275c05af236")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "X937-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59cd98c8-cc7e-43c1-9350-269f3f4556c6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18569,7 +19440,7 @@
 			)
 		)
 	)
-	(gr_text "© 2024 A.C. Wright Design | acwrightdesign.com | Rev 1.0"
+	(gr_text "© 2024 A.C. Wright Design | acwrightdesign.com | Rev 1.1"
 		(at 138.3 148.6 0)
 		(layer "F.SilkS")
 		(uuid "f16d3d08-2e51-46b9-894a-da231faf311b")

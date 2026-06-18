@@ -15,6 +15,7 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Software](#software)
 - [Hardware](#hardware)
   - [Main Board](#main-board)
+    - [Revision History](#revision-history)
   - [Input Board](#input-board)
   - [Output Board](#output-board)
   - [ROM Cart](#rom-cart)
@@ -78,6 +79,16 @@ This repository contains KiCad 7.0+ PCB designs for the three boards that make u
 `Hardware/Main Board/`
 
 The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and reset circuitry. Runs at 1 MHz and provides the bus connection for the Input and Output boards.
+
+#### Revision History
+
+**Rev 1.1**
+
+- Pull-up resistors changed from 1kΩ to 10kΩ.
+
+**Rev 1.0**
+
+- Initial release.
 
 ### Input Board
 `Hardware/Input Board/`

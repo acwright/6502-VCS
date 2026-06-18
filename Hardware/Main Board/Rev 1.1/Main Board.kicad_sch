@@ -7,7 +7,7 @@
 	(title_block
 		(title "6502 Main Board")
 		(date "2024-06-12")
-		(rev "1.0")
+		(rev "1.1")
 		(company "A.C. Wright Design")
 	)
 	(lib_symbols
@@ -22428,7 +22428,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 372.11 134.2136 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22471,7 +22471,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 372.11 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -23903,7 +23903,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 372.11 149.4536 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23946,7 +23946,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 372.11 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -24388,7 +24388,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 372.11 141.8336 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24431,7 +24431,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 372.11 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -25479,7 +25479,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 372.11 164.6936 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -25522,7 +25522,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 372.11 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -26681,7 +26681,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 372.11 157.0736 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26724,7 +26724,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C2930231"
 			(at 372.11 160.02 0)
 			(hide yes)
 			(show_name no)
