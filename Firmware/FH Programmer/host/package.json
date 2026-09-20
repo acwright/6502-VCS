@@ -1,0 +1,20 @@
+{
+  "name": "6502-flash",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Host tool for the AC6502 Flash Helper: programs a Flash Cart in circuit through the card edge",
+  "author": {
+    "name": "A.C. Wright",
+    "email": "acwrightdesign@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "fixtures": "node tools/make-fixtures.js",
+    "fixtures:check": "node tools/make-fixtures.js --check"
+  }
+}

@@ -22,6 +22,8 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
   - [Input Board](#input-board)
   - [Output Board](#output-board)
   - [ROM Cart](#rom-cart)
+  - [Flash Cart](#flash-cart)
+  - [Flash Helper](#flash-helper)
 - [Firmware](#firmware)
   - [IB Controller](#ib-controller)
 - [CAD](#cad)
@@ -34,6 +36,8 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
   - [Output Board](#output-board-1)
   - [ROM Cart (Rev 1.0a)](#rom-cart-rev-10a)
   - [ROM Cart (Rev 1.0b)](#rom-cart-rev-10b)
+  - [Flash Cart (Rev 1.0)](#flash-cart-rev-10)
+  - [Flash Helper (Rev 1.0)](#flash-helper-rev-10)
 - [License](#license)
 
 ---
@@ -83,7 +87,7 @@ All AC6502 computers share:
 
 ## Hardware
 
-This repository contains KiCad 7.0+ PCB designs for the three boards that make up the VCS system.
+This repository contains KiCad 7.0+ PCB designs for the boards that make up the VCS system.
 
 ### Main Board
 `Hardware/Main Board/`
@@ -119,6 +123,42 @@ Swappable ROM cartridge for the VCS system. Comes in two versions:
 
 - **Rev 1.0a** — Uses the **28C256** 32KB EEPROM (electrically erasable, no UV eraser required).
 - **Rev 1.0b** — Uses the **27C256** 32KB EPROM (UV-erasable).
+
+### Flash Cart
+`Hardware/Flash Cart/`
+
+Banked flash cartridge, and the successor to the fixed 16K ROM Cart. One all-SMD board covers 128KB to 1MB,
+depending on which parts are populated, and the flash is programmed in circuit through the card edge, either by
+the Flash Helper (an Arduino Mega 2560 shield with one connector on it) or by the 6502 itself.
+
+- `$C000–$DFFF` is a switchable 8K window, selected by a write-only bank register at `$E000–$FFFF`.
+- `$E000–$FFFF` is fixed to the last 8K of the primary flash, so the vectors and the bank-switching code can
+  never be mapped out.
+- Existing 16K cart images run unmodified.
+
+See [DESIGN.md](./Hardware/Flash%20Cart/Rev%201.0/DESIGN.md) for the memory map, the logic, the programming
+sequences and the build variants.
+
+### Flash Helper
+`Hardware/Flash Helper/`
+
+The programmer for the Flash Cart: an Arduino Mega 2560 R3 shield with a cartridge slot on it, and
+nothing else. It pretends to be the 65C02 on the far side of the card edge, so a cart is programmed
+in circuit with no chip ever removed — which matters, because the flash is a soldered-down TSOP part.
+
+- Two parts: the Arduino, and the same TE card edge connector the Main Board fits as J9.
+- Thirty-seven of the forty card edge pins: `A0–A15`, `D0–D7`, `RWB`, `PHI2`, `RESB`, `IRQB`, `NMIB`,
+  `VCC` and `GND`.
+- `EXP0` and `EXP1` are deliberately **not** connected. Cartridges tie them to GND to disable the
+  system ROM, so driving them would be a short.
+- Host side is `6502-flash`, a Node CLI. See [DESIGN.md](./Hardware/Flash%20Cart/Rev%201.0/DESIGN.md).
+
+**As a card tester.** Every card in the AC6502 family — the [COB](https://github.com/acwright/6502-COB)
+cards, the [KIM](https://github.com/acwright/6502-KIM) Keypad Card and both VCS carts — carries the same
+`6502 Card Edge` fingers and drops into this socket. `IRQB` and `NMIB` are wired for that reason rather
+than for programming: the GPIO, LCD, Serial and Serial Card Pro cards all assert `IRQB`, and a tester
+that could not see it would miss most of what they do. That firmware is a separate build and does not
+exist yet.
 
 ## Firmware
 
@@ -246,6 +286,33 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | C1, C2 | 2 | 100nF | Capacitor | [478-5732-ND](https://www.digikey.com/en/products/filter?keywords=478-5732-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
 | U1 | 1 | AT27C256 | EPROM DIP-28 | [AT27C256R-70PU-ND](https://www.digikey.com/en/products/filter?keywords=AT27C256R-70PU-ND) | | [LINK](https://www.jameco.com/z/AM27C256-255DC-Advanced-Micro-Devices-IC-27C256-25-EPROM-256K-Bit-250ns-CMOS-UV-Electrically-Programmable-ROM_39731.html) |
 | U2 | 1 | 74HC138 | Decoder DIP-16 | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) | |
+
+### Flash Cart (Rev 1.0)
+
+Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
+
+| Reference | Qty | Value | Description | DigiKey | Mouser | Other |
+|-----------|-----|-------|-------------|---------|--------|-------|
+| C1, C3–C8 | 7 | 100nF | Capacitor 0603 | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | | |
+| C2 | 1 | 100nF | Capacitor 0603 — fitted only with U2 | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | | |
+| C9 | 1 | 10uF | Capacitor 0805 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | | |
+| U1 | 1 | SST39SF040 | Flash 512K x 8 TSOP-32 | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) | | |
+| U2 | 1 | SST39SF040 | Flash 512K x 8 TSOP-32 — 1MB build only | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) | | |
+| U3 | 1 | 74HC273 | Octal D flip-flop SOIC-20 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | | |
+| U4 | 1 | 74HC138 | Decoder SOIC-16 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | | |
+| U5 | 1 | 74HC139 | Dual decoder SOIC-16 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | | |
+| U6, U7 | 2 | 74HC32 | Quad OR SOIC-14 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | | |
+| U8 | 1 | 74HC1G04 | Single inverter SOT-23-5 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | | |
+
+> **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
+> whichever variant is in stock.
+
+### Flash Helper (Rev 1.0)
+
+| Reference | Qty | Value | Description | DigiKey | Mouser | Other |
+|-----------|-----|-------|-------------|---------|--------|-------|
+| A1 | 1 | Arduino Mega 2560 | Arduino Mega 2560 R3 | | | |
+| J1 | 1 | 6502 Card Connector | Card Edge 2×20 | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
 
 ## License
 
