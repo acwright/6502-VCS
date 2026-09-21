@@ -325,5 +325,5 @@ Only possible by removing the flash from the board. Not a normal workflow for an
 ## Open items
 
 - Decide whether B7 gets brought out at all (test pad or debug LED). It is currently latched and left unconnected.
-- Draw and lay out the Flash Helper PCB.
-- Write the Flash Helper firmware and the `6502-flash` host tool.
+- ~~Draw and lay out the Flash Helper PCB.~~ Done: `Hardware/Flash Helper/Rev 1.0/`, DRC clean, gerbers exported, boards ordered.
+- ~~Write the Flash Helper firmware and the `6502-flash` host tool.~~ Written: `Firmware/FH Programmer/` and its `host/`. Both are complete and both have been run — the firmware against a Mega 2560 with an empty slot, the tool against that and against a simulated cart. **Neither has met a cartridge**, so everything below the serial protocol is unproven: the bus cycles, the bank register, the JEDEC sequences, programming and erasing. See the firmware README's *What has and has not been proved*.
