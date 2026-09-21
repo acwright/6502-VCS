@@ -1,9 +1,12 @@
 {
   "name": "6502-flash",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "description": "Host tool for the AC6502 Flash Helper: programs a Flash Cart in circuit through the card edge",
+  "bin": {
+    "6502-flash": "bin/6502-flash.js"
+  },
   "author": {
     "name": "A.C. Wright",
     "email": "acwrightdesign@gmail.com"
@@ -16,5 +19,8 @@
     "test": "node --test test/*.test.js",
     "fixtures": "node tools/make-fixtures.js",
     "fixtures:check": "node tools/make-fixtures.js --check"
+  },
+  "dependencies": {
+    "@serialport/bindings-cpp": "^13.0.1"
   }
 }
