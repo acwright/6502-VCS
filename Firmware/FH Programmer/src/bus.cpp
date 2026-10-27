@@ -24,6 +24,23 @@ static inline void bus_delay() {
   __builtin_avr_delay_cycles(BUS_DELAY_CYCLES);
 }
 
+// RESB is open-drain: pulled low to assert, released to the AVR's internal
+// pull-up, never driven high.  It is shared - a card under test may pull it
+// low, and a Helper driving it high would hold it against that card.  The
+// order of the two writes is what keeps it from being driven high for even a
+// moment: an output whose PORTG bit is set drives high, so PORTG is cleared
+// before DDRG makes the pin an output, and DDRG is cleared before PORTG turns
+// the pull-up on.
+static inline void resb_assert() {
+  PORTG &= (uint8_t)~RESB_BIT; // input, no pull-up
+  DDRG |= RESB_BIT;            // output low
+}
+
+static inline void resb_release() {
+  DDRG &= (uint8_t)~RESB_BIT; // input, no pull-up
+  PORTG |= RESB_BIT;          // pull-up on
+}
+
 static inline void bus_address(uint16_t addr) {
   PORTL = (uint8_t)(addr & 0xFF); // A0-A7
   PORTC = (uint8_t)(addr >> 8);   // A8-A15
@@ -42,8 +59,7 @@ void bus_begin() {
   PORTB = (uint8_t)((PORTB & ~PHI2_BIT) | RWB_BIT);
   DDRB |= PHI2_BIT | RWB_BIT;
 
-  PORTG |= RESB_BIT; // RESB idles high
-  DDRG |= RESB_BIT;
+  resb_release(); // RESB idles high, on the pull-up
 
   // IRQB and NMIB are wired for the card tester and are never driven here.
   // Leave them inputs with no pull-up so nothing fights a card that asserts
@@ -99,10 +115,12 @@ uint8_t bus_read(uint16_t addr) {
 
 // RESB is the cart's bank register /MR, so this is the only way to put the
 // window back to bank 0 without writing the register.  10 us is far longer than
-// a 74HC273 needs and is imperceptible next to a program.
+// a 74HC273 needs and is imperceptible next to a program.  The second 10 us
+// also covers the pull-up's rise: 20-50 k into the cart's input and the trace,
+// a few tens of picofarads, takes about a microsecond.
 void bus_reset_pulse() {
-  PORTG &= (uint8_t)~RESB_BIT;
+  resb_assert();
   delayMicroseconds(10);
-  PORTG |= RESB_BIT;
+  resb_release();
   delayMicroseconds(10);
 }

@@ -62,6 +62,14 @@ wave — the same speed the VCS runs the cart at, and about seven times what a 7
 needs. It is `-D BUS_DELAY_CYCLES=n` in `platformio.ini` because the first thing a bench
 failure would want to try is a slower bus.
 
+**`RESB` is open-drain.** The Helper pulls it low to reset the cart's bank register and
+releases it to the AVR's internal pull-up; it never drives it high. `RESB` is shared with
+whatever card is in the slot, and a card under test may pull it low itself. A Helper driving
+it high would hold it against that card. On an AVR a pin drives high when both its `DDRG` and
+`PORTG` bits are set, so `resb_assert` clears `PORTG` before making the pin an output, and
+`resb_release` makes it an input before turning the pull-up on. A host test
+(`firmware.test.js`) reads `bus.cpp` and fails if any write sequence could drive `RESB` high.
+
 ### The one thing easiest to get wrong
 
 **Set the bank register before every flash command cycle.** The JEDEC unlock addresses are

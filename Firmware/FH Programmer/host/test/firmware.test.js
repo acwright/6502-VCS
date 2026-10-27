@@ -74,3 +74,32 @@ test('the platformio.ini monitor speed is the protocol speed', async () => {
   const { BAUD_RATE } = await import('../src/serial.js')
   assert.match(ini, new RegExp(`monitor_speed\\s*=\\s*${BAUD_RATE}`))
 })
+
+// RESB is shared with whatever card is in the slot, so the Helper may pull it
+// low and release it, and must never drive it high (6502-VCS README, the shared
+// lines). On an AVR a pin drives high when its DDR bit and its PORT bit are both
+// set, so this reads every write to RESB's two bits, function by function, and
+// plays each function from every state the pin can be left in.
+test('RESB is open-drain: no write sequence ever drives it high', async () => {
+  const source = await readFile(new URL('../../src/bus.cpp', import.meta.url), 'utf8')
+  const writes = new Map()
+  for (const [, name, body] of source.matchAll(/^(?:static inline )?void (\w+)\([^)]*\) \{\n([\s\S]*?)^\}/gm)) {
+    const steps = [...body.matchAll(/^\s*(PORTG|DDRG) ([|&])= [^;]*RESB_BIT;/gm)]
+      .map(([, reg, op]) => ({ reg, set: op === '|' }))
+    if (steps.length) writes.set(name, steps)
+  }
+  assert.deepEqual([...writes.keys()].sort(), ['resb_assert', 'resb_release'],
+    'only the two helpers touch RESB')
+
+  const reachable = [{ DDRG: false, PORTG: false }] // the AVR's state at reset
+  for (let seen = 0; seen < reachable.length; seen++) {
+    for (const [name, steps] of writes) {
+      const pin = { ...reachable[seen] }
+      for (const { reg, set } of steps) {
+        pin[reg] = set
+        assert.ok(!(pin.DDRG && pin.PORTG), `${name} drives RESB high`)
+      }
+      if (!reachable.some((s) => s.DDRG === pin.DDRG && s.PORTG === pin.PORTG)) reachable.push(pin)
+    }
+  }
+})
