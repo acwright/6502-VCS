@@ -104,6 +104,15 @@ The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and rese
 
 - Initial release.
 
+#### Pull-ups on Rev 1.0 and Rev 1.1
+
+Fit 10kΩ pull-ups on every shared line. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for.
+
+- **Rev 1.1:** fit 10kΩ for R4, the `RESB` pull-up, not the 1kΩ in the files. The other pull-ups, R10–R14, are already 10kΩ. R4 isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1.
+- **Rev 1.0:** fit 10kΩ for R4 and R10–R14, not the 1kΩ in the files.
+
+The Bill of Materials below is Rev 1.1's, as drawn.
+
 ### Input Board
 `Hardware/Input Board/`
 
