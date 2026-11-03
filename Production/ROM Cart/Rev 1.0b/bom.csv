@@ -1,0 +1,4 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C2",C_Disc_D5.0mm_W2.5mm_P5.00mm,2,100nF,
+U1,DIP-28_W15.24mm_Socket_LongPads,1,AT27C256,
+U2,DIP-16_W7.62mm_Socket_LongPads,1,74HC138,
