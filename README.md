@@ -226,7 +226,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J7 | 1 | 6502 EN | Pin Header 1×2 | | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J8 | 1 | EXP EN | Pin Header 2×5 | | | | [AMAZON](https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472) |
 | J9 | 1 | 6502 Card Connector | Card Edge 2×20 | | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) | |
-| J10 | 1 | 6502 Bus | Bus Connector 2×20 | | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
+| J10 | 1 | 6502 Bus | Bus Connector 2×20 | | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | | |
 | Q1 | 1 | SS8050 | NPN Transistor SOT-23 | [C2150](https://www.lcsc.com/search?q=C2150) | | | |
 | R1, R4, R9 | 3 | 1k | Resistor | [C17513](https://www.lcsc.com/search?q=C17513) | | | |
 | R10–R14 | 5 | 10k | Resistor | [C2930231](https://www.lcsc.com/search?q=C2930231) | | | |
@@ -253,7 +253,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J1 | 1 | PORT B | Box Header 2×6 | | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | | [AMAZON](https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2) |
 | J2 | 1 | PORT A | Box Header 2×6 | | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | | [AMAZON](https://www.amazon.com/uxcell-2-54mm-2x6-Pin-Straight-Connector/dp/B07DJYVZV2) |
 | J3 | 1 | PS/2 KEYBOARD | 6-pin Mini-DIN | | | [806-KMDGX-6S-BS](https://www.mouser.com/ProductDetail/806-KMDGX-6S-BS) | [AMAZON](https://www.amazon.com/dp/B08GS3QL7T) |
-| J4 | 1 | 6502 Bus | Bus Connector 2×20 | | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
+| J4 | 1 | 6502 Bus | Bus Connector 2×20 | | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | | |
 | J5 | 1 | KEYBOARD | DB-25 Connector | | [609-1505-ND](https://www.digikey.com/en/products/filter?keywords=609-1505-ND) | | |
 | J6 | 1 | IO SELECT | Pin Header 2×8 | | | | [AMAZON](https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472) |
 | R1 | 1 | 1K | Resistor | [C17513](https://www.lcsc.com/search?q=C17513) | | | |
@@ -276,7 +276,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | J2 | 1 | AUDIO | RCA Connector | | [PJRAN1X1U02X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U02X-ND) | | |
 | J6 | 1 | INT Select | Pin Header 1×3 | | | | [AMAZON](https://www.amazon.com/Straight-Breakaway-Connector-Breadboard-Electronic/dp/B0FRZW75VS) |
 | J7 | 1 | IO SELECT | Pin Header 2×8 | | | | [AMAZON](https://www.amazon.com/Uxcell-Double-Straight-Header-Strip/dp/B00X77A472) |
-| J8 | 1 | 6502 Bus | Bus Connector 2×20 | | | | [AMAZON](https://www.amazon.com/Female-Headers-Connector-Header-Raspberry/dp/B07DNHS2SJ) |
+| J8 | 1 | 6502 Bus | Bus Connector 2×20 | | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | | |
 | R1 | 1 | 1k | Resistor | [C17513](https://www.lcsc.com/search?q=C17513) | | | |
 | U1 | 1 | Pico9918A | Video Chip DIP-40 | | | | [LINK](https://www.tindie.com/products/visrealm/pico9918-pro/) |
 | U2 | 1 | 6581 | SID Chip DIP-28 | | | | [LINK](https://retrocomp.cz/produkt?id=2) |
