@@ -982,6 +982,45 @@
 				)
 			)
 		)
+		(property "Digikey" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da28a7be-ae94-49f6-9b61-8caf31469909")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f75b40ae-7ab8-45b1-89ea-4cfc14e36aa4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a5d03c9-cc33-4fdf-84c1-22e6706fe7ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/00000000-0000-0000-0000-000060621dae")
 		(sheetname "/")
 		(sheetfile "ROM Cart.kicad_sch")
@@ -2175,6 +2214,42 @@
 				)
 			)
 		)
+		(property "Digikey" "296-1575-5-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c9ee377-8e0a-4bda-afcc-1bef928dd057")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" "595-SN74HC138N"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "154610d0-4f66-4623-bfba-d8bee9675a5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75e6340e-d7f7-4fa9-b2c7-093fec952733")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* SSOP*5.3x6.2mm*P0.65mm*")
 		(path "/cdda5216-1baa-407f-967c-331aaa07413e")
 		(sheetname "/")
@@ -2655,7 +2730,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2672,6 +2747,42 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3e83c7b4-2262-43ba-8ea7-1aacdd35ef2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4e4d0c8-53ae-4b82-a27a-ec1695045cc4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b87df23-6a60-48b1-badb-5adea29aa27c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15f76d28-5da0-441c-962a-cf4f19865043")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,6 +3169,42 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f31877a2-9dbe-4a75-ab39-0cfd0b67b7a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "AT27C256R-70PU-ND"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14b5ba07-9b6f-4476-87e8-e370a1b40bec")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b40ba98c-62ec-4f93-84d4-394850cf732b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.jameco.com/z/AM27C256-255DC-Advanced-Micro-Devices-IC-27C256-25-EPROM-256K-Bit-250ns-CMOS-UV-Electrically-Programmable-ROM_39731.html"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5c5b89a-8f10-4b52-8eb5-c8bdfa90ec41")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3676,7 +3823,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3693,6 +3840,42 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4264cf8e-88bb-406b-a937-f03b6ef91baa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digikey" "478-5732-ND"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a757bfe3-e4ba-46eb-97a1-59d52c87fd11")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7f47f71-ddfd-4208-8a90-42bc6ad35064")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "276a9d24-4697-4e61-9208-b8c2ce49984f")
 			(effects
 				(font
 					(size 1.27 1.27)
