@@ -3818,7 +3818,7 @@
 		)
 		(property "Value" "100nF"
 			(at 8.55 0.01 0)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "5b5f9fb6-ed63-4e23-a8ee-301c36ebae88")
 			(effects
 				(font
@@ -4220,8 +4220,8 @@
 		(layer "Edge.Cuts")
 		(uuid "1aa651ae-e2e7-4c72-bede-a8a5e99830cd")
 	)
-	(gr_text "© 2025 A.C. Wright Design | acwrightdesign.com | Rev 1.0a"
-		(at 178.7911 101.3836 90)
+	(gr_text "© 2025 A.C. Wright Design | acwrightdesign.com | Rev 1.0"
+		(at 178.6 100.2 90)
 		(layer "F.SilkS")
 		(uuid "601b6bf6-a5cc-4844-848e-7ede124ca5c0")
 		(effects

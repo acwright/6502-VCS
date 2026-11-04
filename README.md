@@ -251,6 +251,12 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ### Input Board
 
+#### Revision History
+
+**Rev 1.0**
+
+- Initial release. Built and tested. `Hardware/Input Board/Rev 1.0/` and `Production/Input Board/Rev 1.0/` match the boards JLCPCB made (order Y86). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
 | Reference | Qty | Value | Description | LCSC | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|------|---------|--------|-------|
 | C1, C3, C5–C8 | 6 | 100nF | Unpolarized capacitor | [C49678](https://www.lcsc.com/search?q=C49678) | | | |
@@ -272,6 +278,12 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ### Output Board
 
+#### Revision History
+
+**Rev 1.0**
+
+- Initial release. Built and tested. `Hardware/Output Board/Rev 1.0/` and `Production/Output Board/Rev 1.0/` match the boards JLCPCB made (order Y85). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
 | Reference | Qty | Value | Description | LCSC | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|------|---------|--------|-------|
 | C1 | 1 | 1uF | Capacitor | [C28323](https://www.lcsc.com/search?q=C28323) | | | |
@@ -290,6 +302,13 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ### ROM Cart (Rev 1.0a)
 
+#### Revision History
+
+**Rev 1.0a**
+
+- Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0a/` and `Production/ROM Cart/Rev 1.0a/` match the boards JLCPCB made (order Y60). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- The board's silkscreen says Rev 1.0, not Rev 1.0a. Its U1 label, `AT28C256`, tells it apart from Rev 1.0b.
+
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
 | C1, C2 | 2 | 100nF | Capacitor | [478-5732-ND](https://www.digikey.com/en/products/filter?keywords=478-5732-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
@@ -298,6 +317,13 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ### ROM Cart (Rev 1.0b)
 
+#### Revision History
+
+**Rev 1.0b**
+
+- Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0b/` and `Production/ROM Cart/Rev 1.0b/` match the boards JLCPCB made (order Y87). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- The board's silkscreen says Rev 1.0, not Rev 1.0b. Its U1 label, `AT27C256`, tells it apart from Rev 1.0a.
+
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
 | C1, C2 | 2 | 100nF | Capacitor | [478-5732-ND](https://www.digikey.com/en/products/filter?keywords=478-5732-ND) | | [AMAZON](https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5) |
@@ -305,6 +331,12 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 | U2 | 1 | 74HC138 | Decoder DIP-16 | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) | |
 
 ### Flash Cart (Rev 1.0)
+
+#### Revision History
+
+**Rev 1.0**
+
+- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Cart/Rev 1.0/` and `Production/Flash Cart/Rev 1.0/` match the boards JLCPCB made (order Y97). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
 
@@ -325,6 +357,12 @@ Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit a
 > whichever variant is in stock.
 
 ### Flash Helper (Rev 1.0)
+
+#### Revision History
+
+**Rev 1.0**
+
+- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Helper/Rev 1.0/` and `Production/Flash Helper/Rev 1.0/` match the boards JLCPCB made (order Y98). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 | Reference | Qty | Value | Description | DigiKey | Mouser | Other |
 |-----------|-----|-------|-------------|---------|--------|-------|
