@@ -99,12 +99,13 @@ The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and rese
 **Rev 1.1** (drawn, not yet made)
 
 - Pull-up resistors changed from 1kΩ to 10kΩ.
-- J3's four USB-C shell pads now join the GND copper fill.
+- C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
 
 **Rev 1.0**
 
-- Initial release. A board has been built and tested, and it runs from USB power.
-- J3's four USB-C shell pads are on the GND net, but the copper fill in the files doesn't reach them, so KiCad reports four unconnected items. The files stay as they are. USB power doesn't depend on the shell: it runs through J3's VBUS and GND pins, which are routed, and the board doesn't use the USB data pins. All the shell loses is its ground connection for shielding.
+- Initial release. Built and tested. `Hardware/Main Board/Rev 1.0/` and `Production/Main Board/Rev 1.0/` match the boards JLCPCB made (order Y38). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- This board used to live in the 6502-COB project, and it was ordered from there. It is now the VCS's CPU and memory board.
+- The PCB file was restored to that layout on 2026-11-04. The later edits are kept in Rev 1.1. The schematic and BOM are today's, and they match this copper.
 
 #### Pull-ups on Rev 1.0 and Rev 1.1
 

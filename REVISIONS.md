@@ -17,7 +17,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Flash Cart | 1.0 | Made, matches order | Not yet | Y97 | 2026-09-20 | `3680cff` | — | 81.8×57.62 | — | — | — |  |
 | Flash Helper | 1.0 | Made, matches order | Not yet | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | Made, matches order | Yes | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
-| Main Board | 1.0 | Made, not compared | Yes |  |  |  | — | 100×100 | 6 mm | yes | — | on hand; JLCPCB's files not yet supplied; J3's shell pads aren't in the GND fill; kept as made, USB power doesn't use them |
+| Main Board | 1.0 | Made, matches order | Yes | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |
 | Main Board | 1.1 | Drawn | — |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.0 | Made, matches order | Yes | Y85 | 2026-01-14 | `6502-COB 379abb8` | — | 100×100 | 6 mm | yes | — |  |
 | ROM Cart | 1.0a | Made, matches order | Yes | Y60 | 2025-10-06 | `6502-COB 0969243` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT28C256, marks it as 1.0a |

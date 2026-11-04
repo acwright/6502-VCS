@@ -19276,7 +19276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:6502 Bus Connector"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
 			(at 77.47 219.71 0)
 			(hide yes)
 			(show_name no)
@@ -26412,7 +26412,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Socket:DIP_Socket-28_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_228-1277-00-0602J"
+		(property "Footprint" "Socket:DIP_Socket-28_W11.9_W12.7_W15.24_W17.78_W18.5_3M_228-1277-00-0602J"
 			(at 355.6 50.8 0)
 			(hide yes)
 			(show_name no)
