@@ -17,8 +17,8 @@ Every revision of every board in this repository, and what is known about each. 
 | Flash Cart | 1.0 | To confirm |  |  |  | — | 81.8×57.62 | — | — | — |  |
 | Flash Helper | 1.0 | To confirm |  |  |  | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | To confirm |  |  |  | — | 100×100 | 6 mm | yes | — |  |
-| Main Board | 1.0 | To confirm |  |  |  | — | 100×100 | 6 mm | yes | — | 4 unconnected |
-| Main Board | 1.1 | To confirm |  |  |  | — | 100×100 | 6 mm | yes | — | 4 unconnected |
+| Main Board | 1.0 | Made, not checked |  |  |  | — | 100×100 | 6 mm | yes | — | built and tested by the owner; J3's shell pads aren't in the GND fill; kept as made, USB power doesn't use them |
+| Main Board | 1.1 | Drawn |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.0 | To confirm |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | ROM Cart | 1.0a | To confirm |  |  |  | — | 81.8×57.62 | — | — | — |  |
 | ROM Cart | 1.0b | To confirm |  |  |  | — | 81.8×57.62 | — | — | — |  |

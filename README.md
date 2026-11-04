@@ -96,13 +96,15 @@ The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and rese
 
 #### Revision History
 
-**Rev 1.1**
+**Rev 1.1** (drawn, not yet made)
 
 - Pull-up resistors changed from 1kΩ to 10kΩ.
+- J3's four USB-C shell pads now join the GND copper fill.
 
 **Rev 1.0**
 
-- Initial release.
+- Initial release. A board has been built and tested, and it runs from USB power.
+- J3's four USB-C shell pads are on the GND net, but the copper fill in the files doesn't reach them, so KiCad reports four unconnected items. The files stay as they are. USB power doesn't depend on the shell: it runs through J3's VBUS and GND pins, which are routed, and the board doesn't use the USB data pins. All the shell loses is its ground connection for shielding.
 
 #### Pull-ups on Rev 1.0 and Rev 1.1
 
