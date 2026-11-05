@@ -13,3 +13,6 @@ Thumbs.db
 # §2 the mapper, §3 the flash command set, §4 saves — which four
 # implementations across six repositories cite by section number. It is
 # tracked.
+
+# KiCad local history
+.history
