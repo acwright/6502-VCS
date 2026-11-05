@@ -91,7 +91,7 @@ The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and rese
 ### Input Board
 `Hardware/Input Board/`
 
-Unified input board supporting a matrix keyboard, PS/2 keyboard, and Atari 2600-compatible joysticks. Uses a 65C22 VIA and an ATmega1284p microcontroller as the keyboard encoder controller.
+Unified input board supporting a matrix keyboard, PS/2 keyboard, and Atari 2600-compatible joysticks. Uses a 65C22 VIA and an ATmega1284 microcontroller as the keyboard encoder controller.
 
 The joysticks share the VIA ports with the keyboard encoder rather than having connectors of their own: they come in on the `J1` PORT B and `J2` PORT A box headers, with `JOY(1)` reading PORT B and `JOY(2)` reading PORT A. See [Joystick Interface](./Firmware/IB%20Controller/README.md#joystick-interface) for the wiring options and the bitmask the BIOS returns.
 
@@ -151,7 +151,7 @@ This repository contains [PlatformIO](https://platformio.org/)-based firmware fo
 ### IB Controller
 `Firmware/IB Controller/`
 
-Firmware for the ATmega1284p on the Input Board. Provides:
+Firmware for the ATmega1284 on the Input Board. Provides:
 
 - Matrix keyboard scanning and encoding
 - PS/2 keyboard interface
