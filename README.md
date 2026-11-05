@@ -102,6 +102,7 @@ The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and rese
 
 - Pull-up resistors changed from 1kΩ to 10kΩ.
 - C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
+- The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
 
 **Rev 1.0**
 

@@ -2266,7 +2266,7 @@
 				)
 			)
 		)
-		(property "Value" "PWR_SW"
+		(property "Value" "POWER SW"
 			(at 1.25 4.6 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -5546,7 +5546,7 @@
 				)
 			)
 		)
-		(property "Value" "RESET_SW"
+		(property "Value" "RESET SW"
 			(at 1.25 4.6 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6802,7 +6802,7 @@
 				)
 			)
 		)
-		(property "Value" "CLOCK_ENBL_SW"
+		(property "Value" "CLOCK ENBL SW"
 			(at 1.25 4.6 0)
 			(layer "F.Fab")
 			(hide yes)

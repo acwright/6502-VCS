@@ -19012,7 +19012,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PWR_SW"
+		(property "Value" "POWER SW"
 			(at 69.596 19.812 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20294,7 +20294,7 @@
 				)
 			)
 		)
-		(property "Value" "RESET_SW"
+		(property "Value" "RESET SW"
 			(at 134.1628 44.8564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20914,7 +20914,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "CLOCK_ENBL_SW"
+		(property "Value" "CLOCK ENBL SW"
 			(at 144.78 194.818 90)
 			(show_name no)
 			(do_not_autoplace no)

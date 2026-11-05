@@ -39,6 +39,8 @@ These change what you buy or fit. The boards themselves stay as they were made.
 | Main Board | 1.0 | R4, R10–R14 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
 | Main Board | 1.0 | J10 | Fit a box header for a ribbon cable. The silk shows a plain header, but the holes are the same. Pin 1 is the square pad, and the notch faces the even-numbered pins. |
 | Main Board | 1.1 | R4 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
+| Output Board | 1.0 | J1 | `VDD` is the supply for a real SID at pin 28: 12 V for a 6581, 9 V for an 8580. The standard build does not provide it, and it has never been tested. Leave it unconnected with an ARMSID. |
+| Output Board | 1.0 | U2 | The silk says 6581; fit an ARMSID. |
 
 ### Build notes
 
@@ -143,12 +145,12 @@ Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](
 | C2 | 1 | 10uF | KYOCERA AVX TAJA106K016RNJ | [478-1655-1-ND](https://www.digikey.com/en/products/filter?keywords=478-1655-1-ND) | [581-TAJA106K016R](https://www.mouser.com/ProductDetail/581-TAJA106K016R) | LCSC [C7171](https://www.lcsc.com/search?q=C7171) | Yes |
 | D1 | 1 | 1N5819 | MCC (Micro Commercial Components) B5819WS-TP | [B5819WS-TPMSCT-ND](https://www.digikey.com/en/products/filter?keywords=B5819WS-TPMSCT-ND) |  | LCSC [C191023](https://www.lcsc.com/search?q=C191023) | Yes |
 | D2 | 1 | LED | Lite-On Inc. LTST-C170KGKT | [160-1414-1-ND](https://www.digikey.com/en/products/filter?keywords=160-1414-1-ND) | [859-LTST-C170KGKT](https://www.mouser.com/ProductDetail/859-LTST-C170KGKT) | LCSC [C2297](https://www.lcsc.com/search?q=C2297) | Yes |
-| J1 | 1 | PWR_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J1 | 1 | POWER SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
 | J2 | 1 | ROM WE | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
 | J3 | 1 | USB_C_Receptacle_USB2.0 | G-Switch GT-USB-7010ASV |  |  | LCSC [C2988369](https://www.lcsc.com/search?q=C2988369) | Yes |
-| J4 | 1 | RESET_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J4 | 1 | RESET SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
 | J5 | 1 | HRDB EN | Pin header 2×2, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
-| J6 | 1 | CLOCK_ENBL_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J6 | 1 | CLOCK ENBL SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
 | J7 | 1 | 6502 EN | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
 | J8 | 1 | EXP EN | Pin header 2×5, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
 | J9 | 1 | 6502 Card Connector | TE Connectivity 5-5530843-4 | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) |  | |
@@ -242,7 +244,7 @@ Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.0/digikey.csv), [mouser.csv
 | J8 | 1 | 6502 Bus | Würth Elektronik 61204021621 | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | [710-61204021621](https://www.mouser.com/ProductDetail/710-61204021621) |  | |
 | R1 | 1 | 1k | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
 | U1 | 1 | Pico9918A | Pico9918A, DIP_Socket-40_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_240-1280-00-0602J |  |  | [Tindie](https://www.tindie.com/products/visrealm/pico9918-pro/) | |
-| U2 | 1 | 6581 | 6581, DIP_Socket-28_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_228-1277-00-0602J |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) | |
+| U2 | 1 | 6581 | Retrocomp ARMSID |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) | |
 | U3, U4 | 2 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
 | U1 | 1 | Socket | 40-pin ZIF socket, or an ordinary 40-pin socket | [3M4002-ND](https://www.digikey.com/en/products/filter?keywords=3M4002-ND) | [517-240-1280-00](https://www.mouser.com/ProductDetail/517-240-1280-00) | | |
 | U2 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | | |
@@ -250,7 +252,7 @@ Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.0/digikey.csv), [mouser.csv
 Pin headers are cut from strips, and the cart files count whole strips.
 
 - **J8:** Male box header with a keying notch, for a 40-way ribbon cable.
-- **U2:** SID 6581, out of production
+- **U2:** A modern replacement for the MOS 6581 SID, which is out of production. Every tested build uses one. A real 6581 also needs 12 V at pin 28, which the standard build does not provide.
 
 
 ## ROM Cart
