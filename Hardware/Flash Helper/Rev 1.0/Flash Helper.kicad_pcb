@@ -2823,7 +2823,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
+	(footprint "6502 Parts:6502 Card Slot"
 		(layer "F.Cu")
 		(uuid "dc304d22-fe81-46f3-a5ad-6ef498448bb3")
 		(at 167.64 91.44 180)
@@ -3559,7 +3559,7 @@
 			(uuid "51cad041-b162-4e6d-98fa-a03b1d43f12c")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/5-5530843-4.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Card Slot.step"
 			(offset
 				(xyz 24.5 2.5 15.5)
 			)

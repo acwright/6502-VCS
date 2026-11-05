@@ -3055,7 +3055,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
+	(footprint "6502 Parts:6502 Card Slot"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-0000605de077")
 		(at 163.8 66 -90)
@@ -3084,7 +3084,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
+		(property "Footprint" "6502 Parts:6502 Card Slot"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3788,7 +3788,7 @@
 			(solder_mask_margin 0.1016)
 			(uuid "0b7a2d81-0acb-4bc0-b54c-2bdbebdbb379")
 		)
-		(model "${KIPRJMOD}/../../../Models/5-5530843-4.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Card Slot.step"
 			(offset
 				(xyz 24.5 2.5 15.5)
 			)
@@ -8867,7 +8867,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SW_TS-1187A-B-A-B"
+	(footprint "6502 Parts:Tact Switch SMD 5.1mm"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-0000606f5043")
 		(at 124.975 55.7 90)
@@ -8894,7 +8894,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:SW_TS-1187A-B-A-B"
+		(property "Footprint" "6502 Parts:Tact Switch SMD 5.1mm"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9314,7 +9314,7 @@
 			(pintype "passive")
 			(uuid "c57240b6-6f9e-49ff-9e94-c6e9de78fa5e")
 		)
-		(model "${KIPRJMOD}/../../../Models/TS-1187A-B-A-B.step"
+		(model "${KIPRJMOD}/../../../Models/Tact Switch SMD 5.1mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -19573,7 +19573,7 @@
 			(pintype "power_in")
 			(uuid "d713b747-d4f0-4f87-95d9-b41cd861de56")
 		)
-		(model "${KIPRJMOD}/../../../Models/228-1277-00-0602J.step"
+		(model "${KIPRJMOD}/../../../Models/ZIF Socket 28.step"
 			(offset
 				(xyz 7.75 -14.75 0)
 			)

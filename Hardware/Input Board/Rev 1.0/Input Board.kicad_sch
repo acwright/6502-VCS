@@ -16631,7 +16631,7 @@
 				)
 			)
 		)
-		(property "Footprint" "6502 Parts:KMDGX-6S-BS"
+		(property "Footprint" "6502 Parts:PS2 Jack"
 			(at 229.87 106.68 0)
 			(hide yes)
 			(show_name no)

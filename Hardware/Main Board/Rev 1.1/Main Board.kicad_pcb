@@ -2606,7 +2606,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:RHDR40W82P485X254_2X20_5740X93"
+	(footprint "6502 Parts:6502 Card Slot"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-0000605de077")
 		(at 163.8 66 -90)
@@ -3342,7 +3342,7 @@
 			(uuid "0b7a2d81-0acb-4bc0-b54c-2bdbebdbb379")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/5-5530843-4.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Card Slot.step"
 			(offset
 				(xyz 24.5 2.5 15.5)
 			)
@@ -7850,7 +7850,7 @@
 			(uuid "a656f640-bbd2-4136-9275-e0c423d17af7")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/61204021621.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Bus Connector.step"
 			(offset
 				(xyz 1.25 -24 4.5)
 			)
@@ -7862,7 +7862,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SW_TS-1187A-B-A-B"
+	(footprint "6502 Parts:Tact Switch SMD 5.1mm"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-0000606f5043")
 		(at 124.975 55.7 90)
@@ -8308,7 +8308,7 @@
 			(uuid "b212a23c-ff1c-46a2-bd27-253c5ae9b19d")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/TS-1187A-B-A-B.step"
+		(model "${KIPRJMOD}/../../../Models/Tact Switch SMD 5.1mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18320,7 +18320,7 @@
 			(uuid "d713b747-d4f0-4f87-95d9-b41cd861de56")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/228-1277-00-0602J.step"
+		(model "${KIPRJMOD}/../../../Models/ZIF Socket 28.step"
 			(offset
 				(xyz 7.5 -14.5 0)
 			)

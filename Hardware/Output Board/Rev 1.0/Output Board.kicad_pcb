@@ -4151,7 +4151,7 @@
 			)
 		)
 	)
-	(footprint "6502 Parts:SWITCHCRAFT_PJRAN1X1U02X"
+	(footprint "6502 Parts:RCA Jack White"
 		(layer "F.Cu")
 		(uuid "71231088-9c0e-426f-ab9a-e7bf3ffdd402")
 		(at 153.23 145.64)
@@ -4556,7 +4556,7 @@
 			(uuid "3fb5393a-58ec-4ec2-b935-42ef7b270a47")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/PJRAN1X1U02X.step"
+		(model "${KIPRJMOD}/../../../Models/RCA Jack White.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6807,7 +6807,7 @@
 			(uuid "7c7b7def-538f-4b15-ab99-7ec4f415b270")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/240-1280-00-0602J.step"
+		(model "${KIPRJMOD}/../../../Models/ZIF Socket 40.step"
 			(offset
 				(xyz 7.75 -22.25 0)
 			)
@@ -9518,7 +9518,7 @@
 			(uuid "455bd62d-e8e1-470b-91a8-31e784eced07")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/228-1277-00-0602J.step"
+		(model "${KIPRJMOD}/../../../Models/ZIF Socket 28.step"
 			(offset
 				(xyz 7.75 -14.75 0)
 			)
@@ -10238,7 +10238,7 @@
 			(uuid "c425226b-1ed7-4277-b0e3-67abb0e614ca")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../../Models/61204021621.step"
+		(model "${KIPRJMOD}/../../../Models/6502 Bus Connector.step"
 			(offset
 				(xyz 1.25 -24 4.5)
 			)

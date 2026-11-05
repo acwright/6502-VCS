@@ -4,7 +4,7 @@
 D1,D_DO-35_SOD27_P7.62mm_Horizontal,1,1N914,
 J1,6502 GPIO Connector,1,PORT B,
 J2,6502 GPIO Connector,1,PORT A,
-J3,KMDGX-6S-BS,1,PS/2 KEYBOARD,
+J3,PS2 Jack,1,PS/2 KEYBOARD,
 J4,6502 Bus Connector,1,6502 Bus,
 J5,DSUB-25_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,1,KEYBOARD,
 J6,PinHeader_2x08_P2.54mm_Vertical,1,IO SELECT,
