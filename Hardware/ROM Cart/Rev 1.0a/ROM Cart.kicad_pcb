@@ -2250,6 +2250,32 @@
 				)
 			)
 		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e323f51-2cb2-5917-9760-cf692a1cb4c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7cec6a3-d996-5802-a0da-bc130e902a1f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* SSOP*5.3x6.2mm*P0.65mm*")
 		(path "/cdda5216-1baa-407f-967c-331aaa07413e")
 		(sheetname "/")
@@ -2755,7 +2781,7 @@
 				)
 			)
 		)
-		(property "Digikey" "478-5732-ND"
+		(property "Digikey" "478-3188-ND"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2767,7 +2793,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "581-SR215C104KAR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2779,11 +2805,37 @@
 				)
 			)
 		)
-		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+		(property "Other" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d0727ec6-35c1-4815-be1f-13732454aae9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96a69d2e-154d-5eed-9c1a-bbe74b898f96")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc262d8e-a6a5-50df-8813-7268bc8acd30")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,6 +3260,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "05950291-6446-4320-a6d1-301b35657755")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59d8d97e-c4b5-54b8-969a-5189a3e13a96")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0764545-c0ec-5ae0-bf37-0d5826e7e2d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3851,7 +3929,7 @@
 				)
 			)
 		)
-		(property "Digikey" "478-5732-ND"
+		(property "Digikey" "478-3188-ND"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3863,7 +3941,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "581-SR215C104KAR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3875,11 +3953,37 @@
 				)
 			)
 		)
-		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+		(property "Other" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5b1a4c37-0da4-4071-914f-bfcec92839e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d7a4b6ae-5a8c-50d5-94a4-2d0a23a8496a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "073bdee5-c4dd-5495-82a4-78c448116a23")
 			(effects
 				(font
 					(size 1.27 1.27)

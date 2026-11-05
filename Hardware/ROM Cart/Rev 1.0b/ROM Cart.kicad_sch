@@ -4789,7 +4789,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "556-AT27C256R70PU"
 			(at 154.94 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4800,7 +4800,29 @@
 				)
 			)
 		)
-		(property "Other" "https://www.jameco.com/z/AM27C256-255DC-Advanced-Micro-Devices-IC-27C256-25-EPROM-256K-Bit-250ns-CMOS-UV-Electrically-Programmable-ROM_39731.html"
+		(property "Other" ""
+			(at 154.94 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 154.94 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 154.94 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4968,7 +4990,7 @@
 				)
 			)
 		)
-		(property "Digikey" "478-5732-ND"
+		(property "Digikey" "478-3188-ND"
 			(at 168.91 99.06 90)
 			(hide yes)
 			(show_name no)
@@ -4979,7 +5001,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "581-SR215C104KAR"
 			(at 168.91 99.06 90)
 			(hide yes)
 			(show_name no)
@@ -4990,8 +5012,30 @@
 				)
 			)
 		)
-		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+		(property "Other" ""
 			(at 168.91 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 168.91 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 168.91 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5160,7 +5204,7 @@
 				)
 			)
 		)
-		(property "Digikey" "478-5732-ND"
+		(property "Digikey" "478-3188-ND"
 			(at 49.53 151.13 90)
 			(hide yes)
 			(show_name no)
@@ -5171,7 +5215,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "581-SR215C104KAR"
 			(at 49.53 151.13 90)
 			(hide yes)
 			(show_name no)
@@ -5182,8 +5226,30 @@
 				)
 			)
 		)
-		(property "Other" "https://www.amazon.com/PANMILED-Multilayer-Monolithic-Capacitors-Assortment/dp/B0CYQ1Z4G5"
+		(property "Other" ""
 			(at 49.53 151.13 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 49.53 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 49.53 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5456,6 +5522,28 @@
 			)
 		)
 		(property "Other" ""
+			(at 80.01 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 80.01 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
 			(at 80.01 160.02 0)
 			(hide yes)
 			(show_name no)

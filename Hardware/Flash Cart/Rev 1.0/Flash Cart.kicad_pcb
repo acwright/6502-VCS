@@ -2320,7 +2320,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2342,6 +2342,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5488fd93-8c3c-50db-8cd3-a0d18509cc14")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f95a320-8e52-5220-a978-0299b2676308")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2607,7 +2633,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "603-CC0805KRX57BB106"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2629,6 +2655,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82e00087-2831-5aa6-a5e2-898c80b09c6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3794a8da-8773-519c-9a72-ee201f79553c")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2792,7 +2844,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "771-74HC139D-T"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2814,6 +2866,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0d544479-f0de-559e-9d2a-05159ff9847d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "197c049d-6407-5c3e-bbe7-e9ac3e1a8fc5")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3290,7 +3368,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3312,6 +3390,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69335c24-ccff-5591-bf59-9c2903c69eeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c358cd50-e12b-5837-a55c-ce89bee41f29")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3577,7 +3681,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3599,6 +3703,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95a1664a-240f-5418-a772-128faed041e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecf9c88b-1cc7-5129-ac13-f42c6bd1ad53")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3762,7 +3892,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "771-74HC32D-T"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3784,6 +3914,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff514ffe-2779-5363-b194-70979b486156")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ead133f5-88fd-5d44-827b-b3390111f7df")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4235,7 +4391,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "771-74HC1G04GV"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4257,6 +4413,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd73e684-ba0a-5375-8e74-9e3943285ad9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79910dc5-3b88-5f2f-83a8-8ba88b880726")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4662,7 +4844,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "771-74HC32D-T"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4684,6 +4866,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30ea1320-6b16-5568-a84a-929e3741b3ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90851529-36e7-5ba7-8e41-c9a46c0a0c69")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5236,7 +5444,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "771-74HC138D-T"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5258,6 +5466,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1733a1a-920c-5b18-a387-d3f820a29a54")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5602"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1ead021-78b0-51de-a5bd-96aecda6cb47")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5728,7 +5962,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5750,6 +5984,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b8b4f82-8211-58d9-86e5-7acf93c0a248")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11cd6430-9c04-5fca-8711-e14ba8299c58")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -5935,6 +6195,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f413cc99-cb15-519b-a133-66ba264ebdce")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cef6dfaa-6e35-55c5-9a7a-c0ba5ba8a2ca")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6526,7 +6812,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6548,6 +6834,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1aaf281-0593-58ff-8098-88f26e6344a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ddbb24a3-f622-5d13-9b1f-802da232a503")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6712,7 +7024,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6734,6 +7046,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56a09ec8-3530-5bfd-9dd4-26649d157a3e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61a0bb8f-7fb3-5f77-8750-4dc8c39f727f")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -6919,6 +7257,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91b9190a-5ac8-559f-b254-27dcae756723")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3bcdb7a9-4f6b-5f4a-8d9d-8a60d4ae078d")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -7509,7 +7873,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "771-74HC273D-T"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7531,6 +7895,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ccca7ff-0cb9-55f2-9ed0-6e71dbe4b2bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e174c9e6-20b2-548c-8921-264fc9cd6d19")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8041,7 +8431,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8063,6 +8453,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "810ead7b-e3b0-55f8-b0a9-4a4d3a2ccaa4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d852256-923b-585d-9e0e-8a3d6fd76ebd")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -8227,7 +8643,7 @@
 				)
 			)
 		)
-		(property "Mouser" ""
+		(property "Mouser" "80-C0603C104K5R"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8249,6 +8665,32 @@
 			(effects
 				(font
 					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67c3f617-52c3-5053-9fae-9a9e5d2d1289")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a033b8b5-50ec-5e95-a155-da761a8e43ee")
+			(effects
+				(font
+					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
