@@ -36,6 +36,7 @@ These change what you buy or fit. The boards themselves stay as they were made.
 | Board | Revision | Parts | Issue |
 |---|---|---|---|
 | Input Board | 1.0 | C2, C4 | The silk says 22 pF; fit 20 pF. A board built with 22 pF is fine. |
+| Input Board | 1.0 | U2 | The silk says ATmega1284-P; fit the ATmega1284 listed here. |
 | Main Board | 1.0 | R4, R10–R14 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
 | Main Board | 1.0 | J10 | Fit a box header for a ribbon cable. The silk shows a plain header, but the holes are the same. Pin 1 is the square pad, and the notch faces the even-numbered pins. |
 | Main Board | 1.1 | R4 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
