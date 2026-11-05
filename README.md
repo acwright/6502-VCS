@@ -116,7 +116,6 @@ Fit 10kΩ pull-ups on every shared line. With a 1kΩ pull-up, a device that pull
 - **Rev 1.1:** fit 10kΩ for R4, the `RESB` pull-up, not the 1kΩ in the files. The other pull-ups, R10–R14, are already 10kΩ. R4 isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1.
 - **Rev 1.0:** fit 10kΩ for R4 and R10–R14, not the 1kΩ in the files.
 
-The Bill of Materials below is Rev 1.1's, as drawn.
 
 ### Input Board
 `Hardware/Input Board/`
