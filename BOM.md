@@ -16,7 +16,7 @@ Every part for every board in this repository, by revision, with supplier number
 
 ## Which revision do I have?
 
-Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and the [README](README.md) lists what changed between them.
+Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and its history lists what changed between them.
 
 | Board | Revision | What the silk says | Status |
 |---|---|---|---|
@@ -44,7 +44,20 @@ These change what you buy or fit. The boards themselves stay as they were made.
 
 ### Build notes
 
-These come from the README.
+How to build each board, where it needs more than its parts list.
+
+<!-- Build notes: hand-written. tools/bom/gen_bom.py keeps everything between these two markers. -->
+
+**Input Board**
+
+> **Joysticks**: there is no DB-9 in this BOM because the board does not carry one. The joysticks share the VIA ports with the keyboard encoder and connect through the `J1` PORT B and `J2` PORT A box headers, using a helper board from the [6502-COB](https://github.com/acwright/6502-COB) project — the **GPIO Helper** for a direct box-header connection, or the **Joystick Helper** to convert a port to a DB-9 with pull-ups fitted. Budget for one helper per stick.
+
+**Flash Cart**
+
+Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
+
+> **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
+> whichever variant is in stock.
 
 **Main Board**
 
@@ -55,13 +68,7 @@ Fit 10kΩ pull-ups on every shared line. With a 1kΩ pull-up, a device that pull
 - **Rev 1.1:** fit 10kΩ for R4, the `RESB` pull-up, not the 1kΩ in the files. The other pull-ups, R10–R14, are already 10kΩ. R4 isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1.
 - **Rev 1.0:** fit 10kΩ for R4 and R10–R14, not the 1kΩ in the files.
 
-**Flash Cart**
-
-Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
-
-> **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
-> whichever variant is in stock.
-
+<!-- End of build notes. -->
 
 ## Flash Cart
 

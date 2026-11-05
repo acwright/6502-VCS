@@ -20,7 +20,6 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Software](#software)
 - [Hardware](#hardware)
   - [Main Board](#main-board)
-    - [Revision History](#revision-history)
   - [Input Board](#input-board)
   - [Output Board](#output-board)
   - [ROM Cart](#rom-cart)
@@ -33,13 +32,6 @@ An **AC6502** retro-style 8-bit computer based on the **65C02** microprocessor.
 - [Schematics](#schematics)
 - [Libraries](#libraries)
 - [Bill of Materials](#bill-of-materials)
-  - [Main Board](#main-board-1)
-  - [Input Board](#input-board-1)
-  - [Output Board](#output-board-1)
-  - [ROM Cart (Rev 1.0a)](#rom-cart-rev-10a)
-  - [ROM Cart (Rev 1.0b)](#rom-cart-rev-10b)
-  - [Flash Cart (Rev 1.0)](#flash-cart-rev-10)
-  - [Flash Helper (Rev 1.0)](#flash-helper-rev-10)
 - [License](#license)
 
 ---
@@ -95,28 +87,6 @@ This repository contains KiCad 7.0+ PCB designs for the boards that make up the 
 `Hardware/Main Board/`
 
 The core board containing the 65C02 CPU, 32KB SRAM, 32KB EEPROM, clock, and reset circuitry. Runs at 1 MHz and provides the bus connection for the Input and Output boards.
-
-#### Revision History
-
-**Rev 1.1** (drawn, not yet made)
-
-- Pull-up resistors changed from 1kΩ to 10kΩ.
-- C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
-- The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
-
-**Rev 1.0**
-
-- Initial release. Built and tested. `Hardware/Main Board/Rev 1.0/` and `Production/Main Board/Rev 1.0/` match the boards JLCPCB made (order Y38). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-- This board used to live in the 6502-COB project, and it was ordered from there. It is now the VCS's CPU and memory board.
-- The PCB file was restored to that layout on 2026-11-04. The later edits are kept in Rev 1.1. The schematic and BOM are today's, and they match this copper.
-
-#### Pull-ups on Rev 1.0 and Rev 1.1
-
-Fit 10kΩ pull-ups on every shared line. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for.
-
-- **Rev 1.1:** fit 10kΩ for R4, the `RESB` pull-up, not the 1kΩ in the files. The other pull-ups, R10–R14, are already 10kΩ. R4 isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1.
-- **Rev 1.0:** fit 10kΩ for R4 and R10–R14, not the 1kΩ in the files.
-
 
 ### Input Board
 `Hardware/Input Board/`
@@ -220,74 +190,7 @@ Shared KiCad symbol and footprint libraries used across all AC6502 hardware proj
 
 ## Bill of Materials
 
-Every part for every board, by revision, is in **[BOM.md](BOM.md)**, with supplier numbers, known issues and files to upload to Digi-Key and Mouser.
-
-### Main Board
-
-Parts list: [BOM.md](BOM.md#main-board).
-
-### Input Board
-
-#### Revision History
-
-**Rev 1.0**
-
-- Initial release. Built and tested. `Hardware/Input Board/Rev 1.0/` and `Production/Input Board/Rev 1.0/` match the boards JLCPCB made (order Y86). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-> **Joysticks**: there is no DB-9 in this BOM because the board does not carry one. The joysticks share the VIA ports with the keyboard encoder and connect through the `J1` PORT B and `J2` PORT A box headers, using a helper board from the [6502-COB](https://github.com/acwright/6502-COB) project — the **GPIO Helper** for a direct box-header connection, or the **Joystick Helper** to convert a port to a DB-9 with pull-ups fitted. Budget for one helper per stick.
-
-### Output Board
-
-#### Revision History
-
-**Rev 1.0**
-
-- Initial release. Built and tested. `Hardware/Output Board/Rev 1.0/` and `Production/Output Board/Rev 1.0/` match the boards JLCPCB made (order Y85). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-Parts list: [BOM.md](BOM.md#output-board).
-
-### ROM Cart (Rev 1.0a)
-
-#### Revision History
-
-**Rev 1.0a**
-
-- Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0a/` and `Production/ROM Cart/Rev 1.0a/` match the boards JLCPCB made (order Y60). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-- The board's silkscreen says Rev 1.0, not Rev 1.0a. Its U1 label, `AT28C256`, tells it apart from Rev 1.0b.
-
-### ROM Cart (Rev 1.0b)
-
-#### Revision History
-
-**Rev 1.0b**
-
-- Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0b/` and `Production/ROM Cart/Rev 1.0b/` match the boards JLCPCB made (order Y87). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-- The board's silkscreen says Rev 1.0, not Rev 1.0b. Its U1 label, `AT27C256`, tells it apart from Rev 1.0a.
-
-Parts list: [BOM.md](BOM.md#rom-cart).
-
-### Flash Cart (Rev 1.0)
-
-#### Revision History
-
-**Rev 1.0**
-
-- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Cart/Rev 1.0/` and `Production/Flash Cart/Rev 1.0/` match the boards JLCPCB made (order Y97). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
-
-> **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
-> whichever variant is in stock.
-
-### Flash Helper (Rev 1.0)
-
-#### Revision History
-
-**Rev 1.0**
-
-- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Helper/Rev 1.0/` and `Production/Flash Helper/Rev 1.0/` match the boards JLCPCB made (order Y98). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
-
-Parts list: [BOM.md](BOM.md#flash-helper).
+Every part for every board, by revision, is in **[BOM.md](BOM.md)**, with supplier numbers, known issues, build notes and files to upload to Digi-Key and Mouser. What changed in each revision, and what is known about each one, is in **[REVISIONS.md](REVISIONS.md)**.
 
 ## License
 

@@ -24,3 +24,59 @@ Every revision of every board in this repository, and what is known about each. 
 | ROM Cart | 1.0b | Made, matches order | Yes | Y87 | 2026-03-22 | `6502-COB ab85186` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT27C256, marks it as 1.0b |
 
 The audit last ran on 2026-11-04. Each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Tindie stock is from the listings as saved on 2026-10-23.
+
+<!-- History: hand-written. tools/revision-audit/register.py keeps everything from here to the end. -->
+
+## History
+
+What changed in each revision of each board, newest first. The table above has the facts about each one.
+
+### Input Board
+
+**Rev 1.0**
+
+- Initial release. Built and tested. `Hardware/Input Board/Rev 1.0/` and `Production/Input Board/Rev 1.0/` match the boards JLCPCB made (order Y86). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
+### Output Board
+
+**Rev 1.0**
+
+- Initial release. Built and tested. `Hardware/Output Board/Rev 1.0/` and `Production/Output Board/Rev 1.0/` match the boards JLCPCB made (order Y85). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
+### ROM Cart
+
+**Rev 1.0a**
+
+- Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0a/` and `Production/ROM Cart/Rev 1.0a/` match the boards JLCPCB made (order Y60). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- The board's silkscreen says Rev 1.0, not Rev 1.0a. Its U1 label, `AT28C256`, tells it apart from Rev 1.0b.
+
+**Rev 1.0b**
+
+- Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0b/` and `Production/ROM Cart/Rev 1.0b/` match the boards JLCPCB made (order Y87). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- The board's silkscreen says Rev 1.0, not Rev 1.0b. Its U1 label, `AT27C256`, tells it apart from Rev 1.0a.
+
+### Flash Cart
+
+**Rev 1.0**
+
+- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Cart/Rev 1.0/` and `Production/Flash Cart/Rev 1.0/` match the boards JLCPCB made (order Y97). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
+### Flash Helper
+
+**Rev 1.0**
+
+- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Helper/Rev 1.0/` and `Production/Flash Helper/Rev 1.0/` match the boards JLCPCB made (order Y98). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+
+### Main Board
+
+**Rev 1.1** (drawn, not yet made)
+
+- Pull-up resistors changed from 1kΩ to 10kΩ.
+- C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
+- The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
+
+**Rev 1.0**
+
+- Initial release. Built and tested. `Hardware/Main Board/Rev 1.0/` and `Production/Main Board/Rev 1.0/` match the boards JLCPCB made (order Y38). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- This board used to live in the 6502-COB project, and it was ordered from there. It is now the VCS's CPU and memory board.
+- The PCB file was restored to that layout on 2026-11-04. The later edits are kept in Rev 1.1. The schematic and BOM are today's, and they match this copper.
