@@ -20778,7 +20778,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 230.378 34.163 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20822,7 +20822,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C17414"
 			(at 228.6 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -20844,7 +20844,7 @@
 				)
 			)
 		)
-		(property "Digikey" "311-1.00KCRCT-ND"
+		(property "Digikey" "311-10.0KCRCT-ND"
 			(at 228.6 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -20855,7 +20855,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-RC0805FR-071KL"
+		(property "Mouser" "603-RC0805FR-0710KL"
 			(at 228.6 33.02 0)
 			(hide yes)
 			(show_name no)

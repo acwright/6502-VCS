@@ -6132,7 +6132,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "10k"
 			(at 0 1.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6182,7 +6182,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C17513"
+		(property "LCSC" "C17414"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6208,7 +6208,7 @@
 				)
 			)
 		)
-		(property "Digikey" "311-1.00KCRCT-ND"
+		(property "Digikey" "311-10.0KCRCT-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6221,7 +6221,7 @@
 				)
 			)
 		)
-		(property "Mouser" "603-RC0805FR-071KL"
+		(property "Mouser" "603-RC0805FR-0710KL"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

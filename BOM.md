@@ -1,0 +1,284 @@
+# Bill of materials: 6502-VCS
+
+Every part for every board in this repository, by revision, with supplier numbers.
+
+## How to use this
+
+1. **Find your board and revision** in [Which revision do I have?](#which-revision-do-i-have)
+2. **Read the [known issues](#known-issues)** for that revision, because they change what you buy or fit.
+3. **Order from the table for your revision.** Each revision links to files you can upload to Digi-Key and Mouser. Those files are for one board, so multiply the quantities if you're building more. If a site asks which column is which, the first column is its part number and the third is the quantity. A cart only holds what that supplier sells, so check the table for anything else, such as chips from Jameco.
+
+**Pre-soldered parts.** Some boards on Tindie come with their surface-mount parts already soldered. Parts marked **Yes** under Pre-soldered are the ones soldered on those boards. Check your listing, because others are sold as a bare PCB. Each revision that has such parts also has a `through-hole` cart that leaves them out. To solder a bare board yourself, use the full cart.
+
+**Suppliers.** Every part has one set of numbers, so the same resistor is the same order line on every board. The numbers were read from Digi-Key and Mouser on 2026-11-04, and stock changes. A blank supplier cell means that supplier doesn't sell the part, or only sells it in bulk.
+
+**The `bom.csv` files** under `Production/` are for JLCPCB assembly. They list the same parts. A blank LCSC cell there means JLCPCB doesn't place that part, and JLCPCB's "missing parts" warning about it is expected.
+
+## Which revision do I have?
+
+Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and the [README](README.md) lists what changed between them.
+
+| Board | Revision | What the silk says | Status |
+|---|---|---|---|
+| [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, not tested yet |
+| [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, not tested yet |
+| [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested |
+| [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested |
+| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet |
+| [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested |
+| [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested |
+| [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested |
+
+## Known issues
+
+These change what you buy or fit. The boards themselves stay as they were made.
+
+| Board | Revision | Parts | Issue |
+|---|---|---|---|
+| Input Board | 1.0 | C2, C4 | The silk says 22 pF; fit 20 pF. A board built with 22 pF is fine. |
+| Main Board | 1.0 | R4, R10–R14 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
+| Main Board | 1.0 | J10 | Fit a box header for a ribbon cable. The silk shows a plain header, but the holes are the same. Pin 1 is the square pad, and the notch faces the even-numbered pins. |
+| Main Board | 1.1 | R4 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
+
+### Build notes
+
+These come from the README.
+
+**Main Board**
+
+**Pull-ups on Rev 1.0 and Rev 1.1**
+
+Fit 10kΩ pull-ups on every shared line. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for.
+
+- **Rev 1.1:** fit 10kΩ for R4, the `RESB` pull-up, not the 1kΩ in the files. The other pull-ups, R10–R14, are already 10kΩ. R4 isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1.
+- **Rev 1.0:** fit 10kΩ for R4 and R10–R14, not the 1kΩ in the files.
+
+**Flash Cart**
+
+Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
+
+> **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
+> whichever variant is in stock.
+
+
+## Flash Cart
+
+### Flash Cart Rev 1.0
+
+Made, not tested yet.
+
+Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](BOM/Flash%20Cart/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Flash%20Cart/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Flash%20Cart/Rev%201.0/mouser-through-hole.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| C1, C3–C8 | 7 | 100nF | KEMET C0603C104K5RACTU | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | [80-C0603C104K5R](https://www.mouser.com/ProductDetail/80-C0603C104K5R) |  | |
+| C9 | 1 | 10uF | YAGEO CC0805KRX5R7BB106 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | [603-CC0805KRX57BB106](https://www.mouser.com/ProductDetail/603-CC0805KRX57BB106) |  | |
+| U1 | 1 | SST39SF040 | Microchip Technology SST39SF040-70-4C-TU | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) |  |  | |
+| U3 | 1 | 74HC273 | Nexperia USA Inc. 74HC273D,653 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | [771-74HC273D-T](https://www.mouser.com/ProductDetail/771-74HC273D-T) |  | |
+| U4 | 1 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
+| U5 | 1 | 74HC139 | Nexperia USA Inc. 74HC139D,653 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | [771-74HC139D-T](https://www.mouser.com/ProductDetail/771-74HC139D-T) |  | |
+| U6, U7 | 2 | 74HC32 | Nexperia USA Inc. 74HC32D,653 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | [771-74HC32D-T](https://www.mouser.com/ProductDetail/771-74HC32D-T) |  | |
+| U8 | 1 | 74HC1G04 | Nexperia USA Inc. 74HC1G04GV,125 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | [771-74HC1G04GV](https://www.mouser.com/ProductDetail/771-74HC1G04GV) |  | |
+
+**Do not fit** C2, U2: see the build notes.
+
+
+## Flash Helper
+
+### Flash Helper Rev 1.0
+
+Made, not tested yet.
+
+Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.0/digikey.csv), [mouser.csv](BOM/Flash%20Helper/Rev%201.0/mouser.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
+|---|---|---|---|---|---|---|
+| A1 | 1 | Arduino Mega2560 R3 Shield | Arduino A000067 | [1050-1018-ND](https://www.digikey.com/en/products/filter?keywords=1050-1018-ND) | [782-A000067](https://www.mouser.com/ProductDetail/782-A000067) |  |
+| J1 | 1 | 6502 Card Connector | TE Connectivity 5-5530843-4 | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) |  |
+
+
+## Input Board
+
+### Input Board Rev 1.0
+
+Made, tested.
+
+Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/Input%20Board/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Input%20Board/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Input%20Board/Rev%201.0/mouser-through-hole.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| C1, C3, C5–C8 | 6 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
+| C2, C4 | 2 | 22pF | KYOCERA AVX SR151A200JAR | [478-7724-ND](https://www.digikey.com/en/products/filter?keywords=478-7724-ND) | [581-SR151A200JAR](https://www.mouser.com/ProductDetail/581-SR151A200JAR) |  | |
+| D1 | 1 | 1N914 | onsemi 1N914 | [1N914FS-ND](https://www.digikey.com/en/products/filter?keywords=1N914FS-ND) | [512-1N914](https://www.mouser.com/ProductDetail/512-1N914) |  | |
+| J1 | 1 | PORT B | Adam Tech BHR-12-VUA | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | [737-BHR-12-VUA](https://www.mouser.com/ProductDetail/737-BHR-12-VUA) | 2057-BHR-12-VUA-ND | |
+| J2 | 1 | PORT A | Adam Tech BHR-12-VUA | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | [737-BHR-12-VUA](https://www.mouser.com/ProductDetail/737-BHR-12-VUA) | 2057-BHR-12-VUA-ND | |
+| J3 | 1 | PS/2 KEYBOARD | Kycon, Inc. KMDGX-6S-BS | [2092-KMDGX-6S-BS-ND](https://www.digikey.com/en/products/filter?keywords=2092-KMDGX-6S-BS-ND) | [806-KMDGX-6S-BS](https://www.mouser.com/ProductDetail/806-KMDGX-6S-BS) |  | |
+| J4 | 1 | 6502 Bus | Würth Elektronik 61204021621 | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | [710-61204021621](https://www.mouser.com/ProductDetail/710-61204021621) |  | |
+| J5 | 1 | KEYBOARD | Amphenol D25P33E4GX00LF | [609-1505-ND](https://www.digikey.com/en/products/filter?keywords=609-1505-ND) | [649-D25P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D25P33E4GX00LF) |  | |
+| J6 | 1 | IO SELECT | Pin header 2×8, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
+| R1 | 1 | 1K | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
+| U1 | 1 | 65C22 | Western Design Center (WDC) W65C22N6TPG-14 |  | [955-W65C22N6TPG-14](https://www.mouser.com/ProductDetail/955-W65C22N6TPG-14) |  | |
+| U2 | 1 | ATmega1284-P | Microchip Technology ATMEGA1284-PU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) |  | |
+| U3 | 1 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
+| Y1 | 1 | 16 MHz | ECS Inc. ECS-160-20-4X | [X1103-ND](https://www.digikey.com/en/products/filter?keywords=X1103-ND) | [520-HCU1600-20X](https://www.mouser.com/ProductDetail/520-HCU1600-20X) |  | |
+| U1, U2 | 2 | Socket | IC socket, 40-pin, 0.6 in |  |  | | |
+
+Pin headers are cut from strips, and the cart files count whole strips.
+
+- **C2, C4:** 16 MHz crystal capacitors: fit 20 pF. Made boards whose silk says 22 pF keep it; a board built with 22 pF is fine. Mouser has none in stock today.
+- **J4:** Male box header with a keying notch, for a 40-way ribbon cable.
+
+
+## Main Board
+
+### Main Board Rev 1.1
+
+Drawn, not made yet.
+
+Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Main%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Main%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Main%20Board/Rev%201.1/mouser-through-hole.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| C1, C3–C11 | 10 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
+| C2 | 1 | 10uF | KYOCERA AVX TAJA106K016RNJ | [478-1655-1-ND](https://www.digikey.com/en/products/filter?keywords=478-1655-1-ND) | [581-TAJA106K016R](https://www.mouser.com/ProductDetail/581-TAJA106K016R) | LCSC [C7171](https://www.lcsc.com/search?q=C7171) | Yes |
+| D1 | 1 | 1N5819 | MCC (Micro Commercial Components) B5819WS-TP | [B5819WS-TPMSCT-ND](https://www.digikey.com/en/products/filter?keywords=B5819WS-TPMSCT-ND) |  | LCSC [C191023](https://www.lcsc.com/search?q=C191023) | Yes |
+| D2 | 1 | LED | Lite-On Inc. LTST-C170KGKT | [160-1414-1-ND](https://www.digikey.com/en/products/filter?keywords=160-1414-1-ND) | [859-LTST-C170KGKT](https://www.mouser.com/ProductDetail/859-LTST-C170KGKT) | LCSC [C2297](https://www.lcsc.com/search?q=C2297) | Yes |
+| J1 | 1 | PWR_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J2 | 1 | ROM WE | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
+| J3 | 1 | USB_C_Receptacle_USB2.0 | G-Switch GT-USB-7010ASV |  |  | LCSC [C2988369](https://www.lcsc.com/search?q=C2988369) | Yes |
+| J4 | 1 | RESET_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J5 | 1 | HRDB EN | Pin header 2×2, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
+| J6 | 1 | CLOCK_ENBL_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J7 | 1 | 6502 EN | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
+| J8 | 1 | EXP EN | Pin header 2×5, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
+| J9 | 1 | 6502 Card Connector | TE Connectivity 5-5530843-4 | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) |  | |
+| J10 | 1 | 6502 Bus | Würth Elektronik 61204021621 | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | [710-61204021621](https://www.mouser.com/ProductDetail/710-61204021621) |  | |
+| Q1 | 1 | SS8050 | Comchip Technology SS8050-G | [641-1790-1-ND](https://www.digikey.com/en/products/filter?keywords=641-1790-1-ND) | [750-SS8050-G](https://www.mouser.com/ProductDetail/750-SS8050-G) | LCSC [C2150](https://www.lcsc.com/search?q=C2150) | Yes |
+| R1, R9 | 2 | 1k | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
+| R2 | 1 | 1M | YAGEO RC0805FR-071ML | [311-1.00MCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00MCRCT-ND) | [603-RC0805FR-071ML](https://www.mouser.com/ProductDetail/603-RC0805FR-071ML) | LCSC [C17514](https://www.lcsc.com/search?q=C17514) | Yes |
+| R3 | 1 | 47k | YAGEO RC0805FR-0747KL | [311-47.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-47.0KCRCT-ND) | [603-RC0805FR-0747KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0747KL) | LCSC [C17713](https://www.lcsc.com/search?q=C17713) | Yes |
+| R4, R8, R10–R14 | 7 | 10k | YAGEO RC0805FR-0710KL | [311-10.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-10.0KCRCT-ND) | [603-RC0805FR-0710KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0710KL) | LCSC [C17414](https://www.lcsc.com/search?q=C17414) | Yes |
+| R5, R6 | 2 | 5.1k | YAGEO RC0805FR-075K1L | [311-5.10KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-5.10KCRCT-ND) | [603-RC0805FR-075K1L](https://www.mouser.com/ProductDetail/603-RC0805FR-075K1L) | LCSC [C27834](https://www.lcsc.com/search?q=C27834) | Yes |
+| R7 | 1 | 330 | YAGEO RC0805FR-07330RL | [311-330CRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-330CRCT-ND) | [603-RC0805FR-07330RL](https://www.mouser.com/ProductDetail/603-RC0805FR-07330RL) | LCSC [C17630](https://www.lcsc.com/search?q=C17630) | Yes |
+| SW1 | 1 | Reset | TS-1187A-B-A-B |  |  | LCSC [C318884](https://www.lcsc.com/search?q=C318884) | |
+| U1 | 1 | NE555 | Texas Instruments NE555DR | [296-6501-1-ND](https://www.digikey.com/en/products/filter?keywords=296-6501-1-ND) | [595-NE555DR](https://www.mouser.com/ProductDetail/595-NE555DR) | LCSC [C7593](https://www.lcsc.com/search?q=C7593) | Yes |
+| U2 | 1 | AS6C62256 | Alliance Memory AS6C62256-55PCN | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) |  | |
+| U3 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  | |
+| U4, U5, U7 | 3 | 74HC00 | Nexperia USA Inc. 74HC00D,653 | [1727-2773-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2773-1-ND) | [771-74HC00D-T](https://www.mouser.com/ProductDetail/771-74HC00D-T) | LCSC [C5586](https://www.lcsc.com/search?q=C5586) | Yes |
+| U6 | 1 | 65C02 | Western Design Center (WDC) W65C02S6TPG-14 |  | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) |  | |
+| X1 | 1 | 1 MHz | ECS Inc. ECS-100AX-010 | [X937-ND](https://www.digikey.com/en/products/filter?keywords=X937-ND) | [520-TCF100-X](https://www.mouser.com/ProductDetail/520-TCF100-X) |  | |
+| U3 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | | |
+| U2 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | | |
+| U6 | 1 | Socket | IC socket, 40-pin, 0.6 in |  |  | | |
+
+Pin headers are cut from strips, and the cart files count whole strips.
+
+- **J3:** What LCSC C2988369 is. The footprint is HRO TYPE-C-31-M-12, and JLCPCB placed this part on the made boards.
+- **J10:** Male box header with a keying notch, for a 40-way ribbon cable.
+
+### Main Board Rev 1.0
+
+Made, tested.
+
+Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/Main%20Board/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Main%20Board/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Main%20Board/Rev%201.0/mouser-through-hole.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| C1, C3–C11 | 10 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
+| C2 | 1 | 10uF | KYOCERA AVX TAJA106K016RNJ | [478-1655-1-ND](https://www.digikey.com/en/products/filter?keywords=478-1655-1-ND) | [581-TAJA106K016R](https://www.mouser.com/ProductDetail/581-TAJA106K016R) | LCSC [C7171](https://www.lcsc.com/search?q=C7171) | Yes |
+| D1 | 1 | 1N5819 | MCC (Micro Commercial Components) B5819WS-TP | [B5819WS-TPMSCT-ND](https://www.digikey.com/en/products/filter?keywords=B5819WS-TPMSCT-ND) |  | LCSC [C191023](https://www.lcsc.com/search?q=C191023) | Yes |
+| D2 | 1 | LED | Lite-On Inc. LTST-C170KGKT | [160-1414-1-ND](https://www.digikey.com/en/products/filter?keywords=160-1414-1-ND) | [859-LTST-C170KGKT](https://www.mouser.com/ProductDetail/859-LTST-C170KGKT) | LCSC [C2297](https://www.lcsc.com/search?q=C2297) | Yes |
+| J1 | 1 | PWR_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J2 | 1 | ROM WE | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
+| J3 | 1 | USB_C_Receptacle_USB2.0 | G-Switch GT-USB-7010ASV |  |  | LCSC [C2988369](https://www.lcsc.com/search?q=C2988369) | Yes |
+| J4 | 1 | RESET_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J5 | 1 | HRDB EN | Pin header 2×2, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
+| J6 | 1 | CLOCK_ENBL_SW | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J7 | 1 | 6502 EN | Pin header 1×2, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
+| J8 | 1 | EXP EN | Pin header 2×5, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
+| J9 | 1 | 6502 Card Connector | TE Connectivity 5-5530843-4 | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) |  | |
+| J10 | 1 | 6502 Bus | Pin header 2×20, 2.54 mm, cut from a strip | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | [710-61204021621](https://www.mouser.com/ProductDetail/710-61204021621) |  | |
+| Q1 | 1 | SS8050 | Comchip Technology SS8050-G | [641-1790-1-ND](https://www.digikey.com/en/products/filter?keywords=641-1790-1-ND) | [750-SS8050-G](https://www.mouser.com/ProductDetail/750-SS8050-G) | LCSC [C2150](https://www.lcsc.com/search?q=C2150) | Yes |
+| R1, R9 | 2 | 1k | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
+| R2 | 1 | 1M | YAGEO RC0805FR-071ML | [311-1.00MCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00MCRCT-ND) | [603-RC0805FR-071ML](https://www.mouser.com/ProductDetail/603-RC0805FR-071ML) | LCSC [C17514](https://www.lcsc.com/search?q=C17514) | Yes |
+| R3 | 1 | 47k | YAGEO RC0805FR-0747KL | [311-47.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-47.0KCRCT-ND) | [603-RC0805FR-0747KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0747KL) | LCSC [C17713](https://www.lcsc.com/search?q=C17713) | Yes |
+| R4, R8, R10–R14 | 7 | 10k | YAGEO RC0805FR-0710KL | [311-10.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-10.0KCRCT-ND) | [603-RC0805FR-0710KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0710KL) | LCSC [C17414](https://www.lcsc.com/search?q=C17414) | Yes |
+| R5, R6 | 2 | 5.1k | YAGEO RC0805FR-075K1L | [311-5.10KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-5.10KCRCT-ND) | [603-RC0805FR-075K1L](https://www.mouser.com/ProductDetail/603-RC0805FR-075K1L) | LCSC [C27834](https://www.lcsc.com/search?q=C27834) | Yes |
+| R7 | 1 | 330 | YAGEO RC0805FR-07330RL | [311-330CRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-330CRCT-ND) | [603-RC0805FR-07330RL](https://www.mouser.com/ProductDetail/603-RC0805FR-07330RL) | LCSC [C17630](https://www.lcsc.com/search?q=C17630) | Yes |
+| SW1 | 1 | Reset | TS-1187A-B-A-B |  |  | LCSC [C318884](https://www.lcsc.com/search?q=C318884) | |
+| U1 | 1 | NE555 | Texas Instruments NE555DR | [296-6501-1-ND](https://www.digikey.com/en/products/filter?keywords=296-6501-1-ND) | [595-NE555DR](https://www.mouser.com/ProductDetail/595-NE555DR) | LCSC [C7593](https://www.lcsc.com/search?q=C7593) | Yes |
+| U2 | 1 | AS6C62256 | Alliance Memory AS6C62256-55PCN | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) |  | |
+| U3 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  | |
+| U4, U5, U7 | 3 | 74HC00 | Nexperia USA Inc. 74HC00D,653 | [1727-2773-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2773-1-ND) | [771-74HC00D-T](https://www.mouser.com/ProductDetail/771-74HC00D-T) | LCSC [C5586](https://www.lcsc.com/search?q=C5586) | Yes |
+| U6 | 1 | 65C02 | Western Design Center (WDC) W65C02S6TPG-14 |  | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) |  | |
+| X1 | 1 | 1 MHz | ECS Inc. ECS-100AX-010 | [X937-ND](https://www.digikey.com/en/products/filter?keywords=X937-ND) | [520-TCF100-X](https://www.mouser.com/ProductDetail/520-TCF100-X) |  | |
+| U3 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | | |
+| U2 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | | |
+| U6 | 1 | Socket | IC socket, 40-pin, 0.6 in |  |  | | |
+
+Pin headers are cut from strips, and the cart files count whole strips.
+
+- **J3:** What LCSC C2988369 is. The footprint is HRO TYPE-C-31-M-12, and JLCPCB placed this part on the made boards.
+
+
+## Output Board
+
+### Output Board Rev 1.0
+
+Made, tested.
+
+Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/Output%20Board/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Output%20Board/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Output%20Board/Rev%201.0/mouser-through-hole.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| C1 | 1 | 1uF | YAGEO CC0805KKX7R8BB105 | [311-1456-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1456-1-ND) | [603-CC805KKX7R8BB105](https://www.mouser.com/ProductDetail/603-CC805KKX7R8BB105) | LCSC [C28323](https://www.lcsc.com/search?q=C28323) | Yes |
+| C2, C3 | 2 | 2.2nF | Samsung Electro-Mechanics CL21C222JBFNNNE | [1276-2993-1-ND](https://www.digikey.com/en/products/filter?keywords=1276-2993-1-ND) | [187-CL21C222JBFNNNE](https://www.mouser.com/ProductDetail/187-CL21C222JBFNNNE) | LCSC [C28260](https://www.lcsc.com/search?q=C28260) | Yes |
+| C5–C10 | 6 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
+| D1 | 1 | 1N914 | onsemi 1N914 | [1N914FS-ND](https://www.digikey.com/en/products/filter?keywords=1N914FS-ND) | [512-1N914](https://www.mouser.com/ProductDetail/512-1N914) |  | |
+| J1 | 1 | VDD | JST Sales America Inc. B2B-XH-A | [455-B2B-XH-A-ND](https://www.digikey.com/en/products/filter?keywords=455-B2B-XH-A-ND) |  |  | |
+| J2 | 1 | AUDIO | Switchcraft Inc. PJRAN1X1U02X | [PJRAN1X1U02X-ND](https://www.digikey.com/en/products/filter?keywords=PJRAN1X1U02X-ND) | [502-PJRAN1X1U02X](https://www.mouser.com/ProductDetail/502-PJRAN1X1U02X) |  | |
+| J6 | 1 | INT Select | Pin header 1×3, 2.54 mm, cut from a strip | [S1011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S1011EC-40-ND) | [200-TSW14007TS](https://www.mouser.com/ProductDetail/200-TSW14007TS) |  | |
+| J7 | 1 | IO SELECT | Pin header 2×8, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
+| J8 | 1 | 6502 Bus | Würth Elektronik 61204021621 | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | [710-61204021621](https://www.mouser.com/ProductDetail/710-61204021621) |  | |
+| R1 | 1 | 1k | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
+| U1 | 1 | Pico9918A | Pico9918A, DIP_Socket-40_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_240-1280-00-0602J |  |  | [Tindie](https://www.tindie.com/products/visrealm/pico9918-pro/) | |
+| U2 | 1 | 6581 | 6581, DIP_Socket-28_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_228-1277-00-0602J |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) | |
+| U3, U4 | 2 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
+| U1 | 1 | Socket | 40-pin ZIF socket, or an ordinary 40-pin socket | [3M4002-ND](https://www.digikey.com/en/products/filter?keywords=3M4002-ND) | [517-240-1280-00](https://www.mouser.com/ProductDetail/517-240-1280-00) | | |
+| U2 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | | |
+
+Pin headers are cut from strips, and the cart files count whole strips.
+
+- **J8:** Male box header with a keying notch, for a 40-way ribbon cable.
+- **U2:** SID 6581, out of production
+
+
+## ROM Cart
+
+### ROM Cart Rev 1.0b
+
+Made, tested.
+
+Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.0b/digikey.csv), [mouser.csv](BOM/ROM%20Cart/Rev%201.0b/mouser.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
+|---|---|---|---|---|---|---|
+| C1, C2 | 2 | 100nF | KYOCERA AVX SR215C104KAR | [478-3188-ND](https://www.digikey.com/en/products/filter?keywords=478-3188-ND) | [581-SR215C104KAR](https://www.mouser.com/ProductDetail/581-SR215C104KAR) |  |
+| U1 | 1 | AT27C256 | Microchip Technology AT27C256R-70PU | [AT27C256R-70PU-ND](https://www.digikey.com/en/products/filter?keywords=AT27C256R-70PU-ND) | [556-AT27C256R70PU](https://www.mouser.com/ProductDetail/556-AT27C256R70PU) |  |
+| U2 | 1 | 74HC138 | Texas Instruments SN74HC138N | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) |  |
+| U2 | 1 | Socket | IC socket, 16-pin, 0.3 in | [3M5475-ND](https://www.digikey.com/en/products/filter?keywords=3M5475-ND) | [517-4816-3004-CP](https://www.mouser.com/ProductDetail/517-4816-3004-CP) | |
+| U1 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | |
+
+### ROM Cart Rev 1.0a
+
+Made, tested.
+
+Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.0a/digikey.csv), [mouser.csv](BOM/ROM%20Cart/Rev%201.0a/mouser.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
+|---|---|---|---|---|---|---|
+| C1, C2 | 2 | 100nF | KYOCERA AVX SR215C104KAR | [478-3188-ND](https://www.digikey.com/en/products/filter?keywords=478-3188-ND) | [581-SR215C104KAR](https://www.mouser.com/ProductDetail/581-SR215C104KAR) |  |
+| U1 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  |
+| U2 | 1 | 74HC138 | Texas Instruments SN74HC138N | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) |  |
+| U2 | 1 | Socket | IC socket, 16-pin, 0.3 in | [3M5475-ND](https://www.digikey.com/en/products/filter?keywords=3M5475-ND) | [517-4816-3004-CP](https://www.mouser.com/ProductDetail/517-4816-3004-CP) | |
+| U1 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | |
