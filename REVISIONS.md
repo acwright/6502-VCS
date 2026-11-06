@@ -1,6 +1,6 @@
 # Revisions
 
-Every revision of every board in this repository, and what is known about each. The audit date is at the end.
+Every revision of every board in this repository, and what is known about each. The dates of the checks are at the end.
 
 **Status** says what has happened to a revision:
 
@@ -23,7 +23,7 @@ Every revision of every board in this repository, and what is known about each. 
 | ROM Cart | 1.0a | Made, matches order | Yes | Y60 | 2025-10-06 | `6502-COB 0969243` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT28C256, marks it as 1.0a |
 | ROM Cart | 1.0b | Made, matches order | Yes | Y87 | 2026-03-22 | `6502-COB ab85186` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT27C256, marks it as 1.0b |
 
-The audit last ran on 2026-11-04. Each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Tindie stock is from the listings as saved on 2026-10-23.
+JLCPCB's orders were checked on 2026-11-04: each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Each time this table is written, every PCB is checked again against its production zip, for copper and drill holes. Tindie stock is from the listings as saved on 2026-10-23.
 
 <!-- History: hand-written. tools/revision-audit/register.py keeps everything from here to the end. -->
 
