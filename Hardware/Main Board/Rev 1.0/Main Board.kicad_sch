@@ -8183,12 +8183,6 @@
 		(uuid "4c0409bf-62cf-4b04-b615-2cf0709f89af")
 	)
 	(junction
-		(at 228.6 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e767be4-2fd6-4673-afe9-ce8a07e95cc6")
-	)
-	(junction
 		(at 210.82 223.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8379,12 +8373,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf99df57-482c-400c-9072-be2096812be8")
-	)
-	(junction
-		(at 205.74 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c21dfd1d-d946-4d90-b43f-b031a5cd675a")
 	)
 	(junction
 		(at 93.98 151.13)
@@ -10790,13 +10778,49 @@
 	)
 	(wire
 		(pts
-			(xy 361.95 116.84) (xy 361.95 137.16)
+			(xy 361.95 116.84) (xy 361.95 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "525d4a23-ddf5-4102-9a9e-0fc009c97142")
+	)
+	(wire
+		(pts
+			(xy 361.95 129.54) (xy 361.95 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587b6a13-4514-5a43-b427-0b1c9fbf923d")
+	)
+	(wire
+		(pts
+			(xy 361.95 129.54) (xy 368.3 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9325006b-db91-53bb-9d03-05e570fdcc4c")
+	)
+	(wire
+		(pts
+			(xy 375.92 129.54) (xy 382.27 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80abff65-588c-50d0-8104-9d832978a408")
+	)
+	(junction
+		(at 361.95 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5750d2b-c82f-5d23-b1eb-f5d851fef887")
 	)
 	(wire
 		(pts
@@ -11620,16 +11644,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 25.4) (xy 228.6 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79f4fb3e-58b2-4c16-9646-779e3be2b09e")
-	)
-	(wire
-		(pts
 			(xy 161.29 157.48) (xy 167.64 157.48)
 		)
 		(stroke
@@ -11877,16 +11891,6 @@
 			(type default)
 		)
 		(uuid "84fa66eb-a7bd-43a4-bf5c-eb5d9817ba65")
-	)
-	(wire
-		(pts
-			(xy 228.6 36.83) (xy 228.6 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85f1e7af-c905-4133-9d02-f6486384a159")
 	)
 	(wire
 		(pts
@@ -14067,16 +14071,6 @@
 			(type default)
 		)
 		(uuid "eb33fa45-53cd-493d-be8e-e8be9246ff9e")
-	)
-	(wire
-		(pts
-			(xy 228.6 25.4) (xy 228.6 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebda0512-3631-4d38-bc27-aa0d1ffdb59d")
 	)
 	(wire
 		(pts
@@ -16366,6 +16360,28 @@
 		(uuid "5dbfef87-2813-4977-be57-7e2212a393bd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 382.27 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "RESB"
+		(shape output)
+		(at 382.27 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9d7c215-5b9e-57b7-b84d-ec6227458c37")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 382.27 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20758,7 +20774,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 228.6 33.02 180)
+		(at 372.11 129.54 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20768,29 +20784,27 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060641b66")
 		(property "Reference" "R4"
-			(at 230.378 31.8516 0)
+			(at 372.11 124.2822 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Value" "10k"
-			(at 230.378 34.163 0)
+			(at 372.11 126.5936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 230.378 33.02 90)
+			(at 372.11 127.762 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20801,7 +20815,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20812,7 +20826,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20823,7 +20837,7 @@
 			)
 		)
 		(property "LCSC" "C17414"
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20834,7 +20848,7 @@
 			)
 		)
 		(property "Other" ""
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20845,7 +20859,7 @@
 			)
 		)
 		(property "Digikey" "311-10.0KCRCT-ND"
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20856,7 +20870,7 @@
 			)
 		)
 		(property "Mouser" "603-RC0805FR-0710KL"
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20867,7 +20881,7 @@
 			)
 		)
 		(property "Jameco" ""
-			(at 228.6 33.02 0)
+			(at 372.11 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

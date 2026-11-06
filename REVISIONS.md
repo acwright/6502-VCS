@@ -17,11 +17,11 @@ Every revision of every board in this repository, and what is known about each. 
 | Flash Cart | 1.0 | Made, matches order | Not yet | Y97 | 2026-09-20 | `3680cff` | — | 81.8×57.62 | — | — | — |  |
 | Flash Helper | 1.0 | Made, matches order | Not yet | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | Made, matches order | Yes | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
-| Input Board | 1.1 | Drawn | — |  |  |  | — | 100×100 | 6 mm | SVG only | — |  |
+| Input Board | 1.1 | Drawn | — |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Main Board | 1.0 | Made, matches order | Yes | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |
 | Main Board | 1.1 | Drawn | — |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.0 | Made, matches order | Yes | Y85 | 2026-01-14 | `6502-COB 379abb8` | — | 100×100 | 6 mm | yes | — |  |
-| Output Board | 1.1 | Drawn | — |  |  |  | — | 100×100 | 6 mm | SVG only | — |  |
+| Output Board | 1.1 | Drawn | — |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | ROM Cart | 1.0a | Made, matches order | Yes | Y60 | 2025-10-06 | `6502-COB 0969243` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT28C256, marks it as 1.0a |
 | ROM Cart | 1.0b | Made, matches order | Yes | Y87 | 2026-03-22 | `6502-COB ab85186` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT27C256, marks it as 1.0b |
 
@@ -84,6 +84,7 @@ What changed in each revision of each board, newest first. The table above has t
 **Rev 1.1** (drawn, not yet made)
 
 - Pull-up resistors changed from 1kΩ to 10kΩ. R4, the `RESB` pull-up, was still 1kΩ when this revision was first drawn, and it is 10kΩ now. It was fixed in place, keeping the revision number, because Rev 1.1 has never been ordered.
+- The schematic draws R4 with the other pull-ups, R10–R14, in one group, as every CPU board does. It used to sit in the reset circuit beside Q1. The netlist is unchanged (2026-11-06).
 - C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
 - The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
 
@@ -92,3 +93,4 @@ What changed in each revision of each board, newest first. The table above has t
 - Initial release. Built and tested. `Hardware/Main Board/Rev 1.0/` and `Production/Main Board/Rev 1.0/` match the boards JLCPCB made (order Y38). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 - This board used to live in the 6502-COB project, and it was ordered from there. It is now the VCS's CPU and memory board.
 - The PCB file was restored to that layout on 2026-11-04. The later edits are kept in Rev 1.1. The schematic and BOM are today's, and they match this copper.
+- The schematic draws R4, the `RESB` pull-up, with the other pull-ups, R10–R14, as Rev 1.1's does. The netlist is unchanged, so the board is the same (2026-11-06).
