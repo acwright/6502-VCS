@@ -52,6 +52,7 @@ What changed in each revision of each board, newest first. The table above has t
 - J1, the `VDD` header for a real SID's supply at U2 pin 28, is removed, with its track and two vias, as on the ACE Board Rev 1.1. U2 pin 28 is left unconnected: the ARMSID needs nothing there. No standard build supplied that pin, and it was never tested. The ground pour fills the space.
 - The silkscreen says `ARMSID` at U2. Rev 1.0's says `6581`.
 - The holes and outline are Rev 1.0's. The top panel in `CAD/Tops/Output Board/Rev 1.1/` is Rev 1.0's without the opening over J1.
+- JP1 ships open, so D1 stays in the pico9918's interrupt line, as on the VGA Card 1.1 (2026-11-06). The pico9918 drives its interrupt high as well as low; with JP1 bridged, as on Rev 1.0, it can hold `IRQB` high against the Input Board. The footprint is the open solder jumper on the same pads.
 
 **Rev 1.0**
 
@@ -87,6 +88,16 @@ What changed in each revision of each board, newest first. The table above has t
 
 - Pull-up resistors changed from 1kΩ to 10kΩ. R4, the `RESB` pull-up, was still 1kΩ when this revision was first drawn, and it is 10kΩ now. It was fixed in place, keeping the revision number, because Rev 1.1 has never been ordered.
 - The schematic draws R4 with the other pull-ups, R10–R14, in one group, as every CPU board does. It used to sit in the reset circuit beside Q1. The netlist is unchanged (2026-11-06).
+- Bus pins 4 and 6 on J9 and J10 are wired to `HRDB`, as on the ACE and the KIM, and J5 (`HRDB EN`), JP3 and JP4 are gone: the Main Board is for the VCS, which always takes cartridges (2026-11-06). Rev 1.0 needs those jumpers fitted to run a cartridge. The silk by J10 says `HRDB` for pins 4 and 6.
+- J8 (`EXP EN`) is gone too. It could jumper `EXP0` to VPB and `EXP1` to MLB, which would drive the ROM disable now that those pins are `HRDB`. MLB, PHI1O and PHI2O are left unconnected, and `EXP2` and `EXP3` pass between J9 and J10 unused.
+- The jumpers for experimenting are gone, because the VCS is the family's game console: plug in USB power and a cartridge, and it runs (owner, 2026-11-06). The COB keeps them, as the experimenter's build.
+  - J7 and JP5, the jumper for an original 6502. VPB (U6 pin 1) is left unconnected, as on the ACE and the KIM.
+  - J2, JP1 and R1, the ROM write-enable jumper. The ROM's `/WE` is tied to VCC, as on the ACE and the KIM.
+  - J1 (`POWER SW`) and JP2. USB power reaches D1 directly, so the board powers on when it is plugged in. Rev 1.0 needs a switch on J1 or JP2 bridged.
+  - J6 (`CLOCK ENBL SW`) and JP6. The oscillator drives `PHI2` directly. Rev 1.0 needs a switch on J6 or JP6 bridged.
+- The silk that named the removed parts goes with them: `6502`, `CLOCK ENBL`, `POWER SW`, `HI ROM DISABLE` and `IC2 RAM`.
+- The joins are routed by hand (owner, 2026-11-06). One new via, 0.6/0.3 mm at (118.25, 112.25), stitches a ground island around C9 to the rest of `GND`; a standard 0.8/0.4 via has no room there except inside C9's pad.
+- The top panel loses its windows over J1, J2, J6, J7 and J8, and its notch over J5.
 - C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
 - The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
 

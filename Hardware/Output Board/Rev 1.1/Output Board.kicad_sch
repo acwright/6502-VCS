@@ -10116,7 +10116,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 80.01 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -10136,7 +10136,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Bridged"
+		(property "Value" "SolderJumper_2_Open"
 			(at 80.01 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -10147,7 +10147,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 80.01 109.22 0)
 			(hide yes)
 			(show_name no)

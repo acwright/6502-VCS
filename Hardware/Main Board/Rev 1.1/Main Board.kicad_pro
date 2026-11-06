@@ -76,12 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "courtyards_overlap|95695000|71145000|28eaf701-b351-494d-a053-e734ea41bdfe|bf1798bb-6324-42da-b9ba-8c98c72027d5",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -296,6 +291,10 @@
       [
         "lib_symbol_mismatch|1866900|457200|00000000-0000-0000-0000-00006060ad8a|00000000-0000-0000-0000-000000000000|||",
         ""
+      ],
+      [
+        "pin_to_pin|3835400|533400|85fd9524-b3a7-4e42-ba52-5d789979cee1|8e789cb2-c964-431d-8fac-60295d83f378|/5d95bc66-f610-41ca-b1ae-73f5b5edc5a7|/5d95bc66-f610-41ca-b1ae-73f5b5edc5a7|/5d95bc66-f610-41ca-b1ae-73f5b5edc5a7",
+        "The ROM's ~WE is tied to VCC: it is never written in circuit. Its symbol types ~WE bidirectional, which meets VCC's PWR_FLAG. The ACE and the KIM exclude the same."
       ],
       [
         "same_local_global_label|1117600|901700|091779a0-73b0-4402-bba1-515d5c944c30|407eae9c-c79d-4d72-baa2-2da80084e66f|/5d95bc66-f610-41ca-b1ae-73f5b5edc5a7|/5d95bc66-f610-41ca-b1ae-73f5b5edc5a7|/5d95bc66-f610-41ca-b1ae-73f5b5edc5a7",
