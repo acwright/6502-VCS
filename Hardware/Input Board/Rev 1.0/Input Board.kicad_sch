@@ -9418,7 +9418,7 @@
 		)
 	)
 	(global_label "CA1"
-		(shape input)
+		(shape bidirectional)
 		(at 220.98 78.74 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9490,7 +9490,7 @@
 		)
 	)
 	(global_label "PA6"
-		(shape bidirectional)
+		(shape output)
 		(at 205.74 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -9702,7 +9702,7 @@
 		)
 	)
 	(global_label "PA7"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 48.26 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9770,7 +9770,7 @@
 		)
 	)
 	(global_label "PA2"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 35.56 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9818,7 +9818,7 @@
 		)
 	)
 	(global_label "CA1"
-		(shape input)
+		(shape bidirectional)
 		(at 213.36 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -9914,7 +9914,7 @@
 		)
 	)
 	(global_label "PA3"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 38.1 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10078,7 +10078,7 @@
 		)
 	)
 	(global_label "PA7"
-		(shape bidirectional)
+		(shape output)
 		(at 208.28 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10102,7 +10102,7 @@
 		)
 	)
 	(global_label "PB5"
-		(shape bidirectional)
+		(shape input)
 		(at 228.6 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10150,7 +10150,7 @@
 		)
 	)
 	(global_label "PA5"
-		(shape bidirectional)
+		(shape output)
 		(at 203.2 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10244,7 +10244,7 @@
 		)
 	)
 	(global_label "PA2"
-		(shape bidirectional)
+		(shape output)
 		(at 195.58 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10388,7 +10388,7 @@
 		)
 	)
 	(global_label "PA1"
-		(shape bidirectional)
+		(shape output)
 		(at 193.04 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10482,7 +10482,7 @@
 		)
 	)
 	(global_label "PB4"
-		(shape bidirectional)
+		(shape input)
 		(at 231.14 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10506,7 +10506,7 @@
 		)
 	)
 	(global_label "PB6"
-		(shape bidirectional)
+		(shape input)
 		(at 226.06 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10578,7 +10578,7 @@
 		)
 	)
 	(global_label "PA4"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 40.64 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10602,7 +10602,7 @@
 		)
 	)
 	(global_label "PB1"
-		(shape bidirectional)
+		(shape input)
 		(at 238.76 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10626,7 +10626,7 @@
 		)
 	)
 	(global_label "PB0"
-		(shape bidirectional)
+		(shape input)
 		(at 241.3 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -10742,7 +10742,7 @@
 		)
 	)
 	(global_label "PA0"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 30.48 180)
 		(fields_autoplaced yes)
 		(effects
@@ -10766,7 +10766,7 @@
 		)
 	)
 	(global_label "PA3"
-		(shape bidirectional)
+		(shape output)
 		(at 198.12 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -11198,7 +11198,7 @@
 		)
 	)
 	(global_label "PA1"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 33.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11314,7 +11314,7 @@
 		)
 	)
 	(global_label "PA4"
-		(shape bidirectional)
+		(shape output)
 		(at 200.66 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -11552,7 +11552,7 @@
 		)
 	)
 	(global_label "PB2"
-		(shape bidirectional)
+		(shape input)
 		(at 236.22 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -11576,7 +11576,7 @@
 		)
 	)
 	(global_label "PA0"
-		(shape bidirectional)
+		(shape output)
 		(at 190.5 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -11644,7 +11644,7 @@
 		)
 	)
 	(global_label "PB7"
-		(shape bidirectional)
+		(shape input)
 		(at 223.52 142.24 90)
 		(fields_autoplaced yes)
 		(effects
@@ -11808,7 +11808,7 @@
 		)
 	)
 	(global_label "PA6"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 45.72 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11854,7 +11854,7 @@
 		)
 	)
 	(global_label "PA5"
-		(shape input)
+		(shape bidirectional)
 		(at 48.26 43.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12066,7 +12066,7 @@
 		)
 	)
 	(global_label "PB3"
-		(shape bidirectional)
+		(shape input)
 		(at 233.68 142.24 90)
 		(fields_autoplaced yes)
 		(effects
