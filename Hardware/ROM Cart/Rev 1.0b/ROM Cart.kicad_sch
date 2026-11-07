@@ -4754,7 +4754,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.4 109.22 0)
+			(at 152.4 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5091,7 +5091,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 184.15 0)
+			(at 80.01 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5152,7 +5152,7 @@
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "13a36659-d15c-535d-aa5f-54d59d30a606")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"

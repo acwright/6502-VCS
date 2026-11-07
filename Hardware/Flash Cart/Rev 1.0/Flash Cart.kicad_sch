@@ -15130,7 +15130,7 @@
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f9f8cf21-8e56-5e8e-8daa-2c7ea5036c2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"

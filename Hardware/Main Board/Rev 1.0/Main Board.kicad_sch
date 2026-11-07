@@ -15227,7 +15227,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.957 80.5942 0)
+			(at 36.83 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15576,7 +15576,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.627 59.0042 0)
+			(at 63.5 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17420,7 +17420,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.817 67.8942 0)
+			(at 186.69 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18744,7 +18744,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 329.057 180.9242 0)
+			(at 328.93 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21183,7 +21183,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 136.017 222.8342 0)
+			(at 135.89 222.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21665,7 +21665,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 294.767 100.9142 0)
+			(at 294.64 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22048,7 +22048,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 353.187 100.9142 0)
+			(at 353.06 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22676,7 +22676,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 392.43 214.63 0)
+			(at 392.43 213.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23284,16 +23284,6 @@
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 384.81 205.74 0)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "Jumper for orginal 6502"
-			(at 368.808 204.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25741,7 +25731,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 257.81 231.394 0)
+			(at 257.81 229.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28365,6 +28355,16 @@
 			(justify left bottom)
 		)
 		(uuid "f852569f-3cbb-5593-ba4f-2fea24d655d5")
+	)
+	(text "Jumper for original 6502"
+		(exclude_from_sim no)
+		(at 368.808 204.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "11e44986-dcb4-51af-9814-1f1cfece0f82")
 	)
 	(sheet_instances
 		(path "/"
