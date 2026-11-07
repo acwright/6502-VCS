@@ -19,18 +19,20 @@ Every part for every board in this repository, by revision, with supplier number
 
 Look on the board: the silk prints the revision next to the copyright line. [REVISIONS.md](REVISIONS.md) has the facts for each one, and its history lists what changed between them.
 
-| Board | Revision | What the silk says | Status |
-|---|---|---|---|
-| [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, not tested yet |
-| [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, not tested yet |
-| [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested |
-| [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet |
-| [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested |
-| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet |
-| [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested |
-| [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet |
-| [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested |
-| [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested |
+**To make a new board, make the newest revision**, and check its label first. The README's [Which revision to make](README.md#which-revision-to-make) explains the three labels: **Tested**, **Proven design** and **Untested**.
+
+| Board | Revision | What the silk says | Status | Label |
+|---|---|---|---|---|
+| [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, not tested yet | **Untested**: made, and not tested yet |
+| [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, not tested yet | **Untested**: made, and not tested yet |
+| [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
+| [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
+| [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, and the `VDD` header removed |
+| [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
+| [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested | **Tested**: built and tested. Takes an AT27C256 EPROM |
 
 ## Known issues
 
@@ -74,7 +76,7 @@ Fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ i
 
 ### Flash Cart Rev 1.0
 
-Made, not tested yet.
+Made, not tested yet. **Untested**: made, and not tested yet.
 
 Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](BOM/Flash%20Cart/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Flash%20Cart/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Flash%20Cart/Rev%201.0/mouser-through-hole.csv)
 
@@ -96,7 +98,7 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](
 
 ### Flash Helper Rev 1.0
 
-Made, not tested yet.
+Made, not tested yet. **Untested**: made, and not tested yet.
 
 Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.0/digikey.csv), [mouser.csv](BOM/Flash%20Helper/Rev%201.0/mouser.csv)
 
@@ -110,7 +112,7 @@ Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.0/digikey.csv), [mouser.csv
 
 ### Input Board Rev 1.1
 
-Drawn, not made yet.
+Drawn, not made yet. **Proven design**: silkscreen text only.
 
 Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Input%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Input%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Input%20Board/Rev%201.1/mouser-through-hole.csv)
 
@@ -139,7 +141,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Input Board Rev 1.0
 
-Made, tested.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/Input%20Board/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Input%20Board/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Input%20Board/Rev%201.0/mouser-through-hole.csv)
 
@@ -172,7 +174,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Main Board Rev 1.1
 
-Drawn, not made yet.
+Drawn, not made yet. **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted.
 
 Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Main%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Main%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Main%20Board/Rev%201.1/mouser-through-hole.csv)
 
@@ -209,7 +211,7 @@ Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](
 
 ### Main Board Rev 1.0
 
-Made, tested.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/Main%20Board/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Main%20Board/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Main%20Board/Rev%201.0/mouser-through-hole.csv)
 
@@ -257,7 +259,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Output Board Rev 1.1
 
-Drawn, not made yet.
+Drawn, not made yet. **Proven design**: silkscreen text, and the `VDD` header removed.
 
 Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Output%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Output%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Output%20Board/Rev%201.1/mouser-through-hole.csv)
 
@@ -286,7 +288,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Output Board Rev 1.0
 
-Made, tested.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.0/digikey.csv), [mouser.csv](BOM/Output%20Board/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Output%20Board/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Output%20Board/Rev%201.0/mouser-through-hole.csv)
 
@@ -319,7 +321,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### ROM Cart Rev 1.0b
 
-Made, tested.
+Made, tested. **Tested**: built and tested. Takes an AT27C256 EPROM.
 
 Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.0b/digikey.csv), [mouser.csv](BOM/ROM%20Cart/Rev%201.0b/mouser.csv)
 
@@ -333,7 +335,7 @@ Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.0b/digikey.csv), [mouser.csv](B
 
 ### ROM Cart Rev 1.0a
 
-Made, tested.
+Made, tested. **Tested**: built and tested. Takes an AT28C256 EEPROM.
 
 Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.0a/digikey.csv), [mouser.csv](BOM/ROM%20Cart/Rev%201.0a/mouser.csv)
 
