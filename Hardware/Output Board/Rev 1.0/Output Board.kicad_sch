@@ -6892,7 +6892,7 @@
 		(uuid "d4b95395-4bb1-471a-a504-e65e5c96e6fe")
 	)
 	(global_label "A13"
-		(shape output)
+		(shape input)
 		(at 110.49 147.32 180)
 		(effects
 			(font
@@ -6914,7 +6914,7 @@
 		)
 	)
 	(global_label "A11"
-		(shape output)
+		(shape input)
 		(at 110.49 137.16 180)
 		(effects
 			(font
@@ -6936,7 +6936,7 @@
 		)
 	)
 	(global_label "A1"
-		(shape output)
+		(shape input)
 		(at 44.45 64.77 180)
 		(effects
 			(font
@@ -7002,7 +7002,7 @@
 		)
 	)
 	(global_label "A15"
-		(shape output)
+		(shape input)
 		(at 110.49 152.4 180)
 		(effects
 			(font
@@ -7024,7 +7024,7 @@
 		)
 	)
 	(global_label "A0"
-		(shape output)
+		(shape input)
 		(at 109.22 43.18 180)
 		(effects
 			(font
@@ -7068,7 +7068,7 @@
 		)
 	)
 	(global_label "A10"
-		(shape output)
+		(shape input)
 		(at 110.49 134.62 180)
 		(effects
 			(font
@@ -7112,7 +7112,7 @@
 		)
 	)
 	(global_label "A14"
-		(shape output)
+		(shape input)
 		(at 110.49 149.86 180)
 		(effects
 			(font
@@ -7358,7 +7358,7 @@
 		)
 	)
 	(global_label "RWB"
-		(shape output)
+		(shape input)
 		(at 218.44 133.35 180)
 		(effects
 			(font
@@ -7446,7 +7446,7 @@
 		)
 	)
 	(global_label "A2"
-		(shape output)
+		(shape input)
 		(at 44.45 67.31 180)
 		(effects
 			(font
@@ -7490,7 +7490,7 @@
 		)
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 44.45 78.74 180)
 		(effects
 			(font
@@ -7534,7 +7534,7 @@
 		)
 	)
 	(global_label "IRQB"
-		(shape input)
+		(shape output)
 		(at 96.52 100.33 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7580,7 +7580,7 @@
 		)
 	)
 	(global_label "A0"
-		(shape output)
+		(shape input)
 		(at 44.45 62.23 180)
 		(effects
 			(font
@@ -7624,7 +7624,7 @@
 		)
 	)
 	(global_label "A3"
-		(shape output)
+		(shape input)
 		(at 44.45 69.85 180)
 		(effects
 			(font
@@ -7646,7 +7646,7 @@
 		)
 	)
 	(global_label "NMIB"
-		(shape input)
+		(shape output)
 		(at 96.52 105.41 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7738,7 +7738,7 @@
 		)
 	)
 	(global_label "A12"
-		(shape output)
+		(shape input)
 		(at 110.49 139.7 180)
 		(effects
 			(font
@@ -7826,7 +7826,7 @@
 		)
 	)
 	(global_label "A4"
-		(shape output)
+		(shape input)
 		(at 44.45 72.39 180)
 		(effects
 			(font
@@ -7848,7 +7848,7 @@
 		)
 	)
 	(global_label "RWB"
-		(shape output)
+		(shape input)
 		(at 44.45 81.28 180)
 		(effects
 			(font
@@ -12935,7 +12935,7 @@
 		(uuid "2a8a6557-299c-5990-ae5e-b25502c7ce30")
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 48.26 147.32 180)
 		(fields_autoplaced yes)
 		(effects
@@ -13139,7 +13139,7 @@
 		(uuid "65841faa-ce4e-54bb-97ee-eab1b0cd8feb")
 	)
 	(global_label "RESB"
-		(shape input)
+		(shape output)
 		(at 48.26 129.54 180)
 		(fields_autoplaced yes)
 		(effects

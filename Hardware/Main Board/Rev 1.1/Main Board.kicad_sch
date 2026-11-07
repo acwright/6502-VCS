@@ -11379,7 +11379,7 @@
 		(uuid "ff8495e2-fa1b-4e6d-864b-1bbbe021e160")
 	)
 	(global_label "A1"
-		(shape output)
+		(shape input)
 		(at 88.9 240.03 0)
 		(effects
 			(font
@@ -11423,7 +11423,7 @@
 		)
 	)
 	(global_label "BE"
-		(shape input)
+		(shape output)
 		(at 68.58 209.55 180)
 		(effects
 			(font
@@ -11445,7 +11445,7 @@
 		)
 	)
 	(global_label "A8"
-		(shape output)
+		(shape input)
 		(at 50.8 222.25 0)
 		(effects
 			(font
@@ -11511,7 +11511,7 @@
 		)
 	)
 	(global_label "A15"
-		(shape output)
+		(shape input)
 		(at 111.76 90.17 90)
 		(effects
 			(font
@@ -11533,7 +11533,7 @@
 		)
 	)
 	(global_label "A14"
-		(shape output)
+		(shape input)
 		(at 50.8 207.01 0)
 		(effects
 			(font
@@ -11555,7 +11555,7 @@
 		)
 	)
 	(global_label "IRQB"
-		(shape input)
+		(shape output)
 		(at 382.27 144.78 0)
 		(effects
 			(font
@@ -11577,7 +11577,7 @@
 		)
 	)
 	(global_label "RESB"
-		(shape input)
+		(shape output)
 		(at 382.27 129.54 0)
 		(effects
 			(font
@@ -11643,7 +11643,7 @@
 		)
 	)
 	(global_label "D0"
-		(shape bidirectional)
+		(shape output)
 		(at 353.06 76.2 180)
 		(effects
 			(font
@@ -11665,7 +11665,7 @@
 		)
 	)
 	(global_label "A6"
-		(shape output)
+		(shape input)
 		(at 353.06 58.42 180)
 		(effects
 			(font
@@ -11687,7 +11687,7 @@
 		)
 	)
 	(global_label "RWB"
-		(shape output)
+		(shape input)
 		(at 68.58 212.09 180)
 		(effects
 			(font
@@ -11709,7 +11709,7 @@
 		)
 	)
 	(global_label "D4"
-		(shape bidirectional)
+		(shape output)
 		(at 394.97 81.28 0)
 		(effects
 			(font
@@ -11731,7 +11731,7 @@
 		)
 	)
 	(global_label "A14"
-		(shape output)
+		(shape input)
 		(at 88.9 207.01 0)
 		(effects
 			(font
@@ -11753,7 +11753,7 @@
 		)
 	)
 	(global_label "A3"
-		(shape output)
+		(shape input)
 		(at 295.91 66.04 180)
 		(effects
 			(font
@@ -11775,7 +11775,7 @@
 		)
 	)
 	(global_label "A12"
-		(shape output)
+		(shape input)
 		(at 295.91 53.34 180)
 		(effects
 			(font
@@ -11797,7 +11797,7 @@
 		)
 	)
 	(global_label "A4"
-		(shape output)
+		(shape input)
 		(at 353.06 63.5 180)
 		(effects
 			(font
@@ -11819,7 +11819,7 @@
 		)
 	)
 	(global_label "A0"
-		(shape output)
+		(shape input)
 		(at 295.91 73.66 180)
 		(effects
 			(font
@@ -11885,7 +11885,7 @@
 		)
 	)
 	(global_label "A9"
-		(shape output)
+		(shape input)
 		(at 394.97 60.96 0)
 		(effects
 			(font
@@ -11929,7 +11929,7 @@
 		)
 	)
 	(global_label "HRDB"
-		(shape bidirectional)
+		(shape output)
 		(at 50.8 199.39 0)
 		(effects
 			(font
@@ -12017,7 +12017,7 @@
 		)
 	)
 	(global_label "D6"
-		(shape bidirectional)
+		(shape output)
 		(at 394.97 76.2 0)
 		(effects
 			(font
@@ -12061,7 +12061,7 @@
 		)
 	)
 	(global_label "NMIB"
-		(shape input)
+		(shape output)
 		(at 68.58 204.47 180)
 		(effects
 			(font
@@ -12083,7 +12083,7 @@
 		)
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 30.48 217.17 180)
 		(effects
 			(font
@@ -12193,7 +12193,7 @@
 		)
 	)
 	(global_label "SYNC"
-		(shape output)
+		(shape input)
 		(at 68.58 214.63 180)
 		(effects
 			(font
@@ -12237,7 +12237,7 @@
 		)
 	)
 	(global_label "A8"
-		(shape output)
+		(shape input)
 		(at 394.97 58.42 0)
 		(effects
 			(font
@@ -12259,7 +12259,7 @@
 		)
 	)
 	(global_label "RDY"
-		(shape input)
+		(shape output)
 		(at 68.58 207.01 180)
 		(effects
 			(font
@@ -12281,7 +12281,7 @@
 		)
 	)
 	(global_label "A13"
-		(shape output)
+		(shape input)
 		(at 394.97 55.88 0)
 		(effects
 			(font
@@ -12303,7 +12303,7 @@
 		)
 	)
 	(global_label "A14"
-		(shape output)
+		(shape input)
 		(at 36.83 115.57 180)
 		(effects
 			(font
@@ -12369,7 +12369,7 @@
 		)
 	)
 	(global_label "IRQB"
-		(shape input)
+		(shape output)
 		(at 68.58 201.93 180)
 		(effects
 			(font
@@ -12479,7 +12479,7 @@
 		)
 	)
 	(global_label "A7"
-		(shape output)
+		(shape input)
 		(at 50.8 224.79 0)
 		(effects
 			(font
@@ -12501,7 +12501,7 @@
 		)
 	)
 	(global_label "A13"
-		(shape output)
+		(shape input)
 		(at 50.8 209.55 0)
 		(effects
 			(font
@@ -12523,7 +12523,7 @@
 		)
 	)
 	(global_label "A9"
-		(shape output)
+		(shape input)
 		(at 335.28 60.96 0)
 		(effects
 			(font
@@ -12611,7 +12611,7 @@
 		)
 	)
 	(global_label "D7"
-		(shape bidirectional)
+		(shape output)
 		(at 394.97 73.66 0)
 		(effects
 			(font
@@ -12633,7 +12633,7 @@
 		)
 	)
 	(global_label "A11"
-		(shape output)
+		(shape input)
 		(at 50.8 214.63 0)
 		(effects
 			(font
@@ -12699,7 +12699,7 @@
 		)
 	)
 	(global_label "A5"
-		(shape output)
+		(shape input)
 		(at 50.8 229.87 0)
 		(effects
 			(font
@@ -12765,7 +12765,7 @@
 		)
 	)
 	(global_label "A2"
-		(shape output)
+		(shape input)
 		(at 88.9 237.49 0)
 		(effects
 			(font
@@ -12787,7 +12787,7 @@
 		)
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 330.2 129.54 0)
 		(effects
 			(font
@@ -12809,7 +12809,7 @@
 		)
 	)
 	(global_label "A10"
-		(shape output)
+		(shape input)
 		(at 335.28 68.58 0)
 		(effects
 			(font
@@ -12831,7 +12831,7 @@
 		)
 	)
 	(global_label "A15"
-		(shape output)
+		(shape input)
 		(at 332.74 25.4 90)
 		(effects
 			(font
@@ -12941,7 +12941,7 @@
 		)
 	)
 	(global_label "A10"
-		(shape output)
+		(shape input)
 		(at 394.97 68.58 0)
 		(effects
 			(font
@@ -13007,7 +13007,7 @@
 		)
 	)
 	(global_label "A14"
-		(shape output)
+		(shape input)
 		(at 353.06 50.8 180)
 		(effects
 			(font
@@ -13075,7 +13075,7 @@
 		)
 	)
 	(global_label "RDY"
-		(shape input)
+		(shape output)
 		(at 382.27 137.16 0)
 		(effects
 			(font
@@ -13119,7 +13119,7 @@
 		)
 	)
 	(global_label "A5"
-		(shape output)
+		(shape input)
 		(at 295.91 60.96 180)
 		(effects
 			(font
@@ -13141,7 +13141,7 @@
 		)
 	)
 	(global_label "HRDB"
-		(shape bidirectional)
+		(shape output)
 		(at 88.9 199.39 0)
 		(effects
 			(font
@@ -13185,7 +13185,7 @@
 		)
 	)
 	(global_label "IRQB"
-		(shape input)
+		(shape output)
 		(at 30.48 201.93 180)
 		(effects
 			(font
@@ -13273,7 +13273,7 @@
 		)
 	)
 	(global_label "A1"
-		(shape output)
+		(shape input)
 		(at 50.8 240.03 0)
 		(effects
 			(font
@@ -13295,7 +13295,7 @@
 		)
 	)
 	(global_label "A4"
-		(shape output)
+		(shape input)
 		(at 50.8 232.41 0)
 		(effects
 			(font
@@ -13317,7 +13317,7 @@
 		)
 	)
 	(global_label "A5"
-		(shape output)
+		(shape input)
 		(at 353.06 60.96 180)
 		(effects
 			(font
@@ -13339,7 +13339,7 @@
 		)
 	)
 	(global_label "A6"
-		(shape output)
+		(shape input)
 		(at 88.9 227.33 0)
 		(effects
 			(font
@@ -13361,7 +13361,7 @@
 		)
 	)
 	(global_label "A9"
-		(shape output)
+		(shape input)
 		(at 50.8 219.71 0)
 		(effects
 			(font
@@ -13427,7 +13427,7 @@
 		)
 	)
 	(global_label "D1"
-		(shape bidirectional)
+		(shape output)
 		(at 353.06 78.74 180)
 		(effects
 			(font
@@ -13449,7 +13449,7 @@
 		)
 	)
 	(global_label "A12"
-		(shape output)
+		(shape input)
 		(at 50.8 212.09 0)
 		(effects
 			(font
@@ -13471,7 +13471,7 @@
 		)
 	)
 	(global_label "A0"
-		(shape output)
+		(shape input)
 		(at 353.06 73.66 180)
 		(effects
 			(font
@@ -13515,7 +13515,7 @@
 		)
 	)
 	(global_label "A13"
-		(shape output)
+		(shape input)
 		(at 88.9 209.55 0)
 		(effects
 			(font
@@ -13559,7 +13559,7 @@
 		)
 	)
 	(global_label "A13"
-		(shape output)
+		(shape input)
 		(at 36.83 137.16 180)
 		(effects
 			(font
@@ -13603,7 +13603,7 @@
 		)
 	)
 	(global_label "RWB"
-		(shape output)
+		(shape input)
 		(at 30.48 212.09 180)
 		(effects
 			(font
@@ -13669,7 +13669,7 @@
 		)
 	)
 	(global_label "A8"
-		(shape output)
+		(shape input)
 		(at 335.28 58.42 0)
 		(effects
 			(font
@@ -13691,7 +13691,7 @@
 		)
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 138.43 147.32 180)
 		(effects
 			(font
@@ -13713,7 +13713,7 @@
 		)
 	)
 	(global_label "A11"
-		(shape output)
+		(shape input)
 		(at 88.9 214.63 0)
 		(effects
 			(font
@@ -13757,7 +13757,7 @@
 		)
 	)
 	(global_label "A2"
-		(shape output)
+		(shape input)
 		(at 295.91 68.58 180)
 		(effects
 			(font
@@ -13779,7 +13779,7 @@
 		)
 	)
 	(global_label "A7"
-		(shape output)
+		(shape input)
 		(at 88.9 224.79 0)
 		(effects
 			(font
@@ -13801,7 +13801,7 @@
 		)
 	)
 	(global_label "A6"
-		(shape output)
+		(shape input)
 		(at 295.91 58.42 180)
 		(effects
 			(font
@@ -13823,7 +13823,7 @@
 		)
 	)
 	(global_label "BE"
-		(shape input)
+		(shape output)
 		(at 30.48 209.55 180)
 		(effects
 			(font
@@ -13845,7 +13845,7 @@
 		)
 	)
 	(global_label "A2"
-		(shape output)
+		(shape input)
 		(at 353.06 68.58 180)
 		(effects
 			(font
@@ -13867,7 +13867,7 @@
 		)
 	)
 	(global_label "A4"
-		(shape output)
+		(shape input)
 		(at 88.9 232.41 0)
 		(effects
 			(font
@@ -13889,7 +13889,7 @@
 		)
 	)
 	(global_label "A8"
-		(shape output)
+		(shape input)
 		(at 88.9 222.25 0)
 		(effects
 			(font
@@ -13911,7 +13911,7 @@
 		)
 	)
 	(global_label "A7"
-		(shape output)
+		(shape input)
 		(at 353.06 55.88 180)
 		(effects
 			(font
@@ -13933,7 +13933,7 @@
 		)
 	)
 	(global_label "NMIB"
-		(shape input)
+		(shape output)
 		(at 382.27 152.4 0)
 		(effects
 			(font
@@ -13955,7 +13955,7 @@
 		)
 	)
 	(global_label "A2"
-		(shape output)
+		(shape input)
 		(at 50.8 237.49 0)
 		(effects
 			(font
@@ -13977,7 +13977,7 @@
 		)
 	)
 	(global_label "A3"
-		(shape output)
+		(shape input)
 		(at 88.9 234.95 0)
 		(effects
 			(font
@@ -14021,7 +14021,7 @@
 		)
 	)
 	(global_label "A9"
-		(shape output)
+		(shape input)
 		(at 88.9 219.71 0)
 		(effects
 			(font
@@ -14065,7 +14065,7 @@
 		)
 	)
 	(global_label "A3"
-		(shape output)
+		(shape input)
 		(at 50.8 234.95 0)
 		(effects
 			(font
@@ -14153,7 +14153,7 @@
 		)
 	)
 	(global_label "A5"
-		(shape output)
+		(shape input)
 		(at 88.9 229.87 0)
 		(effects
 			(font
@@ -14219,7 +14219,7 @@
 		)
 	)
 	(global_label "HRDB"
-		(shape bidirectional)
+		(shape output)
 		(at 50.8 201.93 0)
 		(effects
 			(font
@@ -14241,7 +14241,7 @@
 		)
 	)
 	(global_label "A11"
-		(shape output)
+		(shape input)
 		(at 394.97 63.5 0)
 		(effects
 			(font
@@ -14285,7 +14285,7 @@
 		)
 	)
 	(global_label "D2"
-		(shape bidirectional)
+		(shape output)
 		(at 353.06 81.28 180)
 		(effects
 			(font
@@ -14395,7 +14395,7 @@
 		)
 	)
 	(global_label "A1"
-		(shape output)
+		(shape input)
 		(at 353.06 71.12 180)
 		(effects
 			(font
@@ -14417,7 +14417,7 @@
 		)
 	)
 	(global_label "HRDB"
-		(shape bidirectional)
+		(shape output)
 		(at 88.9 201.93 0)
 		(effects
 			(font
@@ -14439,7 +14439,7 @@
 		)
 	)
 	(global_label "A1"
-		(shape output)
+		(shape input)
 		(at 295.91 71.12 180)
 		(effects
 			(font
@@ -14461,7 +14461,7 @@
 		)
 	)
 	(global_label "A15"
-		(shape output)
+		(shape input)
 		(at 50.8 204.47 0)
 		(effects
 			(font
@@ -14483,7 +14483,7 @@
 		)
 	)
 	(global_label "SYNC"
-		(shape output)
+		(shape input)
 		(at 30.48 214.63 180)
 		(effects
 			(font
@@ -14505,7 +14505,7 @@
 		)
 	)
 	(global_label "A4"
-		(shape output)
+		(shape input)
 		(at 295.91 63.5 180)
 		(effects
 			(font
@@ -14549,7 +14549,7 @@
 		)
 	)
 	(global_label "A3"
-		(shape output)
+		(shape input)
 		(at 353.06 66.04 180)
 		(effects
 			(font
@@ -14571,7 +14571,7 @@
 		)
 	)
 	(global_label "A10"
-		(shape output)
+		(shape input)
 		(at 88.9 217.17 0)
 		(effects
 			(font
@@ -14593,7 +14593,7 @@
 		)
 	)
 	(global_label "A7"
-		(shape output)
+		(shape input)
 		(at 295.91 55.88 180)
 		(effects
 			(font
@@ -14615,7 +14615,7 @@
 		)
 	)
 	(global_label "HRDB"
-		(shape bidirectional)
+		(shape input)
 		(at 36.83 99.06 180)
 		(effects
 			(font
@@ -14703,7 +14703,7 @@
 		)
 	)
 	(global_label "A15"
-		(shape output)
+		(shape input)
 		(at 88.9 204.47 0)
 		(effects
 			(font
@@ -14725,7 +14725,7 @@
 		)
 	)
 	(global_label "A0"
-		(shape output)
+		(shape input)
 		(at 50.8 242.57 0)
 		(effects
 			(font
@@ -14747,7 +14747,7 @@
 		)
 	)
 	(global_label "NMIB"
-		(shape input)
+		(shape output)
 		(at 30.48 204.47 180)
 		(effects
 			(font
@@ -14815,7 +14815,7 @@
 		)
 	)
 	(global_label "RWB"
-		(shape output)
+		(shape input)
 		(at 138.43 137.16 180)
 		(effects
 			(font
@@ -14859,7 +14859,7 @@
 		)
 	)
 	(global_label "A14"
-		(shape output)
+		(shape input)
 		(at 295.91 50.8 180)
 		(effects
 			(font
@@ -14881,7 +14881,7 @@
 		)
 	)
 	(global_label "D3"
-		(shape bidirectional)
+		(shape output)
 		(at 394.97 83.82 0)
 		(effects
 			(font
@@ -14947,7 +14947,7 @@
 		)
 	)
 	(global_label "D5"
-		(shape bidirectional)
+		(shape output)
 		(at 394.97 78.74 0)
 		(effects
 			(font
@@ -15101,7 +15101,7 @@
 		)
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 68.58 217.17 180)
 		(effects
 			(font
@@ -15147,7 +15147,7 @@
 		)
 	)
 	(global_label "A6"
-		(shape output)
+		(shape input)
 		(at 50.8 227.33 0)
 		(effects
 			(font
@@ -15191,7 +15191,7 @@
 		)
 	)
 	(global_label "RESB"
-		(shape input)
+		(shape output)
 		(at 242.57 39.37 0)
 		(fields_autoplaced yes)
 		(effects
@@ -15215,7 +15215,7 @@
 		)
 	)
 	(global_label "BE"
-		(shape input)
+		(shape output)
 		(at 382.27 160.02 0)
 		(effects
 			(font
@@ -15237,7 +15237,7 @@
 		)
 	)
 	(global_label "A12"
-		(shape output)
+		(shape input)
 		(at 88.9 212.09 0)
 		(effects
 			(font
@@ -15259,7 +15259,7 @@
 		)
 	)
 	(global_label "A0"
-		(shape output)
+		(shape input)
 		(at 88.9 242.57 0)
 		(effects
 			(font
@@ -15371,7 +15371,7 @@
 		)
 	)
 	(global_label "A11"
-		(shape output)
+		(shape input)
 		(at 335.28 63.5 0)
 		(effects
 			(font
@@ -15415,7 +15415,7 @@
 		)
 	)
 	(global_label "A10"
-		(shape output)
+		(shape input)
 		(at 50.8 217.17 0)
 		(effects
 			(font
@@ -15437,7 +15437,7 @@
 		)
 	)
 	(global_label "A12"
-		(shape output)
+		(shape input)
 		(at 353.06 53.34 180)
 		(effects
 			(font
@@ -15459,7 +15459,7 @@
 		)
 	)
 	(global_label "A13"
-		(shape output)
+		(shape input)
 		(at 335.28 55.88 0)
 		(effects
 			(font
@@ -15503,7 +15503,7 @@
 		)
 	)
 	(global_label "RDY"
-		(shape input)
+		(shape output)
 		(at 30.48 207.01 180)
 		(effects
 			(font
