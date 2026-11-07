@@ -1,0 +1,209 @@
+[
+ {
+  "repo": "VCS",
+  "board": "Input Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "refs": [
+   "J6"
+  ],
+  "what": "I/O window: one shunt picks the 1 KB window the board answers in.",
+  "shipped": "No shunt.",
+  "do": "Fit the shunt beside `$9400`: IO 6, where the BIOS looks for the Input Board.",
+  "need": "To run",
+  "shunts": 1
+ },
+ {
+  "repo": "VCS",
+  "board": "Input Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "refs": [
+   "JP1"
+  ],
+  "what": "Bridged across D1, the diode in the VIA's interrupt line.",
+  "shipped": "Bridged.",
+  "do": "Leave it. The VIA's interrupt output only pulls low, so D1 isn't needed. Cut JP1 only for a part that drives its interrupt high as well as low.",
+  "need": null,
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "refs": [
+   "J7"
+  ],
+  "what": "I/O windows: two shunts pick the windows for the sound chip and the video chip.",
+  "shipped": "No shunts.",
+  "do": "Fit one shunt beside `$9800` (IO 7) for the sound chip and one beside `$9C00` (IO 8) for the video chip, where the BIOS looks for them.",
+  "need": "To run",
+  "shunts": 2
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "refs": [
+   "J6"
+  ],
+  "what": "Interrupt: one shunt sends the board's interrupt to `IRQB` or `NMIB`.",
+  "shipped": "No shunt.",
+  "do": "Fit the shunt on `IRQB`, which the BIOS expects. With no shunt the interrupt reaches neither.",
+  "need": "For interrupts",
+  "shunts": 1
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "JP1"
+  ],
+  "what": "Bridged across D1, the diode in the pico9918's interrupt line.",
+  "shipped": "Bridged.",
+  "do": "Cut JP1. The pico9918 drives its interrupt high as well as low, and only D1 stops it holding `IRQB` high against the Input Board, as on the VGA Card 1.0. Rev 1.1 ships it open.",
+  "need": "For interrupts",
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "refs": [
+   "JP3",
+   "JP2"
+  ],
+  "what": "JP3 feeds `PHI2` to an enable of U3, a 74HC138, so the board is selected only while `PHI2` is high. JP2 would tie that enable high instead.",
+  "shipped": "JP3 bridged, JP2 open.",
+  "do": "Leave them.",
+  "need": null,
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "JP2",
+   "J1"
+  ],
+  "what": "Power: JP2 is across J1 (`PWR_SW`), the header for a power switch.",
+  "shipped": "Open.",
+  "do": "Bridge JP2, or wire a switch to J1. Until one is done the board has no power. Rev 1.1 has neither.",
+  "need": "To run",
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "JP6",
+   "J6"
+  ],
+  "what": "Clock: JP6 is across J6 (`CLOCK_ENBL_SW`), the header for a switch that stops the clock.",
+  "shipped": "Open.",
+  "do": "Bridge JP6, or wire a switch to J6. Until one is done there is no clock on `PHI2`. Rev 1.1 has neither.",
+  "need": "To run",
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "J5",
+   "JP3",
+   "JP4"
+  ],
+  "what": "`HRDB EN`: joins the bus's `EXP1` and `EXP0` to the ROM's High ROM disable.",
+  "shipped": "Open, no shunts.",
+  "do": "Fit two shunts on J5, or bridge JP3 and JP4: without them a cartridge can't take `$C000–$FFFF`, and the VCS always takes cartridges. Rev 1.1 wires them.",
+  "need": "For cartridges",
+  "shunts": 2
+ },
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "JP5",
+   "J7"
+  ],
+  "what": "Original 6502: grounds pin 1, which is `VSS` on an NMOS 6502 and `VPB` on a 65C02.",
+  "shipped": "Open, no shunt.",
+  "do": "Leave both open for a 65C02. Rev 1.1 has neither.",
+  "need": null,
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "JP1",
+   "J2"
+  ],
+  "what": "`ROM WE`: joins the ROM's `/WE` to the write strobe, so a program can write the EEPROM in circuit.",
+  "shipped": "Open, no shunt.",
+  "do": "Leave it open: R1 holds `/WE` high. Rev 1.1 ties `/WE` to VCC.",
+  "need": null,
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0"
+  ],
+  "refs": [
+   "J8"
+  ],
+  "what": "`EXP EN`: shunts here join CPU signals (`VPB`, `MLB`, `SOB`, `PHI1O`, `PHI2O`) to the bus's extra pins.",
+  "shipped": "No shunts.",
+  "do": "Leave it empty: the VCS takes cartridges, which ground `EXP0` and `EXP1`. Rev 1.1 has no J8.",
+  "need": null,
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.1"
+  ],
+  "refs": [
+   "JP1"
+  ],
+  "what": "Bridged across D1, the diode in the pico9918's interrupt line.",
+  "shipped": "Open.",
+  "do": "Leave it open: the pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Never bridge it.",
+  "need": null,
+  "shunts": 0
+ }
+]
