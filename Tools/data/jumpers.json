@@ -97,8 +97,7 @@
   "repo": "VCS",
   "board": "Output Board",
   "revs": [
-   "1.0",
-   "1.1"
+   "1.0"
   ],
   "refs": [
    "JP3",
@@ -106,7 +105,7 @@
   ],
   "what": "JP3 feeds `PHI2` to an enable of U3, a 74HC138, so the board is selected only while `PHI2` is high. JP2 would tie that enable high instead.",
   "shipped": "JP3 bridged, JP2 open.",
-  "do": "Leave them.",
+  "do": "Leave them. With `PHI2` on the decoder's enable, the card's read and write strobes last only while `PHI2` is high, when the 6502's address and data are valid, as the chips need. Tied high, the strobes would run through the whole cycle and glitch while the address settles. Rev 1.1 has no jumpers here: `PHI2` goes straight to the enable.",
   "need": null,
   "shunts": 0
  },

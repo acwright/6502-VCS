@@ -31,7 +31,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
 | [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, the `VDD` header removed, and JP1 ships open |
+| [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |
 | [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
 | [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested | **Tested**: built and tested. Takes an AT27C256 EPROM |
 | [ROM Cart](#rom-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does |
@@ -76,7 +76,7 @@ Fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ i
 
 **Output Board**
 
-**Building a Rev 1.0: cut JP1.** The pico9918 drives its `/INT` high as well as low. D1 is meant to let it only pull `IRQB` (or `NMIB`, through J6) low, but JP1, a solder jumper bridged on the board as made, shorts across D1. With JP1 bridged, the pico9918 holds `IRQB` high against the Input Board's VIA, so the VIA's interrupts don't reach the 65C02. Cut the trace between JP1's pads, and check with a meter that they no longer connect; Rev 1.1 ships JP1 open. Rev 1.1's other changes, its silkscreen and the `VDD` header it drops, need nothing on a built board: the ARMSID needs nothing at U2 pin 28.
+**Building a Rev 1.0: cut JP1.** The pico9918 drives its `/INT` high as well as low. D1 is meant to let it only pull `IRQB` (or `NMIB`, through J6) low, but JP1, a solder jumper bridged on the board as made, shorts across D1. With JP1 bridged, the pico9918 holds `IRQB` high against the Input Board's VIA, so the VIA's interrupts don't reach the 65C02. Cut the trace between JP1's pads, and check with a meter that they no longer connect; Rev 1.1 ships JP1 open. Rev 1.1's other changes, its silkscreen and the `VDD` header it drops, need nothing on a built board: the ARMSID needs nothing at U2 pin 28. Leave JP2 and JP3 as shipped: Rev 1.1 drops them and is wired the way they ship.
 
 **ROM Cart**
 
@@ -292,7 +292,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Output Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: silkscreen text, the `VDD` header removed, and JP1 ships open.
+Drawn, not made yet. **Proven design**: silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them.
 
 Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Output%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Output%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Output%20Board/Rev%201.1/mouser-through-hole.csv)
 

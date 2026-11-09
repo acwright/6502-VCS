@@ -168,7 +168,7 @@ Each revision carries one of three labels:
 | Flash Helper | 1.0 | **Untested** | Made, and not tested yet. |
 | Input Board | 1.1 | **Proven design** | Silkscreen text only. |
 | Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
-| Output Board | 1.1 | **Proven design** | Silkscreen text, the `VDD` header removed, and JP1 ships open. |
+| Output Board | 1.1 | **Proven design** | Silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them. |
 | ROM Cart | 1.1 | **Proven design** | The bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does. |
 <!-- End of which revision to make -->
 
@@ -280,7 +280,7 @@ Where a header needs a shunt, the board's BOM lists it.
 | 1.0, 1.1 | J6 | Interrupt: one shunt sends the board's interrupt to `IRQB` or `NMIB`. | No shunt. | Fit the shunt on `IRQB`, which the BIOS expects. With no shunt the interrupt reaches neither. | For interrupts |
 | 1.0, 1.1 | J7 | I/O windows: two shunts pick the windows for the sound chip and the video chip. | No shunts. | Fit one shunt beside `$9800` (IO 7) for the sound chip and one beside `$9C00` (IO 8) for the video chip, where the BIOS looks for them. | To run |
 | 1.0 | JP1 | Across D1, the diode in the pico9918's interrupt line. | Bridged. | Cut JP1. The pico9918 drives its interrupt high as well as low, and only D1 stops it holding `IRQB` high against every other interrupt source. Rev 1.1 ships it open. | For interrupts |
-| 1.0, 1.1 | JP3, JP2 | JP3 feeds `PHI2` to an enable of U3, a 74HC138, so the board is selected only while `PHI2` is high. JP2 would tie that enable high instead. | JP3 bridged, JP2 open. | Leave them. |  |
+| 1.0 | JP3, JP2 | JP3 feeds `PHI2` to an enable of U3, a 74HC138, so the board is selected only while `PHI2` is high. JP2 would tie that enable high instead. | JP3 bridged, JP2 open. | Leave them. With `PHI2` on the decoder's enable, the card's read and write strobes last only while `PHI2` is high, when the 6502's address and data are valid, as the chips need. Tied high, the strobes would run through the whole cycle and glitch while the address settles. Rev 1.1 has no jumpers here: `PHI2` goes straight to the enable. |  |
 | 1.1 | JP1 | Across D1, the diode in the pico9918's interrupt line. | Open. | Leave it open. The pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Bridged, JP1 would let it hold the line high against every other interrupt source. Never bridge it. Fit D1, which the BOM lists: with the jumper open it is the only path to the line, so without it the board never interrupts. |  |
 
 <!-- End of jumpers -->
