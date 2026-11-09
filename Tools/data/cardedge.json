@@ -1,6 +1,7 @@
 {
  "_about": "Newest revisions with the 6502 Card Edge footprint that don't meet Tools/cardedge/standard.json yet, each with the KICAD.md item that fixes it. cardedge.py --check reports them without failing, and fails on an entry that is no longer needed.",
  "pending": {
+  "VCS|Cart Enclosure": "The owner moves the shell's posts in Fusion 360 to the standard's holes (M3 5.0 mm from the top edge and the sides, M2 13.0 mm from the sides and 45.5 mm from the top) and exports CAD/Enclosuers/Cart Enclosure.step again; then its posts are measured into Tools/cardedge/standard.json",
   "VCS|Flash Cart|1.0": "K28c: made, so a new Rev 1.1",
   "VCS|ROM Cart|1.0b": "K10: made, so the card edge is drawn in ROM Cart 1.1"
  }
