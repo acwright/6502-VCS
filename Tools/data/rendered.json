@@ -1,5 +1,6 @@
 {
  "VCS|Flash Cart|1.0": "de7aea597b457195d93dbca213473e82a7b03b9d",
+ "VCS|Flash Cart|1.1": "ed87afe6b26d975c90b4ff23b6a02995077c340e",
  "VCS|Flash Helper|1.0": "3c6d188382a89ceccc3e79a7d25ca77b8dd50220",
  "VCS|Input Board|1.0": "8f9f77243aea21f0503fdf100b7d2cbbd91edd47",
  "VCS|Input Board|1.1": "56be9d132f04e4a7a684ff831fc0fe2854fe4323",
@@ -9,5 +10,6 @@
  "VCS|Output Board|1.1": "c2b72b274733dd7d8ffe0be4084f80cf7f072d44",
  "VCS|ROM Cart|1.0a": "f9f3218974456fccb3160d7fea1506df84626cb1",
  "VCS|ROM Cart|1.0b": "88647a609f828f7cca601ef1190ddce59df0e302",
+ "VCS|ROM Cart|1.1": "52a1618b2282c4bf73d3c0973e5843b155c54bfa",
  "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares."
 }

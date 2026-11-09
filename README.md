@@ -164,12 +164,12 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| Flash Cart | 1.0 | **Untested** | Made, and not tested yet. |
+| Flash Cart | 1.1 | **Untested** | The bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet. |
 | Flash Helper | 1.0 | **Untested** | Made, and not tested yet. |
 | Input Board | 1.1 | **Proven design** | Silkscreen text only. |
 | Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
 | Output Board | 1.1 | **Proven design** | Silkscreen text, and the `VDD` header removed. |
-| ROM Cart | 1.0a or 1.0b | **Tested** | Rev 1.0a takes an AT28C256 EEPROM; Rev 1.0b takes an AT27C256 EPROM. |
+| ROM Cart | 1.1 | **Proven design** | The bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does. |
 <!-- End of which revision to make -->
 
 ## Firmware

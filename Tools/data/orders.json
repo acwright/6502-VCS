@@ -38,9 +38,11 @@
   ]
  },
  "drawn": [
+  "VCS|Flash Cart|1.1",
   "VCS|Input Board|1.1",
   "VCS|Main Board|1.1",
-  "VCS|Output Board|1.1"
+  "VCS|Output Board|1.1",
+  "VCS|ROM Cart|1.1"
  ],
  "never": [],
  "ordered": {},
@@ -65,6 +67,10 @@
    "Untested",
    "Made, and not tested yet"
   ],
+  "VCS|Flash Cart|1.1": [
+   "Untested",
+   "The bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet"
+  ],
   "VCS|Flash Helper|1.0": [
    "Untested",
    "Made, and not tested yet"
@@ -88,6 +94,10 @@
   "VCS|ROM Cart|1.0b": [
    "Tested",
    "Built and tested. Takes an AT27C256 EPROM"
+  ],
+  "VCS|ROM Cart|1.1": [
+   "Proven design",
+   "The bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does"
   ]
  }
 }

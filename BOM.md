@@ -24,6 +24,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
 | [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, not tested yet | **Untested**: made, and not tested yet |
+| [Flash Cart](#flash-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: the bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet |
 | [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, not tested yet | **Untested**: made, and not tested yet |
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
@@ -33,6 +34,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, and the `VDD` header removed |
 | [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
 | [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested | **Tested**: built and tested. Takes an AT27C256 EPROM |
+| [ROM Cart](#rom-cart) | 1.1 | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Drawn, not made yet | **Proven design**: the bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does |
 
 ## Known issues
 
@@ -64,15 +66,42 @@ Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit a
 > **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
 > whichever variant is in stock.
 
+**Building a Rev 1.0:** nothing to do. Rev 1.1 changes the card edge, which has no solder mask on its tab, and moves the shell's four holes to their nominal places, by up to 0.18 mm. A Rev 1.0's masked edge works in the slot, and the cart shell is drawn for its holes.
+
 **Main Board**
 
 **Pull-ups on Rev 1.0**
 
 Fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ in the files. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for. R4, the `RESB` pull-up, isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1. Rev 1.1 has 10kΩ on all six.
 
+**ROM Cart**
+
+**Building a Rev 1.0a:** nothing to do. Rev 1.1 changes the card edge, which has no solder mask on its tab, and moves the shell's four holes to their nominal places, by up to 0.18 mm. A Rev 1.0a's masked edge works in the slot, and the cart shell is drawn for its holes. Rev 1.1 takes the AT28C256, as Rev 1.0a does.
+
+**Building a Rev 1.0b:** nothing to do. Rev 1.1 changes the card edge, which has no solder mask on its tab, and moves the shell's four holes to their nominal places, by up to 0.18 mm. A Rev 1.0b's masked edge works in the slot, and the cart shell is drawn for its holes. Rev 1.1 takes the AT28C256, so a cart for the AT27C256 is still a Rev 1.0b.
+
 <!-- End of build notes. -->
 
 ## Flash Cart
+
+### Flash Cart Rev 1.1
+
+Drawn, not made yet. **Untested**: the bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet.
+
+Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.1/digikey.csv), [mouser.csv](BOM/Flash%20Cart/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Flash%20Cart/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Flash%20Cart/Rev%201.1/mouser-through-hole.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
+|---|---|---|---|---|---|---|---|
+| C1, C3–C8 | 7 | 100nF | KEMET C0603C104K5RACTU | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | [80-C0603C104K5R](https://www.mouser.com/ProductDetail/80-C0603C104K5R) |  | |
+| C9 | 1 | 10uF | YAGEO CC0805KRX5R7BB106 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | [603-CC0805KRX57BB106](https://www.mouser.com/ProductDetail/603-CC0805KRX57BB106) |  | |
+| U1 | 1 | SST39SF040 | Microchip Technology SST39SF040-70-4C-TU | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) |  |  | |
+| U3 | 1 | 74HC273 | Nexperia USA Inc. 74HC273D,653 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | [771-74HC273D-T](https://www.mouser.com/ProductDetail/771-74HC273D-T) |  | |
+| U4 | 1 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
+| U5 | 1 | 74HC139 | Nexperia USA Inc. 74HC139D,653 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | [771-74HC139D-T](https://www.mouser.com/ProductDetail/771-74HC139D-T) |  | |
+| U6, U7 | 2 | 74HC32 | Nexperia USA Inc. 74HC32D,653 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | [771-74HC32D-T](https://www.mouser.com/ProductDetail/771-74HC32D-T) |  | |
+| U8 | 1 | 74HC1G04 | Nexperia USA Inc. 74HC1G04GV,125 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | [771-74HC1G04GV](https://www.mouser.com/ProductDetail/771-74HC1G04GV) |  | |
+
+**Do not fit** C2, U2: see the build notes.
 
 ### Flash Cart Rev 1.0
 
@@ -318,6 +347,20 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 
 ## ROM Cart
+
+### ROM Cart Rev 1.1
+
+Drawn, not made yet. **Proven design**: the bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does.
+
+Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.1/digikey.csv), [mouser.csv](BOM/ROM%20Cart/Rev%201.1/mouser.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
+|---|---|---|---|---|---|---|
+| C1, C2 | 2 | 100nF | KYOCERA AVX SR215C104KAR | [478-3188-ND](https://www.digikey.com/en/products/filter?keywords=478-3188-ND) | [581-SR215C104KAR](https://www.mouser.com/ProductDetail/581-SR215C104KAR) |  |
+| U1 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  |
+| U2 | 1 | 74HC138 | Texas Instruments SN74HC138N | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) |  |
+| U2 | 1 | Socket | IC socket, 16-pin, 0.3 in | [3M5475-ND](https://www.digikey.com/en/products/filter?keywords=3M5475-ND) | [517-4816-3004-CP](https://www.mouser.com/ProductDetail/517-4816-3004-CP) | |
+| U1 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | |
 
 ### ROM Cart Rev 1.0b
 

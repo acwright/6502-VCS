@@ -21,6 +21,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Board | Rev | Status | Label | Order | Ordered | Made from | Tindie stock | Size (mm) | Holes | Top panel | Enclosure | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Flash Cart | 1.0 | Made, matches order | **Untested**: made, and not tested yet | Y97 | 2026-09-20 | `3680cff` | — | 81.8×57.62 | — | — | — |  |
+| Flash Cart | 1.1 | Drawn | **Untested**: the bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet |  |  |  | — | 81.8×57.62 | — | — | — |  |
 | Flash Helper | 1.0 | Made, matches order | **Untested**: made, and not tested yet | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | Made, matches order | **Tested** | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
 | Input Board | 1.1 | Drawn | **Proven design**: silkscreen text only |  |  |  | — | 100×100 | 6 mm | yes | — |  |
@@ -30,6 +31,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Output Board | 1.1 | Drawn | **Proven design**: silkscreen text, and the `VDD` header removed |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | ROM Cart | 1.0a | Made, matches order | **Tested**: built and tested. Takes an AT28C256 EEPROM | Y60 | 2025-10-06 | `6502-COB 0969243` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT28C256, marks it as 1.0a |
 | ROM Cart | 1.0b | Made, matches order | **Tested**: built and tested. Takes an AT27C256 EPROM | Y87 | 2026-03-22 | `6502-COB ab85186` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT27C256, marks it as 1.0b |
+| ROM Cart | 1.1 | Drawn | **Proven design**: the bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does |  |  |  | — | 81.8×57.62 | — | — | — |  |
 
 JLCPCB's orders were checked on 2026-11-04: each production zip marked *Made, matches order* was compared byte for byte with JLCPCB's copy, and its PCB regenerated to the same copper, mask, outline and holes. Each time this table is written, every PCB is checked again against its production zip, for copper and drill holes. Tindie stock is from the listings as saved on 2026-10-23.
 
@@ -66,6 +68,12 @@ What changed in each revision of each board, newest first. The table above has t
 
 ### ROM Cart
 
+**Rev 1.1** (drawn, not yet made; Rev 1.0a is sold first)
+
+- The card edge is bare: no solder mask on the tab, front or back, from where its fillets end, so the fingers seat better in the slot and make better contact. Rev 1.0a has mask between the fingers. The fingers carry no solder paste, so no stencil prints paste onto them. The outline is redrawn to the one cart shape every cart shares, placed by the fingers: it moved 0.04 mm from Rev 1.0a's, its corners are 5 mm (Rev 1.0a's are 5.036 mm) and its width is 81.8 mm (81.799 mm), and no track or pad moved. The ground pours are refilled to suit.
+- The four holes for the cart shell are at their nominal places, each pair centred on the cart: the M3 holes 5.0 mm from the top edge and the sides, the M2 holes 13.0 mm from the sides. Rev 1.0a's were 4.849 mm and 12.95 mm from the sides, a slip in the drawing, so the holes moved by up to 0.18 mm.
+- The silkscreen's revision reads Rev 1.1. Nothing else changed: the circuit, parts, tracks and pads are Rev 1.0a's, so Rev 1.1 takes the AT28C256. Taking either ROM chip, through two solder jumpers, is still to be drawn before Rev 1.1 is made.
+
 **Rev 1.0a**
 
 - Initial release. Built and tested. `Hardware/ROM Cart/Rev 1.0a/` and `Production/ROM Cart/Rev 1.0a/` match the boards JLCPCB made (order Y60). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
@@ -77,6 +85,13 @@ What changed in each revision of each board, newest first. The table above has t
 - The board's silkscreen says Rev 1.0, not Rev 1.0b. Its U1 label, `AT27C256`, tells it apart from Rev 1.0a.
 
 ### Flash Cart
+
+**Rev 1.1** (drawn, not yet made; Rev 1.0 is tested first)
+
+- The card edge is bare: no solder mask on the tab, front or back, from where its fillets end, so the fingers seat better in the slot and make better contact. Rev 1.0 has mask between the fingers. The fingers carry no solder paste, so no stencil prints paste onto them. The outline is redrawn to the one cart shape every cart shares, placed by the fingers: it moved 0.04 mm from Rev 1.0's, its corners are 5 mm (Rev 1.0's are 5.036 mm) and its width is 81.8 mm (81.799 mm), and no track or pad moved. The ground pours are refilled to suit.
+- The four holes for the cart shell are at their nominal places, each pair centred on the cart: the M3 holes 5.0 mm from the top edge and the sides, the M2 holes 13.0 mm from the sides. Rev 1.0's were 4.849 mm and 12.95 mm from the sides, a slip in the drawing, so the holes moved by up to 0.18 mm.
+- The silkscreen's revision reads Rev 1.1. Nothing else changed: the circuit, parts, tracks and pads are Rev 1.0's.
+- Rev 1.1 is labelled **Untested** only because Rev 1.0 hasn't been tested yet. When Rev 1.0 passes, Rev 1.1 becomes **Proven design**.
 
 **Rev 1.0**
 
