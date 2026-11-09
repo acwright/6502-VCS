@@ -21,8 +21,8 @@ it before trusting a number here.
 
 | | |
 |---|---|
-| `src/` | The Mega 2560 firmware. 4,076 bytes of flash, 984 bytes of RAM. |
-| [`host/`](host/README.md) | `6502-flash`, the Node CLI that drives it. 117 tests. |
+| `src/` | The Mega 2560 firmware. 4,094 bytes of flash, 984 bytes of RAM. |
+| [`host/`](host/README.md) | `6502-flash`, the Node CLI that drives it. 121 tests. |
 
 ## Bus interface
 

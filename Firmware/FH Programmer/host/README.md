@@ -8,7 +8,7 @@ Node 22 or later. One dependency, `@serialport/bindings-cpp`, and only `id`, `er
 
 ```bash
 npm install
-npm test              # 117 tests, no network, no hardware
+npm test              # 121 tests, no network, no hardware
 npm run fixtures:check
 ```
 

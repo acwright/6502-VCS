@@ -24,7 +24,7 @@
 
 #define FW_VERSION_MAJOR 1
 #define FW_VERSION_MINOR 0
-#define FW_VERSION_PATCH 0
+#define FW_VERSION_PATCH 1
 
 #define FRAME_SYNC0 0xAA
 #define FRAME_SYNC1 0x55
