@@ -7682,7 +7682,7 @@
 		)
 	)
 	(global_label "PHI2"
-		(shape output)
+		(shape input)
 		(at 196.85 151.13 180)
 		(effects
 			(font
@@ -12430,7 +12430,7 @@
 		(uuid "ed2ef07e-6cb8-57c7-8760-eee64de74396")
 	)
 	(global_label "PHI2"
-		(shape input)
+		(shape output)
 		(at 48.26 147.32 180)
 		(fields_autoplaced yes)
 		(effects
