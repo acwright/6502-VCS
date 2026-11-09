@@ -218,7 +218,7 @@ Five lines of the 6502 bus are shared by every board on it: `RESB`, `IRQB`, `NMI
 **Interrupt outputs.** Whatever drives `IRQB` or `NMIB` may only pull it low. Every board is drawn for the parts in its BOM and works as shipped, with no jumper to cut or bridge:
 
 - **A part whose interrupt output is open-drain** (the W65C22N, W65C21N, R6551AP, DS1511Y and TMS9918A) drives the line directly, or through a diode with a solder jumper across it that ships bridged. The diode is fitted either way. To use a part that drives its interrupt high as well as low instead, such as a W65C22S or a replacement of your own, cut the jumper: the diode then lets the part only pull the line low. A board with no diode in the line can't take such a part.
-- **A part that drives its interrupt high as well as low** (the pico9918, the VERA module, and a microcontroller such as the ATmega1284 or a Raspberry Pi Pico) reaches the line through a diode, a BAT85 or a 1N914, with its cathode toward the part. Where a solder jumper sits across that diode, it ships open. Never bridge it, because the part would then hold the line high against every other interrupt source.
+- **A part that drives its interrupt high as well as low** (the pico9918, the VERA module, and a microcontroller such as the ATmega1284 or a Raspberry Pi Pico) reaches the line through a diode, a BAT85 or a 1N914, with its cathode toward the part. Where a solder jumper sits across that diode, it ships open. The diode is then the only path to the line, so fit it, and never bridge the jumper, because the part would then hold the line high against every other interrupt source.
 - **A microcontroller wired to the line directly,** as on the ACE Board, the Mega Helper and the Flash Helper, drives it open-drain in its firmware: it sets the pin low or leaves it as an input, and never drives it high.
 
 The *Jumpers* section below gives each board's interrupt jumper.
@@ -281,7 +281,7 @@ Where a header needs a shunt, the board's BOM lists it.
 | 1.0, 1.1 | J7 | I/O windows: two shunts pick the windows for the sound chip and the video chip. | No shunts. | Fit one shunt beside `$9800` (IO 7) for the sound chip and one beside `$9C00` (IO 8) for the video chip, where the BIOS looks for them. | To run |
 | 1.0 | JP1 | Across D1, the diode in the pico9918's interrupt line. | Bridged. | Cut JP1. The pico9918 drives its interrupt high as well as low, and only D1 stops it holding `IRQB` high against every other interrupt source. Rev 1.1 ships it open. | For interrupts |
 | 1.0, 1.1 | JP3, JP2 | JP3 feeds `PHI2` to an enable of U3, a 74HC138, so the board is selected only while `PHI2` is high. JP2 would tie that enable high instead. | JP3 bridged, JP2 open. | Leave them. |  |
-| 1.1 | JP1 | Across D1, the diode in the pico9918's interrupt line. | Open. | Leave it open. The pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Bridged, JP1 would let it hold the line high against every other interrupt source. Never bridge it. |  |
+| 1.1 | JP1 | Across D1, the diode in the pico9918's interrupt line. | Open. | Leave it open. The pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Bridged, JP1 would let it hold the line high against every other interrupt source. Never bridge it. Fit D1, which the BOM lists: with the jumper open it is the only path to the line, so without it the board never interrupts. |  |
 
 <!-- End of jumpers -->
 

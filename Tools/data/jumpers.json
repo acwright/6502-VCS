@@ -89,7 +89,7 @@
   ],
   "what": "Across D1, the diode in the pico9918's interrupt line.",
   "shipped": "Open.",
-  "do": "Leave it open. The pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Bridged, JP1 would let it hold the line high against every other interrupt source. Never bridge it.",
+  "do": "Leave it open. The pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Bridged, JP1 would let it hold the line high against every other interrupt source. Never bridge it. Fit D1, which the BOM lists: with the jumper open it is the only path to the line, so without it the board never interrupts.",
   "need": null,
   "shunts": 0
  },
