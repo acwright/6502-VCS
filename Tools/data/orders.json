@@ -85,7 +85,7 @@
   ],
   "VCS|Output Board|1.1": [
    "Proven design",
-   "Silkscreen text, and the `VDD` header removed"
+   "Silkscreen text, the `VDD` header removed, and JP1 ships open"
   ],
   "VCS|ROM Cart|1.0a": [
    "Tested",

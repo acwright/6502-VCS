@@ -25,9 +25,9 @@
   "refs": [
    "JP1"
   ],
-  "what": "Bridged across D1, the diode in the VIA's interrupt line.",
+  "what": "Across D1, the diode in the W65C22N's interrupt line.",
   "shipped": "Bridged.",
-  "do": "Leave it. The VIA's interrupt output only pulls low, so D1 isn't needed. Cut JP1 only for a part that drives its interrupt high as well as low.",
+  "do": "Leave it. The W65C22N's interrupt output is open-drain: it only pulls the line low, so the board works as shipped and D1 isn't needed. To fit a part that drives its interrupt high as well as low, such as a W65C22S, cut JP1 so the interrupt goes through D1.",
   "need": null,
   "shunts": 0
  },
@@ -72,10 +72,25 @@
   "refs": [
    "JP1"
   ],
-  "what": "Bridged across D1, the diode in the pico9918's interrupt line.",
+  "what": "Across D1, the diode in the pico9918's interrupt line.",
   "shipped": "Bridged.",
-  "do": "Cut JP1. The pico9918 drives its interrupt high as well as low, and only D1 stops it holding `IRQB` high against the Input Board, as on the VGA Card 1.0. Rev 1.1 ships it open.",
+  "do": "Cut JP1. The pico9918 drives its interrupt high as well as low, and only D1 stops it holding `IRQB` high against every other interrupt source. Rev 1.1 ships it open.",
   "need": "For interrupts",
+  "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.1"
+  ],
+  "refs": [
+   "JP1"
+  ],
+  "what": "Across D1, the diode in the pico9918's interrupt line.",
+  "shipped": "Open.",
+  "do": "Leave it open. The pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Bridged, JP1 would let it hold the line high against every other interrupt source. Never bridge it.",
+  "need": null,
   "shunts": 0
  },
  {
@@ -188,21 +203,6 @@
   "what": "`EXP EN`: shunts here join CPU signals (`VPB`, `MLB`, `SOB`, `PHI1O`, `PHI2O`) to the bus's extra pins.",
   "shipped": "No shunts.",
   "do": "Leave it empty: the VCS takes cartridges, which ground `EXP0` and `EXP1`. Rev 1.1 has no J8.",
-  "need": null,
-  "shunts": 0
- },
- {
-  "repo": "VCS",
-  "board": "Output Board",
-  "revs": [
-   "1.1"
-  ],
-  "refs": [
-   "JP1"
-  ],
-  "what": "Bridged across D1, the diode in the pico9918's interrupt line.",
-  "shipped": "Open.",
-  "do": "Leave it open: the pico9918 drives its interrupt high as well as low, and D1 lets it only pull `IRQB` low. Never bridge it.",
   "need": null,
   "shunts": 0
  }

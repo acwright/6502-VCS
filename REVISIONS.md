@@ -28,7 +28,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Main Board | 1.0 | Made, matches order | **Tested** | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |
 | Main Board | 1.1 | Drawn | **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.0 | Made, matches order | **Tested** | Y85 | 2026-01-14 | `6502-COB 379abb8` | — | 100×100 | 6 mm | yes | — |  |
-| Output Board | 1.1 | Drawn | **Proven design**: silkscreen text, and the `VDD` header removed |  |  |  | — | 100×100 | 6 mm | yes | — |  |
+| Output Board | 1.1 | Drawn | **Proven design**: silkscreen text, the `VDD` header removed, and JP1 ships open |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | ROM Cart | 1.0a | Made, matches order | **Tested**: built and tested. Takes an AT28C256 EEPROM | Y60 | 2025-10-06 | `6502-COB 0969243` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT28C256, marks it as 1.0a |
 | ROM Cart | 1.0b | Made, matches order | **Tested**: built and tested. Takes an AT27C256 EPROM | Y87 | 2026-03-22 | `6502-COB ab85186` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT27C256, marks it as 1.0b |
 | ROM Cart | 1.1 | Drawn | **Proven design**: the bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does |  |  |  | — | 81.8×57.62 | — | — | — |  |
