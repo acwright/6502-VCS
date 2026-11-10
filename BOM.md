@@ -71,11 +71,16 @@ Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit a
 the board assembled by JLCPCB is the preferred way to get one. The cart's `bom.csv` carries an LCSC number only for
 U4 so far, so for now an assembled order needs the other parts chosen on JLCPCB's site.
 
-A fault on a chip-select or output-enable pin shows up as reads that fail. A fault on an address pin or the write
-strobe doesn't: a new chip is blank, and a blank chip reads `$FF` at every address whatever those pins are doing, so
-that kind only appears when the chip refuses a command. The first hand-built Rev 1.0 carts had one of each: a bridge
-between U1's pins 30 and 31 (`CE1B` and A10), and a write-path fault that went away when U1 and U5 were reflowed. After building one by hand, check U1's pins 6–8 and
-30–32, and U2's on a 1MB cart, under magnification. Then run `6502-flash id`: a working chip answers `$BF $B7`.
+A fault on a chip-select or output-enable pin shows up as reads that fail. A fault on an address pin, a bank-select
+line or the write strobe doesn't: a new chip is blank, and a blank chip reads `$FF` at every address whatever those
+pins are doing, so that kind only appears when the chip refuses a command. The first hand-built Rev 1.0 carts had both
+kinds. One had a bridge between U1's pins 30 and 31 (`CE1B` and A10). Both needed rework before the chips took
+commands reliably: at U1, U2 and U5, and on the 1MB cart at U3 and U6, where a bad joint left the bank-select line
+FA13 floating.
+
+After building one by hand, check U1's pins 6–8 and 30–32 (and U2's on a 1MB cart), U5, U3 and U6 under
+magnification, and clean off the flux. Then run `6502-flash id` several times: a working chip answers `$BF $B7` every
+time. Each run resets the Helper, and a joint that leaves an input floating can pass one run and fail the next.
 
 **Building a Rev 1.0:** nothing to do. Rev 1.1 changes the card edge, which has no solder mask on its tab, and moves the shell's four holes to their nominal places, by up to 0.18 mm. A Rev 1.0's masked edge works in the slot, and the cart shell is drawn for its holes.
 
