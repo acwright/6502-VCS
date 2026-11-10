@@ -92,17 +92,17 @@ What changed in each revision of each board, newest first. The table above has t
 - The card edge is bare: no solder mask on the tab, front or back, from where its fillets end, so the fingers seat better in the slot and make better contact. Rev 1.0 has mask between the fingers. The fingers carry no solder paste, so no stencil prints paste onto them. The outline is redrawn to the one cart shape every cart shares, placed by the fingers: it moved 0.04 mm from Rev 1.0's, its corners are 5 mm (Rev 1.0's are 5.036 mm) and its width is 81.8 mm (81.799 mm), and no track or pad moved. The ground pours are refilled to suit.
 - The four holes for the cart shell are at their nominal places, each pair centred on the cart: the M3 holes 5.0 mm from the top edge and the sides, the M2 holes 13.0 mm from the sides. Rev 1.0's were 4.849 mm and 12.95 mm from the sides, a slip in the drawing, so the holes moved by up to 0.18 mm.
 - The silkscreen's revision reads Rev 1.1. Nothing else changed: the circuit, parts, tracks and pads are Rev 1.0's.
-- Rev 1.1 is labelled **Untested** only because Rev 1.0 hasn't been tested yet. When Rev 1.0 passes, Rev 1.1 becomes **Proven design**.
+- Rev 1.0 passed its tests on 2026-11-09, so Rev 1.1, with the same circuit, is labelled **Proven design**.
 
 **Rev 1.0**
 
-- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Cart/Rev 1.0/` and `Production/Flash Cart/Rev 1.0/` match the boards JLCPCB made (order Y97). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- Initial release. Tested on 2026-11-09 in both builds, 512 KB and 1 MB: identified, programmed and verified on the Flash Helper, and run on an ACE, banking and saving included. `Hardware/Flash Cart/Rev 1.0/` and `Production/Flash Cart/Rev 1.0/` match the boards JLCPCB made (order Y97). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 ### Flash Helper
 
 **Rev 1.0**
 
-- Initial release. Boards are on hand, and not yet tested. `Hardware/Flash Helper/Rev 1.0/` and `Production/Flash Helper/Rev 1.0/` match the boards JLCPCB made (order Y98). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
+- Initial release. Tested on 2026-11-09: it identified, erased, programmed and verified both Flash Cart builds. `Hardware/Flash Helper/Rev 1.0/` and `Production/Flash Helper/Rev 1.0/` match the boards JLCPCB made (order Y98). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 ### Main Board
 
