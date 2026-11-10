@@ -68,8 +68,9 @@ Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit a
 > footprint is drawn for the `-TU` package, not the older `-WHE`. JLCPCB stocks the `-70-4C-TU` as LCSC C43083883.
 
 **Assembly: the hardest board in the family to build by hand.** U1 and U2 are TSOP-32 parts with 0.5 mm pins. Having
-the board assembled by JLCPCB is the preferred way to get one. The cart's `bom.csv` carries an LCSC number only for
-U4 so far, so for now an assembled order needs the other parts chosen on JLCPCB's site.
+the board assembled by JLCPCB is the preferred way to get one. Every part in the cart's `bom.csv` has an LCSC number,
+U2 and C2 included for the 1MB build. JLCPCB's stock comes and goes like everyone's: on 2026-11-09 it had no C1–C8
+(C127833) or C9 (C2982567), and 35 of the flash.
 
 A fault on a chip-select or output-enable pin shows up as reads that fail. A fault on an address pin, a bank-select
 line or the write strobe doesn't: a new chip is blank, and a blank chip reads `$FF` at every address whatever those
@@ -112,14 +113,14 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.1/digikey.csv), [mouser.csv](
 
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
 |---|---|---|---|---|---|---|---|
-| C1, C3–C8 | 7 | 100nF | KEMET C0603C104K5RACTU | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | [80-C0603C104K5R](https://www.mouser.com/ProductDetail/80-C0603C104K5R) |  | |
-| C9 | 1 | 10uF | YAGEO CC0805KRX5R7BB106 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | [603-CC0805KRX57BB106](https://www.mouser.com/ProductDetail/603-CC0805KRX57BB106) |  | |
-| U1 | 1 | SST39SF040 | Microchip Technology SST39SF040-70-4C-TU | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) |  |  | |
-| U3 | 1 | 74HC273 | Nexperia USA Inc. 74HC273D,653 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | [771-74HC273D-T](https://www.mouser.com/ProductDetail/771-74HC273D-T) |  | |
+| C1, C3–C8 | 7 | 100nF | KEMET C0603C104K5RACTU | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | [80-C0603C104K5R](https://www.mouser.com/ProductDetail/80-C0603C104K5R) | LCSC [C127833](https://www.lcsc.com/search?q=C127833) | Yes |
+| C9 | 1 | 10uF | YAGEO CC0805KRX5R7BB106 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | [603-CC0805KRX57BB106](https://www.mouser.com/ProductDetail/603-CC0805KRX57BB106) | LCSC [C2982567](https://www.lcsc.com/search?q=C2982567) | Yes |
+| U1 | 1 | SST39SF040 | Microchip Technology SST39SF040-70-4C-TU | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) |  | LCSC [C43083883](https://www.lcsc.com/search?q=C43083883) | Yes |
+| U3 | 1 | 74HC273 | Nexperia USA Inc. 74HC273D,653 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | [771-74HC273D-T](https://www.mouser.com/ProductDetail/771-74HC273D-T) | LCSC [C9030](https://www.lcsc.com/search?q=C9030) | Yes |
 | U4 | 1 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
-| U5 | 1 | 74HC139 | Nexperia USA Inc. 74HC139D,653 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | [771-74HC139D-T](https://www.mouser.com/ProductDetail/771-74HC139D-T) |  | |
-| U6, U7 | 2 | 74HC32 | Nexperia USA Inc. 74HC32D,653 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | [771-74HC32D-T](https://www.mouser.com/ProductDetail/771-74HC32D-T) |  | |
-| U8 | 1 | 74HC1G04 | Nexperia USA Inc. 74HC1G04GV,125 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | [771-74HC1G04GV](https://www.mouser.com/ProductDetail/771-74HC1G04GV) |  | |
+| U5 | 1 | 74HC139 | Nexperia USA Inc. 74HC139D,653 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | [771-74HC139D-T](https://www.mouser.com/ProductDetail/771-74HC139D-T) | LCSC [C5603](https://www.lcsc.com/search?q=C5603) | Yes |
+| U6, U7 | 2 | 74HC32 | Nexperia USA Inc. 74HC32D,653 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | [771-74HC32D-T](https://www.mouser.com/ProductDetail/771-74HC32D-T) | LCSC [C5632](https://www.lcsc.com/search?q=C5632) | Yes |
+| U8 | 1 | 74HC1G04 | Nexperia USA Inc. 74HC1G04GV,125 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | [771-74HC1G04GV](https://www.mouser.com/ProductDetail/771-74HC1G04GV) | LCSC [C12496](https://www.lcsc.com/search?q=C12496) | Yes |
 
 **Do not fit** C2, U2: see the build notes.
 
@@ -131,14 +132,14 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](
 
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
 |---|---|---|---|---|---|---|---|
-| C1, C3–C8 | 7 | 100nF | KEMET C0603C104K5RACTU | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | [80-C0603C104K5R](https://www.mouser.com/ProductDetail/80-C0603C104K5R) |  | |
-| C9 | 1 | 10uF | YAGEO CC0805KRX5R7BB106 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | [603-CC0805KRX57BB106](https://www.mouser.com/ProductDetail/603-CC0805KRX57BB106) |  | |
-| U1 | 1 | SST39SF040 | Microchip Technology SST39SF040-70-4C-TU | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) |  |  | |
-| U3 | 1 | 74HC273 | Nexperia USA Inc. 74HC273D,653 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | [771-74HC273D-T](https://www.mouser.com/ProductDetail/771-74HC273D-T) |  | |
+| C1, C3–C8 | 7 | 100nF | KEMET C0603C104K5RACTU | [399-C0603C104K5RACTUCT-ND](https://www.digikey.com/en/products/filter?keywords=399-C0603C104K5RACTUCT-ND) | [80-C0603C104K5R](https://www.mouser.com/ProductDetail/80-C0603C104K5R) | LCSC [C127833](https://www.lcsc.com/search?q=C127833) | Yes |
+| C9 | 1 | 10uF | YAGEO CC0805KRX5R7BB106 | [311-3502-1-ND](https://www.digikey.com/en/products/filter?keywords=311-3502-1-ND) | [603-CC0805KRX57BB106](https://www.mouser.com/ProductDetail/603-CC0805KRX57BB106) | LCSC [C2982567](https://www.lcsc.com/search?q=C2982567) | Yes |
+| U1 | 1 | SST39SF040 | Microchip Technology SST39SF040-70-4C-TU | [150-SST39SF040-70-4C-TU-ND](https://www.digikey.com/en/products/filter?keywords=150-SST39SF040-70-4C-TU-ND) |  | LCSC [C43083883](https://www.lcsc.com/search?q=C43083883) | Yes |
+| U3 | 1 | 74HC273 | Nexperia USA Inc. 74HC273D,653 | [1727-2795-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2795-1-ND) | [771-74HC273D-T](https://www.mouser.com/ProductDetail/771-74HC273D-T) | LCSC [C9030](https://www.lcsc.com/search?q=C9030) | Yes |
 | U4 | 1 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
-| U5 | 1 | 74HC139 | Nexperia USA Inc. 74HC139D,653 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | [771-74HC139D-T](https://www.mouser.com/ProductDetail/771-74HC139D-T) |  | |
-| U6, U7 | 2 | 74HC32 | Nexperia USA Inc. 74HC32D,653 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | [771-74HC32D-T](https://www.mouser.com/ProductDetail/771-74HC32D-T) |  | |
-| U8 | 1 | 74HC1G04 | Nexperia USA Inc. 74HC1G04GV,125 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | [771-74HC1G04GV](https://www.mouser.com/ProductDetail/771-74HC1G04GV) |  | |
+| U5 | 1 | 74HC139 | Nexperia USA Inc. 74HC139D,653 | [1727-5943-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-5943-1-ND) | [771-74HC139D-T](https://www.mouser.com/ProductDetail/771-74HC139D-T) | LCSC [C5603](https://www.lcsc.com/search?q=C5603) | Yes |
+| U6, U7 | 2 | 74HC32 | Nexperia USA Inc. 74HC32D,653 | [1727-2797-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2797-1-ND) | [771-74HC32D-T](https://www.mouser.com/ProductDetail/771-74HC32D-T) | LCSC [C5632](https://www.lcsc.com/search?q=C5632) | Yes |
+| U8 | 1 | 74HC1G04 | Nexperia USA Inc. 74HC1G04GV,125 | [1727-6034-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-6034-1-ND) | [771-74HC1G04GV](https://www.mouser.com/ProductDetail/771-74HC1G04GV) | LCSC [C12496](https://www.lcsc.com/search?q=C12496) | Yes |
 
 **Do not fit** C2, U2: see the build notes.
 
