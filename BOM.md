@@ -63,8 +63,19 @@ How to build each board, where it needs more than its parts list.
 
 Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
 
-> **Flash**: `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and pinout at 55ns, so buy
-> whichever variant is in stock.
+> **Flash**: `SST39SF040-70-4I-TU`, `SST39SF040-55-4C-TU` and `SST39SF040-55-4I-TU` are the same package and
+> pinout as the listed `-70-4C-TU`, so buy whichever is in stock. Stock of each comes and goes from day to day. The
+> footprint is drawn for the `-TU` package, not the older `-WHE`. JLCPCB stocks the `-70-4C-TU` as LCSC C43083883.
+
+**Assembly: the hardest board in the family to build by hand.** U1 and U2 are TSOP-32 parts with 0.5 mm pins. Having
+the board assembled by JLCPCB is the preferred way to get one. The cart's `bom.csv` carries an LCSC number only for
+U4 so far, so for now an assembled order needs the other parts chosen on JLCPCB's site.
+
+A fault on a chip-select or output-enable pin shows up as reads that fail. A fault on an address pin or the write
+strobe doesn't: a new chip is blank, and a blank chip reads `$FF` at every address whatever those pins are doing, so
+that kind only appears when the chip refuses a command. The first hand-built Rev 1.0 carts had one of each: a bridge
+between U1's pins 30 and 31 (`CE1B` and A10), and a write-path fault that went away when U1 and U5 were reflowed. After building one by hand, check U1's pins 6–8 and
+30–32, and U2's on a 1MB cart, under magnification. Then run `6502-flash id`: a working chip answers `$BF $B7`.
 
 **Building a Rev 1.0:** nothing to do. Rev 1.1 changes the card edge, which has no solder mask on its tab, and moves the shell's four holes to their nominal places, by up to 0.18 mm. A Rev 1.0's masked edge works in the slot, and the cart shell is drawn for its holes.
 
