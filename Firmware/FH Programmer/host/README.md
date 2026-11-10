@@ -14,11 +14,10 @@ npm run fixtures:check
 
 ## Status
 
-The command set is complete and every command runs. **No command has ever reached a
-cartridge**, because the boards are still at fab — see
-[*What has and has not been proved*](../README.md#what-has-and-has-not-been-proved) in the
-firmware's README, which covers both halves. The version stays below 1.0 until a cart has
-been programmed and read back.
+The command set is complete. `id`, `program --verify` and `verify` have run against real
+Flash Carts, 512 KB and 1 MB, and every image read back identical (2026-11-09), so this is
+1.0. See [*What has and has not been proved*](../README.md#what-has-and-has-not-been-proved)
+in the firmware's README, which covers both halves.
 
 ## Commands
 

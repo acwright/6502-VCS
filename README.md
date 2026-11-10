@@ -164,8 +164,8 @@ Each revision carries one of three labels:
 
 | Board | Newest revision | Label | Why |
 |---|---|---|---|
-| Flash Cart | 1.1 | **Untested** | The bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet. |
-| Flash Helper | 1.0 | **Untested** | Made, and not tested yet. |
+| Flash Cart | 1.1 | **Proven design** | The bare card edge and the shell's holes at their nominal places. |
+| Flash Helper | 1.0 | **Tested** | Built and tested. |
 | Input Board | 1.1 | **Proven design** | Silkscreen text only. |
 | Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
 | Output Board | 1.1 | **Proven design** | Silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them. |

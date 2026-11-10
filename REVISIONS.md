@@ -20,9 +20,9 @@ Every revision of every board in this repository, and what is known about each. 
 
 | Board | Rev | Status | Label | Order | Ordered | Made from | Tindie stock | Size (mm) | Holes | Top panel | Enclosure | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Flash Cart | 1.0 | Made, matches order | **Untested**: made, and not tested yet | Y97 | 2026-09-20 | `3680cff` | — | 81.8×57.62 | — | — | — |  |
-| Flash Cart | 1.1 | Drawn | **Untested**: the bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet |  |  |  | — | 81.8×57.62 | — | — | — |  |
-| Flash Helper | 1.0 | Made, matches order | **Untested**: made, and not tested yet | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
+| Flash Cart | 1.0 | Made, matches order | **Tested** | Y97 | 2026-09-20 | `3680cff` | — | 81.8×57.62 | — | — | — |  |
+| Flash Cart | 1.1 | Drawn | **Proven design**: the bare card edge and the shell's holes at their nominal places |  |  |  | — | 81.8×57.62 | — | — | — |  |
+| Flash Helper | 1.0 | Made, matches order | **Tested** | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | Made, matches order | **Tested** | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
 | Input Board | 1.1 | Drawn | **Proven design**: silkscreen text only |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Main Board | 1.0 | Made, matches order | **Tested** | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |

@@ -23,9 +23,9 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 
 | Board | Revision | What the silk says | Status | Label |
 |---|---|---|---|---|
-| [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, not tested yet | **Untested**: made, and not tested yet |
-| [Flash Cart](#flash-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Untested**: the bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet |
-| [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, not tested yet | **Untested**: made, and not tested yet |
+| [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [Flash Cart](#flash-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the bare card edge and the shell's holes at their nominal places |
+| [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
@@ -106,7 +106,7 @@ Fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ i
 
 ### Flash Cart Rev 1.1
 
-Drawn, not made yet. **Untested**: the bare card edge and the shell's holes at their nominal places, but Rev 1.0 hasn't been tested yet.
+Drawn, not made yet. **Proven design**: the bare card edge and the shell's holes at their nominal places.
 
 Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.1/digikey.csv), [mouser.csv](BOM/Flash%20Cart/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Flash%20Cart/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Flash%20Cart/Rev%201.1/mouser-through-hole.csv)
 
@@ -125,7 +125,7 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.1/digikey.csv), [mouser.csv](
 
 ### Flash Cart Rev 1.0
 
-Made, not tested yet. **Untested**: made, and not tested yet.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](BOM/Flash%20Cart/Rev%201.0/mouser.csv), [digikey-through-hole.csv](BOM/Flash%20Cart/Rev%201.0/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Flash%20Cart/Rev%201.0/mouser-through-hole.csv)
 
@@ -147,7 +147,7 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](
 
 ### Flash Helper Rev 1.0
 
-Made, not tested yet. **Untested**: made, and not tested yet.
+Made, tested. **Tested**.
 
 Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.0/digikey.csv), [mouser.csv](BOM/Flash%20Helper/Rev%201.0/mouser.csv)
 

@@ -14,10 +14,10 @@ normative for the whole rollout; the board it drives is
 
 ## Status
 
-**Written, built, and talking to a Mega 2560. Never yet connected to a cartridge**, because
-the Flash Helper and Flash Cart boards are still at fab. What that means in practice is set
-out in [*What has and has not been proved*](#what-has-and-has-not-been-proved) below — read
-it before trusting a number here.
+**Tested on real carts (2026-11-09).** Version 1.0.1 has identified, erased, programmed and
+read back Flash Cart Rev 1.0 in both its 512 KB and 1 MB builds, through the Flash Helper
+Rev 1.0, and both boards are recorded as tested. What that covers, and what it doesn't yet,
+is set out in [*What has and has not been proved*](#what-has-and-has-not-been-proved) below.
 
 | | |
 |---|---|
@@ -148,8 +148,26 @@ test rather than a bench session.
 
 ## What has and has not been proved
 
-Verified on an Arduino Mega 2560 R3 (`2341:0042`) running this firmware, **with an empty
-slot**:
+**On real carts** (2026-11-09, firmware 1.0.1, both carts hand-assembled):
+
+- `ID` answers `$BF $B7` (SST39SF040) on U1 of the 512 KB cart and on U1 and U2 of the 1 MB
+  cart: 128 of 128 attempts over 8 sessions on the 1 MB cart.
+- Chip erase, program and read-back, with every image verified byte for byte:
+  `BankedDemo-512K.crt` (99 pages programmed, 512 KB read back, 31 s), a 1 MB image with an
+  address pattern over all of U2 (2,147 pages), and a 1 MB image with pseudo-random data in
+  every bank (4,067 pages in 167 s, read back in 50 s).
+- So the bus cycles, the bank register (B0–B6), both chip selects, the address translation
+  and the JEDEC sequences are proved on silicon. The carts then ran on an ACE: BankedDemo, a
+  bank test reaching all 128 bank values, and the DOCS `flash-save` sample, whose save
+  survived a power cycle.
+- **One passing `id` isn't proof of a sound build.** A blank chip reads `$FF` at every address
+  whatever its address and `WE#` pins are doing, so a bad joint on those hides until the chip
+  refuses a command. And a joint that leaves an input floating can pass one session and fail
+  the next. Both carts needed rework before they passed every session. Run `id` several
+  times after a hand build: each run resets the Helper. The 6502-VCS `BOM.md` build notes
+  list the joints to check.
+
+**With an empty slot**, on an Arduino Mega 2560 R3 (`2341:0042`) running 1.0.0:
 
 - the handshake, `VERSION` (`protocol 1, 1.0.0, FH Programmer`), and 500 consecutive `PING`s
   with no stray or dropped frame;
@@ -165,9 +183,9 @@ slot**:
 - round trip 4.1 ms, and 12.2 ms per 256-byte `READ_PAGE`, which is about 25 seconds to read
   a 512 KB cart back.
 
-**Not proved, and not claimed.** Everything below the protocol: the bus cycles against a
-real cart, the bank register, the address translation, the JEDEC sequences, programming,
-erasing, and reading anything that is not an empty slot. Those wait on the boards. The host
+**Not yet proved.** `ERASE_SECTOR` through the Helper (the `flash-save` sample's sector erase
+ran on the ACE, not here), the `erase` and `read` commands on their own, and the 128 KB and
+256 KB builds (SST39SF010A, SST39SF020A), which no cart has been built with yet. The host
 tool's `--port fake:` runs the same commands against a simulated cart, which is a second
 reading of the same specification and not evidence about silicon.
 

@@ -1,6 +1,6 @@
 {
   "name": "6502-flash",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "description": "Host tool for the AC6502 Flash Helper: programs a Flash Cart in circuit through the card edge",
