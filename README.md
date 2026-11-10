@@ -124,6 +124,11 @@ the Flash Helper (an Arduino Mega 2560 shield with one connector on it) or by th
 - `$E000–$FFFF` is fixed to the last 8K of the primary flash, so the vectors and the bank-switching code can
   never be mapped out.
 - Existing 16K cart images run unmodified.
+- **Tested in the 512KB and 1MB builds** (2026-11-09): programmed through the Flash Helper, and run on an ACE,
+  banking into both chips and saving across a power cycle. The 128KB and 256KB builds (SST39SF010A, SST39SF020A)
+  use the same board but haven't been built yet.
+- Its 0.5 mm TSOP parts make it the hardest board in the family to build by hand: having JLCPCB assemble it is the
+  preferred way to get one. See the build notes in [BOM.md](BOM.md#build-notes).
 
 See [DESIGN.md](./Hardware/Flash%20Cart/Rev%201.0/DESIGN.md) for the memory map, the logic, the programming
 sequences and the build variants.
