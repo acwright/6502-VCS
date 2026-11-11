@@ -474,7 +474,7 @@
 				)
 			)
 		)
-		(property "Value" "20pF"
+		(property "Value" "22pF"
 			(at 1.34 -2.53 0)
 			(layer "F.SilkS")
 			(uuid "eb738320-cd16-40ea-9510-4f663c16a0cc")
@@ -534,7 +534,7 @@
 				)
 			)
 		)
-		(property "Mouser" "581-SR151A200JAR"
+		(property "Mouser" "581-SR151A220JAR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -546,7 +546,7 @@
 				)
 			)
 		)
-		(property "Digikey" "478-7724-ND"
+		(property "Digikey" "478-4846-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -707,7 +707,7 @@
 				)
 			)
 		)
-		(property "Value" "20pF"
+		(property "Value" "22pF"
 			(at 1.2 2.58 0)
 			(layer "F.SilkS")
 			(uuid "3cf917fb-a8df-405f-981d-6b2d245653c8")
@@ -767,7 +767,7 @@
 				)
 			)
 		)
-		(property "Mouser" "581-SR151A200JAR"
+		(property "Mouser" "581-SR151A220JAR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -779,7 +779,7 @@
 				)
 			)
 		)
-		(property "Digikey" "478-7724-ND"
+		(property "Digikey" "478-4846-ND"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")

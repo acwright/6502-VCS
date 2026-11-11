@@ -47,7 +47,7 @@ What changed in each revision of each board, newest first. The table above has t
 
 **Rev 1.1** (drawn, not yet made)
 
-- The silkscreen says `20pF` at C2 and C4 and `ATmega1284` at U2, the parts the BOM lists. Rev 1.0's says `22pF` and `ATmega1284-P`. Nothing else changed: the copper, mask, holes and outline are Rev 1.0's, so Rev 1.0's top panel fits.
+- The silkscreen says `ATmega1284` at U2, the part the BOM lists. Rev 1.0's says `ATmega1284-P`. C2 and C4 stay 22 pF as on Rev 1.0, the value every made board was built and tested with (2026-11-11). Rev 1.1 was drawn with 20 pF from 2026-11-04 to 2026-11-11, and never made that way. Nothing else changed: the copper, mask, holes and outline are Rev 1.0's, so Rev 1.0's top panel fits.
 
 **Rev 1.0**
 

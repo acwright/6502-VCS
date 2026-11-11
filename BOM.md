@@ -42,7 +42,6 @@ These change what you buy or fit. The boards themselves stay as they were made.
 
 | Board | Revision | Parts | Issue |
 |---|---|---|---|
-| Input Board | 1.0 | C2, C4 | The silk says 22 pF; fit 20 pF. A board built with 22 pF is fine. |
 | Input Board | 1.0 | U2 | The silk says ATmega1284-P; fit the ATmega1284 listed here. |
 | Main Board | 1.0 | R4, R10–R14 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
 | Main Board | 1.0 | J10 | Fit a box header for a ribbon cable. The silk shows a plain header, but the holes are the same. Pin 1 is the square pad, and the notch faces the even-numbered pins. |
@@ -169,7 +168,7 @@ Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.1/digikey.csv), [mouser.csv]
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
 |---|---|---|---|---|---|---|---|
 | C1, C3, C5–C8 | 6 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
-| C2, C4 | 2 | 20pF | KYOCERA AVX SR151A200JAR | [478-7724-ND](https://www.digikey.com/en/products/filter?keywords=478-7724-ND) | [581-SR151A200JAR](https://www.mouser.com/ProductDetail/581-SR151A200JAR) |  | |
+| C2, C4 | 2 | 22pF | KYOCERA AVX SR151A220JAR | [478-4846-ND](https://www.digikey.com/en/products/filter?keywords=478-4846-ND) | [581-SR151A220JAR](https://www.mouser.com/ProductDetail/581-SR151A220JAR) |  | |
 | D1 | 1 | 1N914 | onsemi 1N914 | [1N914FS-ND](https://www.digikey.com/en/products/filter?keywords=1N914FS-ND) | [512-1N914](https://www.mouser.com/ProductDetail/512-1N914) |  | |
 | J1 | 1 | PORT B | Adam Tech BHR-12-VUA | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | [737-BHR-12-VUA](https://www.mouser.com/ProductDetail/737-BHR-12-VUA) | 2057-BHR-12-VUA-ND | |
 | J2 | 1 | PORT A | Adam Tech BHR-12-VUA | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | [737-BHR-12-VUA](https://www.mouser.com/ProductDetail/737-BHR-12-VUA) | 2057-BHR-12-VUA-ND | |
@@ -198,7 +197,7 @@ Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.0/digikey.csv), [mouser.csv]
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other | Pre-soldered |
 |---|---|---|---|---|---|---|---|
 | C1, C3, C5–C8 | 6 | 100nF | YAGEO CC0805KRX7R9BB104 | [311-1140-1-ND](https://www.digikey.com/en/products/filter?keywords=311-1140-1-ND) | [603-CC805KRX7R9BB104](https://www.mouser.com/ProductDetail/603-CC805KRX7R9BB104) | LCSC [C49678](https://www.lcsc.com/search?q=C49678) | Yes |
-| C2, C4 | 2 | 22pF | KYOCERA AVX SR151A200JAR | [478-7724-ND](https://www.digikey.com/en/products/filter?keywords=478-7724-ND) | [581-SR151A200JAR](https://www.mouser.com/ProductDetail/581-SR151A200JAR) |  | |
+| C2, C4 | 2 | 22pF | KYOCERA AVX SR151A220JAR | [478-4846-ND](https://www.digikey.com/en/products/filter?keywords=478-4846-ND) | [581-SR151A220JAR](https://www.mouser.com/ProductDetail/581-SR151A220JAR) |  | |
 | D1 | 1 | 1N914 | onsemi 1N914 | [1N914FS-ND](https://www.digikey.com/en/products/filter?keywords=1N914FS-ND) | [512-1N914](https://www.mouser.com/ProductDetail/512-1N914) |  | |
 | J1 | 1 | PORT B | Adam Tech BHR-12-VUA | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | [737-BHR-12-VUA](https://www.mouser.com/ProductDetail/737-BHR-12-VUA) | 2057-BHR-12-VUA-ND | |
 | J2 | 1 | PORT A | Adam Tech BHR-12-VUA | [2057-BHR-12-VUA-ND](https://www.digikey.com/en/products/filter?keywords=2057-BHR-12-VUA-ND) | [737-BHR-12-VUA](https://www.mouser.com/ProductDetail/737-BHR-12-VUA) | 2057-BHR-12-VUA-ND | |
@@ -216,7 +215,6 @@ Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.0/digikey.csv), [mouser.csv]
 
 Pin headers are cut from strips, and the cart files count whole strips.
 
-- **C2, C4:** 16 MHz crystal capacitors: fit 20 pF. Made boards whose silk says 22 pF keep it; a board built with 22 pF is fine. Mouser has none in stock today.
 - **J4:** Male box header with a keying notch, for a 40-way ribbon cable.
 
 
