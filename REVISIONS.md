@@ -26,7 +26,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Input Board | 1.0 | Made, matches order | **Tested** | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
 | Input Board | 1.1 | Drawn | **Proven design**: silkscreen text only |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Main Board | 1.0 | Made, matches order | **Tested** | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |
-| Main Board | 1.1 | Drawn | **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |  |  |  | — | 100×100 | 6 mm | yes | — |  |
+| Main Board | 1.1 | Drawn | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.0 | Made, matches order | **Tested** | Y85 | 2026-01-14 | `6502-COB 379abb8` | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.1 | Drawn | **Proven design**: silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | ROM Cart | 1.0a | Made, matches order | **Tested**: built and tested. Takes an AT28C256 EEPROM | Y60 | 2025-10-06 | `6502-COB 0969243` | — | 81.8×57.62 | — | — | — | the board's silk says Rev 1.0; its U1 label, AT28C256, marks it as 1.0a |
@@ -121,6 +121,7 @@ What changed in each revision of each board, newest first. The table above has t
 - The joins are routed by hand (owner, 2026-11-06). One new via, 0.6/0.3 mm at (118.25, 112.25), stitches a ground island around C9 to the rest of `GND`; a standard 0.8/0.4 via has no room there except inside C9's pad.
 - The top panel loses its windows over J1, J2, J6, J7 and J8, and its notch over J5.
 - C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
+- U5, the 74HC00 that makes the RAM's and ROM's `RB` and `WB` from `PHI2` and `RWB`, is a 74HCT00 (SN74HCT00DR, LCSC C6764; P11, 2026-11-11). Its TTL input threshold ends `RB` and `WB` a few nanoseconds later after `PHI2` falls. An Alliance AS6C62256 with a fast-releasing 74HC00 lot in this gate misread at 2 MHz; a 74HCT00 there cured it in the ACE, writes included. Rev 1.0 keeps its 74HC00. Same footprint, so no track moved.
 - The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
 
 **Rev 1.0**

@@ -172,7 +172,7 @@ Each revision carries one of three labels:
 | Flash Cart | 1.1 | **Proven design** | The bare card edge and the shell's holes at their nominal places. |
 | Flash Helper | 1.0 | **Tested** | Built and tested. |
 | Input Board | 1.1 | **Proven design** | Silkscreen text only. |
-| Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
+| Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
 | Output Board | 1.1 | **Proven design** | Silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them. |
 | ROM Cart | 1.1 | **Proven design** | The bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does. |
 <!-- End of which revision to make -->

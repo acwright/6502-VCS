@@ -29,7 +29,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
+| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
 | [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |
 | [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
@@ -224,7 +224,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Main Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: 10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted.
+Drawn, not made yet. **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted.
 
 Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Main%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Main%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Main%20Board/Rev%201.1/mouser-through-hole.csv)
 
@@ -249,7 +249,8 @@ Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](
 | U1 | 1 | NE555 | Texas Instruments NE555DR | [296-6501-1-ND](https://www.digikey.com/en/products/filter?keywords=296-6501-1-ND) | [595-NE555DR](https://www.mouser.com/ProductDetail/595-NE555DR) | LCSC [C7593](https://www.lcsc.com/search?q=C7593) | Yes |
 | U2 | 1 | AS6C62256 | Alliance Memory AS6C62256-55PCN | [1450-1033-ND](https://www.digikey.com/en/products/filter?keywords=1450-1033-ND) | [913-AS6C62256-55PCN](https://www.mouser.com/ProductDetail/913-AS6C62256-55PCN) |  | |
 | U3 | 1 | AT28C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  | |
-| U4, U5, U7 | 3 | 74HC00 | Nexperia USA Inc. 74HC00D,653 | [1727-2773-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2773-1-ND) | [771-74HC00D-T](https://www.mouser.com/ProductDetail/771-74HC00D-T) | LCSC [C5586](https://www.lcsc.com/search?q=C5586) | Yes |
+| U4, U7 | 2 | 74HC00 | Nexperia USA Inc. 74HC00D,653 | [1727-2773-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2773-1-ND) | [771-74HC00D-T](https://www.mouser.com/ProductDetail/771-74HC00D-T) | LCSC [C5586](https://www.lcsc.com/search?q=C5586) | Yes |
+| U5 | 1 | 74HCT00 | Texas Instruments SN74HCT00DR | [296-14860-1-ND](https://www.digikey.com/en/products/filter?keywords=296-14860-1-ND) | [595-SN74HCT00DR](https://www.mouser.com/ProductDetail/595-SN74HCT00DR) | LCSC [C6764](https://www.lcsc.com/search?q=C6764) | Yes |
 | U6 | 1 | 65C02 | Western Design Center (WDC) W65C02S6TPG-14 |  | [955-W65C02S6TPG-14](https://www.mouser.com/ProductDetail/955-W65C02S6TPG-14) |  | |
 | X1 | 1 | 1 MHz | ECS Inc. ECS-100AX-010 | [X937-ND](https://www.digikey.com/en/products/filter?keywords=X937-ND) | [520-TCF100-X](https://www.mouser.com/ProductDetail/520-TCF100-X) |  | |
 | U3 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | | |
@@ -258,6 +259,7 @@ Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](
 
 - **J3:** What LCSC C2988369 is. The footprint is HRO TYPE-C-31-M-12, and JLCPCB placed this part on the made boards.
 - **J10:** Male box header with a keying notch, for a 40-way ribbon cable.
+- **U5:** The RAM's RB/WB gate (P11, 2026-11-11): its TTL thresholds end RB and WB a few ns later after PHI2 falls.
 
 ### Main Board Rev 1.0
 

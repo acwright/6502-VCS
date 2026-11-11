@@ -73,7 +73,7 @@
   ],
   "VCS|Main Board|1.1": [
    "Proven design",
-   "10k pull-ups, small part moves and tracks rerouted. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted"
+   "10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted"
   ],
   "VCS|Output Board|1.1": [
    "Proven design",

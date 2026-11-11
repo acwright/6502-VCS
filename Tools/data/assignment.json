@@ -109,7 +109,7 @@
  "VCS|Main Board|1.1|C8": "100nF|C_0805_2012Metric",
  "VCS|Main Board|1.1|U7": "74HC00|SOIC-14_3.9x8.7mm_P1.27mm",
  "VCS|Main Board|1.1|D1": "1N5819|D_SOD-323F",
- "VCS|Main Board|1.1|U5": "74HC00|SOIC-14_3.9x8.7mm_P1.27mm",
+ "VCS|Main Board|1.1|U5": "74HCT00|SOIC-14_3.9x8.7mm_P1.27mm",
  "VCS|Main Board|1.1|U6": "65C02|DIP-40_W15.24mm",
  "VCS|Main Board|1.1|R10": "10k|R_0805_2012Metric",
  "VCS|Main Board|1.1|C9": "100nF|C_0805_2012Metric",
