@@ -10749,17 +10749,6 @@
 			(justify left)
 		)
 	)
-	(gr_text "JLCJLCJLCJLC"
-		(at 128.695 85.46 0)
-		(layer "F.SilkS")
-		(uuid "54001f19-9d0c-469a-9220-d224ff7959f5")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(gr_text "GND\n"
 		(at 175.3 66.1 0)
 		(layer "F.SilkS")
