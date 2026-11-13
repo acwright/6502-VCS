@@ -211,7 +211,7 @@
  "VCS|Flash Cart|1.1|U1": "SST39SF040|TSOP-I-32_11.8x8mm_P0.5mm",
  "VCS|Flash Cart|1.1|C3": "100nF|C_0603_1608Metric",
  "VCS|ROM Cart|1.1|U1": "AT28C256|DIP-28_W15.24mm",
- "VCS|ROM Cart|1.1|C1": "100nF|disc-p5",
- "VCS|ROM Cart|1.1|C2": "100nF|disc-p5",
+ "VCS|ROM Cart|1.1|C1": "100nF|disc-p2.5",
+ "VCS|ROM Cart|1.1|C2": "100nF|disc-p2.5",
  "VCS|ROM Cart|1.1|U2": "74HC138|DIP-16_W7.62mm"
 }

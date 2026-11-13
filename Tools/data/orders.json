@@ -89,7 +89,7 @@
   ],
   "VCS|ROM Cart|1.1": [
    "Proven design",
-   "The bare card edge and the shell's holes at their nominal places; it takes the AT28C256, as Rev 1.0a does"
+   "Either ROM chip through two solder jumpers, each setting a tested board's wiring; capacitor pitch; the bare card edge and the shell's holes at their nominal places"
   ]
  }
 }

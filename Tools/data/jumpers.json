@@ -204,5 +204,21 @@
   "do": "Leave it empty: the VCS takes cartridges, which ground `EXP0` and `EXP1`. Rev 1.1 has no J8.",
   "need": null,
   "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "ROM Cart",
+  "revs": [
+   "1.1"
+  ],
+  "refs": [
+   "JP1",
+   "JP2"
+  ],
+  "what": "ROM chip: two three-pad solder jumpers set U1 for an AT28C256 EEPROM (`28C`) or an AT27C256 EPROM (`27C`). JP1 puts `A14` or VPP's `VCC` on pin 1; JP2 puts `VCC`, holding the EEPROM's `/WE` high, or `A14` on pin 27.",
+  "shipped": "Bridged 1–2 on both, `28C`, for the AT28C256.",
+  "do": "Leave both on `28C` for the AT28C256 the parts list orders. For an AT27C256, cut the bridge between pads 1 and 2 on both, check with a meter that they no longer connect, and bridge pads 2 and 3 (`27C`) on both. Never fit an AT28C256 with the jumpers on `27C`: its `/WE` would be on `A14`, so a write to the cart's addresses could overwrite it.",
+  "need": null,
+  "shunts": 0
  }
 ]
