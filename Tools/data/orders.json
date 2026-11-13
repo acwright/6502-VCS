@@ -89,7 +89,7 @@
   ],
   "VCS|ROM Cart|1.1": [
    "Proven design",
-   "Either ROM chip through two solder jumpers, each setting a tested board's wiring; capacitor pitch; the bare card edge and the shell's holes at their nominal places"
+   "Either ROM chip through two solder jumpers, each setting a tested board's wiring; a ROM bank option, not fitted, whose pull-up reads the half Rev 1.0 reads; capacitor pitch; the bare card edge and the shell's holes at their nominal places"
   ]
  }
 }

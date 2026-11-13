@@ -220,5 +220,20 @@
   "do": "Leave both on `28C` for the AT28C256 the parts list orders. For an AT27C256, cut the bridge between pads 1 and 2 on both, check with a meter that they no longer connect, and bridge pads 2 and 3 (`27C`) on both. Never fit an AT28C256 with the jumpers on `27C`: its `/WE` would be on `A14`, so a write to the cart's addresses could overwrite it.",
   "need": null,
   "shunts": 0
+ },
+ {
+  "repo": "VCS",
+  "board": "ROM Cart",
+  "revs": [
+   "1.1"
+  ],
+  "refs": [
+   "J2"
+  ],
+  "what": "ROM bank: which 16K half of the ROM chip the cart reads. An option for tinkerers, not fitted.",
+  "shipped": "Not fitted. R1 holds the ROM on its upper 16K (`HI`).",
+  "do": "Nothing, for a one-program cart. To read the lower 16K, fit a 3-pin header and a shunt on `LO`; on `HI`, or with no shunt, it reads the upper 16K. Keep R1 fitted either way.",
+  "need": null,
+  "shunts": 0
  }
 ]

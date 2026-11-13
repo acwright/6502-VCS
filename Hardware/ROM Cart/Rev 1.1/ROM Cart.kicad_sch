@@ -1782,6 +1782,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1919,6 +2106,146 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -2430,6 +2757,17 @@
 		)
 		(uuid "66469e1f-c8e1-5c2d-8121-74138530bd58")
 	)
+	(text "ROM bank: R1 holds ROM_A14 high, so the ROM's upper 16K (HI) is read, as made.\nJ2 is not fitted. Fit it, with a shunt on LO, to read the lower 16K."
+		(exclude_from_sim no)
+		(at 177.8 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b70b2161-255c-4c73-8676-f9b6561a2a2b")
+	)
 	(text "ROM"
 		(exclude_from_sim no)
 		(at 160.02 93.98 0)
@@ -2441,9 +2779,9 @@
 		)
 		(uuid "f00db70c-2681-45b1-93a9-e39005bb54e1")
 	)
-	(text "ROM chip select: bridged 1-2 (28C) for an AT28C256, as made.\nFor an AT27C256, cut both 1-2 and bridge 2-3 (27C):\nJP1 puts VPP on VCC, JP2 puts A14 on pin 27."
+	(text "ROM chip select: bridged 1-2 (28C) for an AT28C256, as made.\nFor an AT27C256, cut both 1-2 and bridge 2-3 (27C):\nJP1 puts VPP on VCC, JP2 puts ROM_A14 on pin 27."
 		(exclude_from_sim no)
-		(at 147.32 115.57 0)
+		(at 190.5 119.126 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2499,6 +2837,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd5f8734-26f6-4e2f-887f-4cdd3ee6e528")
+	)
+	(junction
+		(at 195.58 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ce20386c-e372-4de8-8243-b0312f468289")
 	)
 	(no_connect
 		(at 64.77 63.5)
@@ -2632,7 +2976,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 127) (xy 203.2 127)
+			(xy 243.84 124.46) (xy 246.38 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2672,7 +3016,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 127) (xy 187.96 127)
+			(xy 233.68 124.46) (xy 231.14 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2702,7 +3046,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 127) (xy 157.48 127)
+			(xy 203.2 124.46) (xy 200.66 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3042,7 +3386,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 130.81) (xy 195.58 133.35)
+			(xy 238.76 128.27) (xy 238.76 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3092,6 +3436,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 157.48) (xy 190.5 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8416f89e-9bb3-4900-8583-8c73297601db")
+	)
+	(wire
+		(pts
 			(xy 49.53 162.56) (xy 69.85 162.56)
 		)
 		(stroke
@@ -3122,7 +3476,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 130.81) (xy 165.1 133.35)
+			(xy 208.28 128.27) (xy 208.28 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3139,6 +3493,16 @@
 			(type default)
 		)
 		(uuid "8af3c836-5116-4c77-b35f-48b96aa47c8c")
+	)
+	(wire
+		(pts
+			(xy 213.36 154.94) (xy 210.82 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d0a6831-bb4b-4556-a9e8-338a47a2ead7")
 	)
 	(wire
 		(pts
@@ -3229,6 +3593,16 @@
 			(type default)
 		)
 		(uuid "a6d6c515-4656-4231-bc20-41c29d2a4b66")
+	)
+	(wire
+		(pts
+			(xy 195.58 147.32) (xy 195.58 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aae62c85-b581-43d6-a848-0d79c9724966")
 	)
 	(wire
 		(pts
@@ -3362,7 +3736,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 127) (xy 172.72 127)
+			(xy 213.36 124.46) (xy 215.9 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3422,6 +3796,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 160.02) (xy 210.82 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e541e69f-2a14-4886-bd56-77f48a79be87")
+	)
+	(wire
+		(pts
 			(xy 95.25 66.04) (xy 99.06 66.04)
 		)
 		(stroke
@@ -3452,6 +3836,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 157.48) (xy 195.58 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed25f7c6-be63-4d7f-84d1-b8b199c015e0")
+	)
+	(wire
+		(pts
 			(xy 154.94 68.58) (xy 152.4 68.58)
 		)
 		(stroke
@@ -3479,6 +3873,16 @@
 			(type default)
 		)
 		(uuid "f4d584bb-d4dd-40e8-ab2d-7cd714b24ff3")
+	)
+	(wire
+		(pts
+			(xy 195.58 154.94) (xy 195.58 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbd3ad2f-44a4-4b98-82a2-9ab9ae558396")
 	)
 	(global_label "A3"
 		(shape output)
@@ -3678,6 +4082,28 @@
 			)
 		)
 	)
+	(global_label "GND"
+		(shape passive)
+		(at 210.82 160.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3001c194-9a30-4481-99ed-f076df0da452")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.82 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "A5"
 		(shape output)
 		(at 99.06 83.82 0)
@@ -3746,7 +4172,7 @@
 	)
 	(global_label "A14_WE"
 		(shape output)
-		(at 195.58 133.35 270)
+		(at 238.76 130.81 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3755,7 +4181,7 @@
 		)
 		(uuid "3b595362-dc30-4ebe-8374-541daf269cb0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.58 133.35 90)
+			(at 238.76 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3986,6 +4412,28 @@
 			)
 		)
 	)
+	(global_label "ROM_A14"
+		(shape output)
+		(at 190.5 157.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a2c720b-5c18-49ba-84e1-e8048a44c60b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "A10"
 		(shape input)
 		(at 190.5 73.66 0)
@@ -3998,6 +4446,28 @@
 		(uuid "5fbdf6e8-7637-4481-b0f5-624b678baa0d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 190.5 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape passive)
+		(at 210.82 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6175e7b1-a3eb-4812-bede-d9cd45f38b08")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.82 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4054,7 +4524,7 @@
 	)
 	(global_label "VCC"
 		(shape passive)
-		(at 187.96 127 180)
+		(at 231.14 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4063,7 +4533,7 @@
 		)
 		(uuid "717c65c3-32c8-49f3-85bf-6a7a8aacfa28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.96 127 0)
+			(at 231.14 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4074,9 +4544,9 @@
 			)
 		)
 	)
-	(global_label "A14"
+	(global_label "ROM_A14"
 		(shape input)
-		(at 157.48 127 180)
+		(at 200.66 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4085,7 +4555,7 @@
 		)
 		(uuid "73672da3-e1a4-460f-9f8f-620adeada6c9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.48 127 0)
+			(at 200.66 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4316,9 +4786,9 @@
 			)
 		)
 	)
-	(global_label "A14"
+	(global_label "ROM_A14"
 		(shape input)
-		(at 203.2 127 0)
+		(at 246.38 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4327,7 +4797,7 @@
 		)
 		(uuid "8fb48877-e08a-4af9-b238-4c0bf0ee2c05")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 203.2 127 0)
+			(at 246.38 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4472,7 +4942,7 @@
 	)
 	(global_label "A14_VPP"
 		(shape output)
-		(at 165.1 133.35 270)
+		(at 208.28 130.81 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4481,7 +4951,7 @@
 		)
 		(uuid "a10898ae-da10-4ec4-8ecd-b2d67553a63b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.1 133.35 90)
+			(at 208.28 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4494,7 +4964,7 @@
 	)
 	(global_label "VCC"
 		(shape passive)
-		(at 172.72 127 0)
+		(at 215.9 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4503,7 +4973,7 @@
 		)
 		(uuid "a13a5a49-4f8e-4dae-a843-560b621f764e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 172.72 127 0)
+			(at 215.9 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4702,6 +5172,28 @@
 		(uuid "c91c2cac-96fa-5eab-aefe-c801936e51a5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 99.06 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape passive)
+		(at 195.58 144.78 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca35a778-6913-4d0a-9ca8-ee62815b5c7d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.58 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5572,6 +6064,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 218.44 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(uuid "17b036d4-aff3-40bf-a199-9eb1d83f00fc")
+		(property "Reference" "J2"
+			(at 218.44 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ROM BANK"
+			(at 218.44 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "S1011EC-40-ND"
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "200-TSW14007TS"
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 218.44 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "63cdaadf-db74-47f3-8fed-b3024ff1ce9f")
+		)
+		(pin "2"
+			(uuid "3a593b7e-7982-4c8a-8d74-6b573ef45d08")
+		)
+		(pin "3"
+			(uuid "531f4045-6214-40a1-acb5-e1366d3eb88c")
+		)
+		(instances
+			(project "ROM Cart"
+				(path "/24157f0f-c5f9-4ba2-930b-b501b00d1e61"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 80.01 176.53 270)
 		(unit 1)
@@ -5864,39 +6493,40 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 195.58 127 0)
+		(lib_id "Device:R")
+		(at 195.58 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "85915534-b22f-4a26-b82c-35b1c5d631a2")
-		(property "Reference" "JP2"
-			(at 195.58 124.46 0)
+		(uuid "84a78cfb-803c-4c3e-926e-47a4c9fb70fb")
+		(property "Reference" "R1"
+			(at 197.612 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SolderJumper_3_Bridged12"
-			(at 195.58 133.35 0)
-			(hide yes)
+		(property "Value" "10k"
+			(at 197.612 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 195.58 127 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 195.58 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5907,7 +6537,142 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 127 0)
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "13-MFR-12FTF52-10KCT-ND"
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "603-MFR-12FTF52-10K"
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a864eb4-3bec-4ebe-8fde-ae311fb3ce66")
+		)
+		(pin "2"
+			(uuid "87352ecb-0905-47ff-a17e-ccca6ba400ef")
+		)
+		(instances
+			(project "ROM Cart"
+				(path "/24157f0f-c5f9-4ba2-930b-b501b00d1e61"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Bridged12")
+		(at 238.76 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85915534-b22f-4a26-b82c-35b1c5d631a2")
+		(property "Reference" "JP2"
+			(at 238.76 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_3_Bridged12"
+			(at 238.76 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
+			(at 238.76 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5918,7 +6683,7 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 195.58 127 0)
+			(at 238.76 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6028,7 +6793,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 165.1 127 0)
+		(at 208.28 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6038,7 +6803,7 @@
 		(dnp no)
 		(uuid "98b9f618-ba9b-4071-bef2-8ed61ea98e16")
 		(property "Reference" "JP1"
-			(at 165.1 124.46 0)
+			(at 208.28 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6048,7 +6813,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 165.1 133.35 0)
+			(at 208.28 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6059,7 +6824,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm"
-			(at 165.1 127 0)
+			(at 208.28 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,7 +6835,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 127 0)
+			(at 208.28 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +6846,7 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 165.1 127 0)
+			(at 208.28 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

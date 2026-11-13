@@ -114,7 +114,9 @@ Swappable ROM cartridge for the VCS system. Rev 1.0 came in two versions, one fo
 - **Rev 1.0b** — Uses the **27C256** 32KB EPROM (UV-erasable).
 
 **Rev 1.1** (drawn, not yet made) takes either chip. Two solder jumpers, JP1 and JP2, ship set for the 28C256
-(`28C`); cut and re-bridge both to `27C` for a 27C256. See *Jumpers* below and the build notes in `BOM.md`.
+(`28C`); cut and re-bridge both to `27C` for a 27C256. It also has an option for tinkerers, not fitted:
+J2, `ROM BANK`, picks the chip's upper 16K (`HI`, as made) or its lower 16K (`LO`), so one chip can hold two
+programs. See *Jumpers* below and the build notes in `BOM.md`.
 
 ### Flash Cart
 `Hardware/Flash Cart/`
@@ -177,7 +179,7 @@ Each revision carries one of three labels:
 | Input Board | 1.1 | **Proven design** | Silkscreen text only. |
 | Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
 | Output Board | 1.1 | **Proven design** | Silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them. |
-| ROM Cart | 1.1 | **Proven design** | Either ROM chip through two solder jumpers, each setting a tested board's wiring; capacitor pitch; the bare card edge and the shell's holes at their nominal places. |
+| ROM Cart | 1.1 | **Proven design** | Either ROM chip through two solder jumpers, each setting a tested board's wiring; a ROM bank option, not fitted, whose pull-up reads the half Rev 1.0 reads; capacitor pitch; the bare card edge and the shell's holes at their nominal places. |
 <!-- End of which revision to make -->
 
 ## Firmware
@@ -295,6 +297,7 @@ Where a header needs a shunt, the board's BOM lists it.
 
 | Rev | Jumper | What it's for | As shipped | What to do | Needed |
 |---|---|---|---|---|---|
+| 1.1 | J2 | ROM bank: which 16K half of the ROM chip the cart reads. An option for tinkerers, not fitted. | Not fitted. R1 holds the ROM on its upper 16K (`HI`). | Nothing, for a one-program cart. To read the lower 16K, fit a 3-pin header and a shunt on `LO`; on `HI`, or with no shunt, it reads the upper 16K. Keep R1 fitted either way. |  |
 | 1.1 | JP1, JP2 | ROM chip: two three-pad solder jumpers set U1 for an AT28C256 EEPROM (`28C`) or an AT27C256 EPROM (`27C`). JP1 puts `A14` or VPP's `VCC` on pin 1; JP2 puts `VCC`, holding the EEPROM's `/WE` high, or `A14` on pin 27. | Bridged 1–2 on both, `28C`, for the AT28C256. | Leave both on `28C` for the AT28C256 the parts list orders. For an AT27C256, cut the bridge between pads 1 and 2 on both, check with a meter that they no longer connect, and bridge pads 2 and 3 (`27C`) on both. Never fit an AT28C256 with the jumpers on `27C`: its `/WE` would be on `A14`, so a write to the cart's addresses could overwrite it. |  |
 
 <!-- End of jumpers -->

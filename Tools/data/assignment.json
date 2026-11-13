@@ -213,5 +213,7 @@
  "VCS|ROM Cart|1.1|U1": "AT28C256|DIP-28_W15.24mm",
  "VCS|ROM Cart|1.1|C1": "100nF|disc-p2.5",
  "VCS|ROM Cart|1.1|C2": "100nF|disc-p2.5",
- "VCS|ROM Cart|1.1|U2": "74HC138|DIP-16_W7.62mm"
+ "VCS|ROM Cart|1.1|U2": "74HC138|DIP-16_W7.62mm",
+ "VCS|ROM Cart|1.1|J2": "pinheader-1x03-2.54-vertical",
+ "VCS|ROM Cart|1.1|R1": "10k|axial"
 }

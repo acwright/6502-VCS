@@ -34,7 +34,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |
 | [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
 | [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested | **Tested**: built and tested. Takes an AT27C256 EPROM |
-| [ROM Cart](#rom-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: either ROM chip through two solder jumpers, each setting a tested board's wiring; capacitor pitch; the bare card edge and the shell's holes at their nominal places |
+| [ROM Cart](#rom-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: either ROM chip through two solder jumpers, each setting a tested board's wiring; a ROM bank option, not fitted, whose pull-up reads the half Rev 1.0 reads; capacitor pitch; the bare card edge and the shell's holes at their nominal places |
 
 ## Known issues
 
@@ -98,9 +98,11 @@ Fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ i
 
 **Building a Rev 1.1:** JP1 and JP2 ship bridged for the AT28C256 that the parts list orders (`28C`). For an AT27C256 (AT27C256R-70PU, Digi-Key AT27C256R-70PU-ND), cut the bridge between pads 1 and 2 on both jumpers, check with a meter that they no longer connect, and bridge pads 2 and 3 (`27C`) with solder. Never fit an AT28C256 with the jumpers on `27C`: its `/WE` would be on `A14`, so a write to the cart's addresses could overwrite it.
 
-**Building a Rev 1.0a:** nothing to do. A Rev 1.0a takes the AT28C256, which Rev 1.1 takes as shipped. Rev 1.1's other changes need nothing on a built board: its card edge has no solder mask on the tab, and a Rev 1.0a's masked edge works in the slot; its shell holes moved to their nominal places, by up to 0.18 mm, and the cart shell is drawn for a Rev 1.0a's; and its capacitors are 2.5 mm pitch, where a Rev 1.0a takes the 5 mm ones its parts list names. A Rev 1.0a can't take an AT27C256: use a Rev 1.0b or a Rev 1.1 for that chip.
+**The ROM bank option (J2, not fitted).** A Rev 1.1 reads the upper 16K of its 32K chip, chip addresses `$4000`–`$7FFF`, which is where a 6502-CRT `.crt` puts the program. R1 (10k) holds it there, so always fit R1. To use the lower 16K (`$0000`–`$3FFF`) as well, for a second program, fit J2: three pins cut from a 2.54 mm header strip (Digi-Key S1011EC-40-ND) and a shunt (Digi-Key S9337-ND). Neither is in the parts list. A shunt on `LO` reads the lower 16K; on `HI`, or with no shunt, the upper. 6502-CRT's image and the emulator only know the upper half, so a program for the lower half goes into the image by hand.
 
-**Building a Rev 1.0b:** nothing to do. A Rev 1.0b takes the AT27C256, as a Rev 1.1 does with its jumpers on `27C`. A Rev 1.0b leaves the chip's VPP pin open where Rev 1.1 joins it to `VCC`; the datasheet allows either for reading. Rev 1.1's other changes need nothing on a built board: its card edge has no solder mask on the tab, and a Rev 1.0b's masked edge works in the slot; its shell holes moved to their nominal places, by up to 0.18 mm, and the cart shell is drawn for a Rev 1.0b's; and its capacitors are 2.5 mm pitch, where a Rev 1.0b takes the 5 mm ones its parts list names.
+**Building a Rev 1.0a:** nothing to do. A Rev 1.0a takes the AT28C256, which Rev 1.1 takes as shipped. Rev 1.1's other changes need nothing on a built board: its card edge has no solder mask on the tab, and a Rev 1.0a's masked edge works in the slot; its shell holes moved to their nominal places, by up to 0.18 mm, and the cart shell is drawn for a Rev 1.0a's; and its capacitors are 2.5 mm pitch, where a Rev 1.0a takes the 5 mm ones its parts list names. A Rev 1.0a can't take an AT27C256: use a Rev 1.0b or a Rev 1.1 for that chip. Rev 1.1's ROM bank option can't be added: the chip's A14 is on the bus's `A14`, which is always high when the cart is read, and there are no pads to change it.
+
+**Building a Rev 1.0b:** nothing to do. A Rev 1.0b takes the AT27C256, as a Rev 1.1 does with its jumpers on `27C`. A Rev 1.0b leaves the chip's VPP pin open where Rev 1.1 joins it to `VCC`; the datasheet allows either for reading. Rev 1.1's other changes need nothing on a built board: its card edge has no solder mask on the tab, and a Rev 1.0b's masked edge works in the slot; its shell holes moved to their nominal places, by up to 0.18 mm, and the cart shell is drawn for a Rev 1.0b's; and its capacitors are 2.5 mm pitch, where a Rev 1.0b takes the 5 mm ones its parts list names. Rev 1.1's ROM bank option can't be added: the chip's A14 is on the bus's `A14`, which is always high when the cart is read, and there are no pads to change it.
 
 <!-- End of build notes. -->
 
@@ -373,17 +375,20 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### ROM Cart Rev 1.1
 
-Drawn, not made yet. **Proven design**: either ROM chip through two solder jumpers, each setting a tested board's wiring; capacitor pitch; the bare card edge and the shell's holes at their nominal places.
+Drawn, not made yet. **Proven design**: either ROM chip through two solder jumpers, each setting a tested board's wiring; a ROM bank option, not fitted, whose pull-up reads the half Rev 1.0 reads; capacitor pitch; the bare card edge and the shell's holes at their nominal places.
 
 Cart files: [digikey.csv](BOM/ROM%20Cart/Rev%201.1/digikey.csv), [mouser.csv](BOM/ROM%20Cart/Rev%201.1/mouser.csv)
 
 | Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
 |---|---|---|---|---|---|---|
 | C1, C2 | 2 | 100nF | KYOCERA AVX SR205C104KAR | [478-3187-ND](https://www.digikey.com/en/products/filter?keywords=478-3187-ND) | [581-SR205C104KAR](https://www.mouser.com/ProductDetail/581-SR205C104KAR) |  |
+| R1 | 1 | 10k | YAGEO MFR-12FTF52-10K | [13-MFR-12FTF52-10KCT-ND](https://www.digikey.com/en/products/filter?keywords=13-MFR-12FTF52-10KCT-ND) | [603-MFR-12FTF52-10K](https://www.mouser.com/ProductDetail/603-MFR-12FTF52-10K) |  |
 | U1 | 1 | AT28C256 / AT27C256 | Microchip Technology AT28C256-15PU | [AT28C256-15PU-ND](https://www.digikey.com/en/products/filter?keywords=AT28C256-15PU-ND) | [556-AT28C25615PU](https://www.mouser.com/ProductDetail/556-AT28C25615PU) |  |
 | U2 | 1 | 74HC138 | Texas Instruments SN74HC138N | [296-1575-5-ND](https://www.digikey.com/en/products/filter?keywords=296-1575-5-ND) | [595-SN74HC138N](https://www.mouser.com/ProductDetail/595-SN74HC138N) |  |
 | U2 | 1 | Socket | IC socket, 16-pin, 0.3 in | [3M5475-ND](https://www.digikey.com/en/products/filter?keywords=3M5475-ND) | [517-4816-3004-CP](https://www.mouser.com/ProductDetail/517-4816-3004-CP) | |
 | U1 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | |
+
+**Do not fit** J2: see the build notes.
 
 ### ROM Cart Rev 1.0b
 
