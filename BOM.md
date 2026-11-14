@@ -26,7 +26,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Flash Cart](#flash-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the bare card edge and the shell's holes at their nominal places |
 | [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [Flash Helper](#flash-helper) | 1.1 | — | Drawn, not made yet | **Proven design**: rev 1.0's circuit; J1's reference and the logo by the family's rules |
+| [Flash Helper](#flash-helper) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: J1's reference resized and the logo moved; silkscreen only |
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
@@ -156,7 +156,7 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](
 
 ### Flash Helper Rev 1.1
 
-Drawn, not made yet. **Proven design**: rev 1.0's circuit; J1's reference and the logo by the family's rules.
+Drawn, not made yet. **Proven design**: J1's reference resized and the logo moved; silkscreen only.
 
 Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.1/digikey.csv), [mouser.csv](BOM/Flash%20Helper/Rev%201.1/mouser.csv)
 
