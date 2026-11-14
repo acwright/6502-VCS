@@ -2179,7 +2179,7 @@
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket, LongPads")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads")
 		(property "Reference" "U2"
-			(at 3.7 -2.52 0)
+			(at 3.81 -2.32825 0)
 			(layer "F.SilkS")
 			(uuid "1f134fc6-e180-4aa2-9f66-3dfefbe0d2b6")
 			(effects

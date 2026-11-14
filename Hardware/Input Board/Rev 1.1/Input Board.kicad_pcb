@@ -4854,7 +4854,7 @@
 			)
 		)
 		(property "Value" "65C22"
-			(at 7.45 50.89 90)
+			(at 7.62 50.58825 90)
 			(layer "F.SilkS")
 			(uuid "b923bcf4-e85b-4326-998a-53e3e50b4d8b")
 			(effects
@@ -7835,7 +7835,7 @@
 		(descr "SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U3"
-			(at 2.775 -6.345 0)
+			(at 0 -6.27325 0)
 			(layer "F.SilkS")
 			(uuid "e8af5133-d314-42a5-b3f2-fcaf1cc62057")
 			(effects
