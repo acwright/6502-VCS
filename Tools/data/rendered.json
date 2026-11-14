@@ -1,16 +1,16 @@
 {
  "VCS|Flash Cart|1.0": "9cdc02088f8c50b8b24a7d6e10241fe7b7ca46fc",
- "VCS|Flash Cart|1.1": "87b6218157fa2303a95cbeb634752aaa4716a529",
+ "VCS|Flash Cart|1.1": "720d4575e1e9aa91c608d5b5d9d2d0a9b78f09a7",
  "VCS|Flash Helper|1.0": "c53ed874fe718e2efb4166db2df0e11d0b797630",
- "VCS|Flash Helper|1.1": "37ce622bf56b756b006b621ffb520c06e5b8da52",
+ "VCS|Flash Helper|1.1": "998a2ee5a5203957309e8093586d9ca7988346c8",
  "VCS|Input Board|1.0": "bfb0d6e481051eabefac946c50a17967add61d3d",
- "VCS|Input Board|1.1": "42189d853866711728aa174c8f6c5c862d962c08",
+ "VCS|Input Board|1.1": "561aa1be74473be4ff7410b6f8b5a1f4ef715f7f",
  "VCS|Main Board|1.0": "36560174c8bf3731f1f4394374c6f296b07dc128",
- "VCS|Main Board|1.1": "6871391d591f90455fb1846f0fb54470401b8840",
+ "VCS|Main Board|1.1": "7e5a78c575d4489b5f19de4ecc33190b79ee3d00",
  "VCS|Output Board|1.0": "b5ca579509e548e860499c05d62ca00072fba0f0",
- "VCS|Output Board|1.1": "e4693944ac40572343b8a910c36d15cc2cc60f8f",
+ "VCS|Output Board|1.1": "6857b6ed920082bb326564ac1ac465276f75c961",
  "VCS|ROM Cart|1.0a": "d1ae9592bea3e970d28c3e6711a76e2f92913b80",
  "VCS|ROM Cart|1.0b": "dfcaf6471dc28620aa01fdea6e1bad9fe15fe8f1",
- "VCS|ROM Cart|1.1": "de24772515b83bdf164e74af04b09e1f97d951a0",
+ "VCS|ROM Cart|1.1": "5a9083ebb5eb2e2d0f98079f636886a96bbd38ab",
  "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares."
 }
