@@ -1,0 +1,7 @@
+{
+ "_about": "Newest revisions not yet made whose board logo is not where Tools/logos/standard.json puts it, each with the KICAD.md item that moves it. placement.py --check reports them without failing, and fails on an entry that is no longer needed. \"exceptions\" lists the boards whose logo has no other place to go, each ruled by the owner: the logo stays, and the check fails on an entry no longer needed.",
+ "pending": {},
+ "exceptions": {
+  "VCS|Flash Cart|1.1": "K40: the owner ruled 2026-11-13 that a logo with no other place to go is an exception; C5 and the C4 and C5 references take its place"
+ }
+}

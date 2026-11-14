@@ -3,13 +3,13 @@
  "VCS|Flash Cart|1.1": "ed87afe6b26d975c90b4ff23b6a02995077c340e",
  "VCS|Flash Helper|1.0": "3c6d188382a89ceccc3e79a7d25ca77b8dd50220",
  "VCS|Input Board|1.0": "8f9f77243aea21f0503fdf100b7d2cbbd91edd47",
- "VCS|Input Board|1.1": "bd91de5fd62243ea6cf711eee4a2b389e448a671",
+ "VCS|Input Board|1.1": "bb635ccde2dbdc49c25189a12f8010d304cfadb7",
  "VCS|Main Board|1.0": "f0ad83f865afeb865e0ae39b74adf650be27a259",
  "VCS|Main Board|1.1": "ae08fb44e5308199095fbd0180451a30e6820250",
  "VCS|Output Board|1.0": "c589201edc47dfda47c66bf2d09bc299ebc43acd",
- "VCS|Output Board|1.1": "e6512f5657f1ebc3c1e1f739c436025c3edbb60b",
+ "VCS|Output Board|1.1": "24580443ee72cefb7479920b6161ef457b09e6c2",
  "VCS|ROM Cart|1.0a": "f9f3218974456fccb3160d7fea1506df84626cb1",
  "VCS|ROM Cart|1.0b": "88647a609f828f7cca601ef1190ddce59df0e302",
- "VCS|ROM Cart|1.1": "c8898baf92f57544266bba4371919113c4075c10",
+ "VCS|ROM Cart|1.1": "2a6c8fa8b86ec68690604b937ebce51310a46e5f",
  "_about": "What each revision's PCB looked like when its images were rendered. Tools/board-images/render.py writes it, and derived-check.py compares."
 }

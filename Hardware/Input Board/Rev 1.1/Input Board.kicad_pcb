@@ -2054,7 +2054,7 @@
 	(footprint "6502 Logos:6502 Input Board Logo 5mm"
 		(layer "F.Cu")
 		(uuid "28bf6af1-5c4e-4c08-859c-88a05a4f9966")
-		(at 158.576175 55.869803 180)
+		(at 158.516121 55.999403 180)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")

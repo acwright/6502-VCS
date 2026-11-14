@@ -132,7 +132,7 @@
 	(footprint "6502 Logos:6502 ROM Cart Logo 5mm"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000060668f41")
-		(at 102.900979 92.011955 90)
+		(at 103.528829 92.331955 90)
 		(property "Reference" "G***"
 			(at 0 0 90)
 			(layer "F.SilkS")

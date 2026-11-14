@@ -1518,7 +1518,7 @@
 	(footprint "6502 Logos:6502 Output Board Logo 5mm"
 		(layer "F.Cu")
 		(uuid "28bf6af1-5c4e-4c08-859c-88a05a4f9966")
-		(at 157.644008 55.929843 180)
+		(at 157.264503 55.999443 180)
 		(property "Reference" "G***"
 			(at 0 0 0)
 			(layer "F.SilkS")
