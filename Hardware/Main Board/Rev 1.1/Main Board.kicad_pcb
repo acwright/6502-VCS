@@ -5409,7 +5409,7 @@
 	(footprint "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen"
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000060643f31")
-		(at 156.6 60.8)
+		(at 103.3 144)
 		(descr "Open Source Hardware Symbol")
 		(tags "Logo Symbol OSHW")
 		(property "Reference" "REF**"
@@ -9102,7 +9102,7 @@
 	(footprint "6502 Logos:6502 Main Board Logo 5mm"
 		(layer "F.Cu")
 		(uuid "3027bfd3-0233-4777-8bb8-0e73ac04b315")
-		(at 160.6 55.9 180)
+		(at 161.012154 55.999524 180)
 		(property "Reference" "G***"
 			(at 0 0 180)
 			(layer "F.SilkS")

@@ -129,6 +129,7 @@ What changed in each revision of each board, newest first. The table above has t
 - C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
 - U5, the 74HC00 that makes the RAM's and ROM's `RB` and `WB` from `PHI2` and `RWB`, is a 74HCT00 (SN74HCT00DR, LCSC C6764, 2026-11-11). Its TTL input threshold ends `RB` and `WB` a few nanoseconds later after `PHI2` falls. An Alliance AS6C62256 with a fast-releasing 74HC00 lot in this gate misread at 2 MHz; a 74HCT00 there cured it in the ACE, writes included. Rev 1.0 keeps its 74HC00. Same footprint, so no track moved.
 - The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
+- The board logo moved 0.4 mm right and 0.1 mm down, to the family's place for it: centred on the top holes' line, its end 11.5 mm from the corner (2026-11-13). The open hardware logo it ran onto moved to the bottom left, centred below the ROM socket on the bottom holes' line (owner, 2026-11-13). Silk only: no copper moved.
 
 **Rev 1.0**
 
