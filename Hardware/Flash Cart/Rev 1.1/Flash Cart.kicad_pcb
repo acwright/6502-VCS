@@ -8,7 +8,7 @@
 	)
 	(paper "USLetter")
 	(title_block
-		(title "6502 Flash Cart")
+		(title "AC6502 Flash Cart")
 		(date "2026-11-09")
 		(rev "1.1")
 		(company "A.C. Wright Design")

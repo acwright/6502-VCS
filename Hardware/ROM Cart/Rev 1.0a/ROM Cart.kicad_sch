@@ -5,7 +5,7 @@
 	(uuid "24157f0f-c5f9-4ba2-930b-b501b00d1e61")
 	(paper "USLetter")
 	(title_block
-		(title "6502 ROM Cart")
+		(title "AC6502 ROM Cart")
 		(date "2025-09-17")
 		(rev "1.0a")
 		(company "A.C. Wright Design")

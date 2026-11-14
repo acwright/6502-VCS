@@ -8,7 +8,7 @@
 	)
 	(paper "USLetter")
 	(title_block
-		(title "6502 ROM Cart")
+		(title "AC6502 ROM Cart")
 		(date "2025-09-17")
 		(rev "1.0a")
 		(company "A.C. Wright Design")

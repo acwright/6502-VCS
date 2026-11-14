@@ -5,7 +5,7 @@
 	(uuid "3646c852-8857-4ca2-a151-6f1cb8bf2f3e")
 	(paper "USLetter")
 	(title_block
-		(title "6502 Flash Helper")
+		(title "AC6502 Flash Helper")
 		(date "2026-09-20")
 		(rev "1.0")
 		(company "A.C. Wright Design")
