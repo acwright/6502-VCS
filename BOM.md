@@ -26,6 +26,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Flash Cart](#flash-cart) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Flash Cart](#flash-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: the bare card edge and the shell's holes at their nominal places |
 | [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
+| [Flash Helper](#flash-helper) | 1.1 | — | Drawn, not made yet | **Proven design**: rev 1.0's circuit; J1's reference and the logo by the family's rules |
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
@@ -83,6 +84,10 @@ magnification, and clean off the flux. Then run `6502-flash id` several times: a
 time. Each run resets the Helper, and a joint that leaves an input floating can pass one run and fail the next.
 
 **Building a Rev 1.0:** nothing to do. Rev 1.1 changes the card edge, which has no solder mask on its tab, and moves the shell's four holes to their nominal places, by up to 0.18 mm. A Rev 1.0's masked edge works in the slot, and the cart shell is drawn for its holes.
+
+**Flash Helper**
+
+**Building a Rev 1.0:** nothing to do. Rev 1.1 changes only the silkscreen: J1's reference is the family's size, and the logo moves to its place; a Rev 1.0 is built and used the same way.
 
 **Main Board**
 
@@ -148,6 +153,17 @@ Cart files: [digikey.csv](BOM/Flash%20Cart/Rev%201.0/digikey.csv), [mouser.csv](
 
 
 ## Flash Helper
+
+### Flash Helper Rev 1.1
+
+Drawn, not made yet. **Proven design**: rev 1.0's circuit; J1's reference and the logo by the family's rules.
+
+Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.1/digikey.csv), [mouser.csv](BOM/Flash%20Helper/Rev%201.1/mouser.csv)
+
+| Reference | Qty | Value | Part | Digi-Key | Mouser | Other |
+|---|---|---|---|---|---|---|
+| A1 | 1 | Arduino Mega2560 R3 Shield | Arduino A000067 | [1050-1018-ND](https://www.digikey.com/en/products/filter?keywords=1050-1018-ND) | [782-A000067](https://www.mouser.com/ProductDetail/782-A000067) |  |
+| J1 | 1 | 6502 Card Connector | TE Connectivity 5-5530843-4 | [A31723-ND](https://www.digikey.com/en/products/filter?keywords=A31723-ND) | [571-5-5530843-4](https://www.mouser.com/ProductDetail/571-5-5530843-4) |  |
 
 ### Flash Helper Rev 1.0
 

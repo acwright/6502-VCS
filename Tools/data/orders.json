@@ -39,6 +39,7 @@
  },
  "drawn": [
   "VCS|Flash Cart|1.1",
+  "VCS|Flash Helper|1.1",
   "VCS|Input Board|1.1",
   "VCS|Main Board|1.1",
   "VCS|Output Board|1.1",
@@ -66,6 +67,10 @@
   "VCS|Flash Cart|1.1": [
    "Proven design",
    "The bare card edge and the shell's holes at their nominal places"
+  ],
+  "VCS|Flash Helper|1.1": [
+   "Proven design",
+   "Rev 1.0's circuit; J1's reference and the logo by the family's rules"
   ],
   "VCS|Input Board|1.1": [
    "Proven design",

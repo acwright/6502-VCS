@@ -23,6 +23,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Flash Cart | 1.0 | Made, matches order | **Tested** | Y97 | 2026-09-20 | `3680cff` | — | 81.8×57.62 | — | — | — |  |
 | Flash Cart | 1.1 | Drawn | **Proven design**: the bare card edge and the shell's holes at their nominal places |  |  |  | — | 81.8×57.62 | — | — | — |  |
 | Flash Helper | 1.0 | Made, matches order | **Tested** | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
+| Flash Helper | 1.1 | Drawn | **Proven design**: rev 1.0's circuit; J1's reference and the logo by the family's rules |  |  |  | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | Made, matches order | **Tested** | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
 | Input Board | 1.1 | Drawn | **Proven design**: silkscreen text only |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Main Board | 1.0 | Made, matches order | **Tested** | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |
@@ -40,6 +41,8 @@ JLCPCB's orders were checked on 2026-11-04: each production zip marked *Made, ma
 ## History
 
 What changed in each revision of each board, newest first. The table above has the facts about each one.
+
+**Every board has a Rev 1.1, 2026-11-14.** The family's boards end as one set of Rev 1.1s under one set of rules (owner, 2026-11-13). The Flash Helper had only a made Rev 1.0, so it gets a Rev 1.1: Rev 1.0's circuit and copper, with J1's reference at the family's size and its logo in its place. It is **Proven design**, its Rev 1.0 being tested. `Tools/revision-audit/gproof.py` shows that only the silkscreen differs from Rev 1.0.
 
 **Title blocks, 2026-11-14.** Every schematic's and PCB's title block names the family as it is: `AC6502 <Board>`, not `6502 <Board>`, on all 12 revisions, the made ones included. The Flash Helper 1.0's PCB read `Flash Helper`. The title block is drawing-sheet text, which no Gerber layer carries: every PCB plots exactly as before (`Tools/revision-audit/gproof.py`), so no board and no label changed, and the made revisions' production zips are as JLCPCB received them. The schematic PDFs are regenerated. The production zip of each revision not yet made (5) is named from the title, so it is now `AC6502_<Board>_<Rev>.zip`, its contents unchanged. The board logos still read "6502". `Tools/revision-audit/audit.py` checks the titles.
 
@@ -113,6 +116,13 @@ What changed in each revision of each board, newest first. The table above has t
 - Initial release. Tested on 2026-11-09 in both builds, 512 KB and 1 MB: identified, programmed and verified on the Flash Helper, and run on an ACE, banking and saving included. `Hardware/Flash Cart/Rev 1.0/` and `Production/Flash Cart/Rev 1.0/` match the boards JLCPCB made (order Y97). The Gerbers and drill files in the production zip are byte-for-byte what JLCPCB received.
 
 ### Flash Helper
+
+**Rev 1.1** (drawn, not yet made; Rev 1.0 is built first)
+
+- Drawn so the family's boards end as one set of Rev 1.1s under one set of rules (owner, 2026-11-13). The circuit, parts, copper, holes and outline are Rev 1.0's.
+- J1's reference is 1.0 mm high, with a 0.15 mm stroke, as every reference on a revision not yet made is. Rev 1.0's is 1.2065 mm, with a 0.0965 mm stroke.
+- The board logo moves 0.72 mm across and 1.33 mm down, to its place 2.5 mm from the left edge and centred on the board's height, the rule for a board with no corner holes by its logo, as every logo on a revision not yet made sits.
+- The silkscreen's revision reads Rev 1.1.
 
 **Rev 1.0**
 
