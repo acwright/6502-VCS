@@ -134,7 +134,7 @@ What changed in each revision of each board, newest first. The table above has t
 
 **Rev 1.1** (drawn, not yet made)
 
-- Pull-up resistors changed from 1kΩ to 10kΩ. R4, the `RESB` pull-up, was still 1kΩ when this revision was first drawn, and it is 10kΩ now. It was fixed in place, keeping the revision number, because Rev 1.1 has never been ordered.
+- Pull-up resistors changed from 1kΩ to 10kΩ. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for; every CPU board in the family uses 10kΩ. R4, the `RESB` pull-up, was still 1kΩ when this revision was first drawn, and it is 10kΩ now. It was fixed in place, keeping the revision number, because Rev 1.1 has never been ordered.
 - The schematic draws R4 with the other pull-ups, R10–R14, in one group, as every CPU board does. It used to sit in the reset circuit beside Q1. The netlist is unchanged (2026-11-06).
 - Bus pins 4 and 6 on J9 and J10 are wired to `HRDB`, as on the ACE and the KIM, and J5 (`HRDB EN`), JP3 and JP4 are gone: the Main Board is for the VCS, which always takes cartridges (2026-11-06). Rev 1.0 needs those jumpers fitted to run a cartridge. The silk by J10 says `HRDB` for pins 4 and 6.
 - J8 (`EXP EN`) is gone too. It could jumper `EXP0` to VPB and `EXP1` to MLB, which would drive the ROM disable now that those pins are `HRDB`. MLB, PHI1O and PHI2O are left unconnected, and `EXP2` and `EXP3` pass between J9 and J10 unused.
@@ -146,7 +146,8 @@ What changed in each revision of each board, newest first. The table above has t
 - The silk that named the removed parts goes with them: `6502`, `CLOCK ENBL`, `POWER SW`, `HI ROM DISABLE` and `IC2 RAM`.
 - The joins are routed by hand (owner, 2026-11-06). One new via, 0.6/0.3 mm at (118.25, 112.25), stitches a ground island around C9 to the rest of `GND`; a standard 0.8/0.4 via has no room there except inside C9's pad.
 - The top panel loses its windows over J1, J2, J6, J7 and J8, and its notch over J5.
-- C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly. Those edits were made to the Rev 1.0 files after its order, in 2024.
+- C6, C11, D1, J5, JP3, JP4, TP1 and TP3 move slightly, as a layout tidy-up with no electrical reason. Those edits were made to the Rev 1.0 files after its order, in 2024.
+- J10 is drawn as the box header that is fitted (the `6502 Bus Connector` footprint), in place of Rev 1.0's plain 2×20 pin header, so the silkscreen shows the part to fit. The pads are in the same places.
 - U5, the 74HC00 that makes the RAM's and ROM's `RB` and `WB` from `PHI2` and `RWB`, is a 74HCT00 (SN74HCT00DR, LCSC C6764, 2026-11-11). Its TTL input threshold ends `RB` and `WB` a few nanoseconds later after `PHI2` falls. An Alliance AS6C62256 with a fast-releasing 74HC00 lot in this gate misread at 2 MHz; a 74HCT00 there cured it in the ACE, writes included. Rev 1.0 keeps its 74HC00. Same footprint, so no track moved.
 - The switch headers' values are `POWER SW`, `RESET SW` and `CLOCK ENBL SW` at `J1`, `J4` and `J6`, as on the COB's boards, in place of `PWR_SW`, `RESET_SW` and `CLOCK_ENBL_SW`. The values aren't printed, so the board is unchanged: its silkscreen already says `POWER SW`, `RESET SW` and `CLOCK ENBL`.
 - The board logo moved 0.4 mm right and 0.1 mm down, to the family's place for it: centred on the top holes' line, its end 11.5 mm from the corner (2026-11-13). The open hardware logo it ran onto moved to the bottom left, centred below the ROM socket on the bottom holes' line (owner, 2026-11-13). Silk only: no copper moved.

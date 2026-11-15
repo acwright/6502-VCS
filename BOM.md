@@ -59,6 +59,8 @@ How to build each board, where it needs more than its parts list.
 
 > **Joysticks**: there is no DB-9 in this BOM because the board does not carry one. The joysticks share the VIA ports with the keyboard encoder and connect through the `J1` PORT B and `J2` PORT A box headers, using a helper board from the [6502-COB](https://github.com/acwright/6502-COB) project — the **GPIO Helper** for a direct box-header connection, or the **Joystick Helper** to convert a port to a DB-9 with pull-ups fitted. Budget for one helper per stick.
 
+**Building a Rev 1.0:** nothing to do. Rev 1.1 changes only the silkscreen: `ATmega1284` at U2, the part both parts lists order, where a Rev 1.0's says `ATmega1284-P`. C2 and C4 are 22 pF on both revisions.
+
 **Flash Cart**
 
 Fitted for the 512KB build. For 1MB, fit U2 and C2 as well; for 128/256KB, fit an SST39SF010A or SST39SF020A at U1.
@@ -91,9 +93,18 @@ time. Each run resets the Helper, and a joint that leaves an input floating can 
 
 **Main Board**
 
-**Pull-ups on Rev 1.0**
+**Building a Rev 1.0**
 
-Fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ in the files. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for. R4, the `RESB` pull-up, isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1. Rev 1.1 has 10kΩ on all six.
+Rev 1.1 wires in what a Rev 1.0 sets with jumpers, because the VCS is a game console that runs as soon as it is plugged in. On a Rev 1.0, set them by hand; the README's *Jumpers* table has each one.
+- **Pull-ups:** fit 10kΩ for R4 and R10–R14, the pull-ups on the shared lines, not the 1kΩ in the files. With a 1kΩ pull-up, a device that pulls `IRQB` low sinks 5 mA, more than the 3.2 mA that the W65C22's and W65C21's IRQ outputs are rated for. R4, the `RESB` pull-up, isn't part of the reset circuit's timing: the circuit only pulls `RESB` low, through Q1. Rev 1.1 has 10kΩ on all six.
+- **Cartridges (`HRDB`):** fit two shunts on J5, or bridge JP3 and JP4. Without them a cartridge can't take `$C000`–`$FFFF`. Rev 1.1 wires bus pins 4 and 6 to `HRDB`.
+- **Power:** bridge JP2, or wire a switch to J1. Until one is done the board has no power. Rev 1.1 powers on when USB is plugged in.
+- **Clock:** bridge JP6, or wire a switch to J6. Until one is done there is no clock on `PHI2`. Rev 1.1's oscillator drives `PHI2` directly.
+- **Leave J8 (`EXP EN`) empty, and leave J7/JP5 and J2/JP1 open.** J8 would join CPU signals to the pins a cartridge grounds; J7 and JP5 are for an original 6502, not the 65C02; and J2 and JP1 would let a program write the ROM, which R1 holds write-protected. Rev 1.1 has none of them.
+- **J10:** fit the box header the parts list orders. Rev 1.0's silkscreen shows a plain 2×20 header with the same holes; Rev 1.1's draws the box header.
+- **U5** is the 74HC00 in Rev 1.0's parts list. Rev 1.1's 74HCT00 matters only above 1 MHz, the VCS's clock: on the ACE, a 74HC00 lot in this gate let an Alliance AS6C62256 misread at 2 MHz. A 74HCT00 (SN74HCT00DR) fits the same footprint.
+
+Rev 1.1's other changes need nothing on a built board: its silkscreen, the parts that moved a fraction of a millimetre in a tidy-up, and its top panel, which loses the windows over the headers Rev 1.1 drops. A Rev 1.0 uses its own top panel.
 
 **Output Board**
 
