@@ -112,6 +112,8 @@ Rev 1.1's other changes need nothing on a built board: its silkscreen, the parts
 
 **Optional, for BIOS 2.x on a Rev 1.0: wire `A1` to the pico9918's `MODE1`.** Rev 1.1 joins `A1` to U1 pin 11 (`MODE1`), as the VGA Card 1.1 and the ACE do, which opens the pico9918's second port pair; with a PICO9918 PRO running 6502-PICOVDP, a VCS can then run BIOS 2.x. A Rev 1.0's U1 pin 11 connects to nothing, but `A1` already reaches the SID. On the back, solder an insulated wire from U2 pin 10, the SID's `A1`, to U1 pin 11. With the power off, check with a meter that U1 pin 11 beeps to U2 pin 10, and to neither U1 pin 10 nor pin 12. On the PICO9918 PRO, solder a header pin into its `MDE1` pad, as the [ACE's video card](https://github.com/acwright/6502-ACE#video-card) has, so `MODE1` reaches the module, and cut JP1 as above. Without the wire, a VCS with a Rev 1.0 runs BIOS 1.x. This wire hasn't been tried on a board yet.
 
+**Building a Rev 1.1:** **J2 (AUDIO L) and J3 (AUDIO R), the two RCA jacks, are wired together:** both carry the SID's one output, the same signal, so a stereo amplifier's two inputs each get the sound. Either jack alone gives all of it, so a builder can fit just one and leave the other off to save its cost; each jack's parts-list row is the whole of that part.
+
 **ROM Cart**
 
 **Building a Rev 1.1:** JP1 and JP2 ship bridged for the AT28C256 that the parts list orders (`28C`). For an AT27C256 (AT27C256R-70PU, Digi-Key AT27C256R-70PU-ND), cut the bridge between pads 1 and 2 on both jumpers, check with a meter that they no longer connect, and bridge pads 2 and 3 (`27C`) with solder. Never fit an AT28C256 with the jumpers on `27C`: its `/WE` would be on `A14`, so a write to the cart's addresses could overwrite it.
