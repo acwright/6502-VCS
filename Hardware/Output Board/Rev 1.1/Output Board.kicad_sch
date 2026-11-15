@@ -5211,6 +5211,62 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 54.61) (xy 256.54 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faba6ba6-d65b-4829-bc3a-f0f28c34cb77")
+	)
+	(wire
+		(pts
+			(xy 248.92 49.53) (xy 251.46 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef88251f-53a1-4179-a1f4-e0a941fb6a8e")
+	)
+	(wire
+		(pts
+			(xy 231.14 49.53) (xy 231.14 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2ce3834-8028-4138-9255-141094c62ad8")
+	)
+	(junction
+		(at 231.14 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9dfe8900-14ec-4689-8691-7edfbffa60d8")
+	)
+	(label "AUDIO_OUT"
+		(at 248.92 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5e7b233-c203-46e4-9315-9225f738c045")
+	)
+	(label "AUDIO_OUT"
+		(at 231.14 44.45 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a5654bed-7cdd-4f98-9387-b955fbd01fa1")
+	)
+	(wire
+		(pts
 			(xy 215.9 151.13) (xy 220.98 151.13)
 		)
 		(stroke
@@ -7902,6 +7958,222 @@
 		)
 	)
 	(symbol
+		(lib_id "6502 Parts:RCA Jack White")
+		(at 256.54 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6aae219e-faa9-4fd4-8d6c-fd031a1af19d")
+		(property "Reference" "J3"
+			(at 259.08 48.5531 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AUDIO R"
+			(at 259.08 51.0931 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "6502 Parts:RCA Jack White"
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.switchcraft.com/assets/1/24/pjran1x1u__x_series_cd.pdf?4664"
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RCA Connector"
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "PJRAN1X1U03X-ND"
+			(at 260.35 52.3631 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Other" ""
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "502-PJRAN1X1U03X"
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 256.54 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "103b1017-b76c-4691-abd3-31939f104d4e")
+		)
+		(pin "2"
+			(uuid "664636f9-f114-4b1a-9975-166c2eb81327")
+		)
+		(instances
+			(project "Output Board"
+				(path "/1eb588e8-a8a6-45d4-8449-ed494748d485"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+		(symbol
+		(lib_id "power:GND")
+		(at 256.54 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8244a089-214b-49bc-b696-d09a613a1a1b")
+		(property "Reference" "#PWR15"
+			(at 256.54 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 256.54 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 256.54 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b7499bda-2011-4433-b2cd-98f2650c4b8a")
+		)
+		(instances
+			(project "Output Board"
+				(path "/1eb588e8-a8a6-45d4-8449-ed494748d485"
+					(reference "#PWR15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 67.31 182.88 270)
 		(unit 1)
@@ -8181,7 +8453,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AUDIO"
+		(property "Value" "AUDIO L"
 			(at 241.3 51.0931 0)
 			(show_name no)
 			(do_not_autoplace no)

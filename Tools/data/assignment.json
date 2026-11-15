@@ -176,6 +176,7 @@
  "VCS|Input Board|1.1|Y1": "16 MHz|Crystal_HC49-U_Vertical",
  "VCS|Output Board|1.1|J7": "pinheader-2x08-2.54-vertical",
  "VCS|Output Board|1.1|J2": "jack-pjran1x1u02x",
+ "VCS|Output Board|1.1|J3": "jack-pjran1x1u03x",
  "VCS|Output Board|1.1|U4": "74HC138|SOIC-16_3.9x9.9mm_P1.27mm",
  "VCS|Output Board|1.1|C7": "100nF|C_0805_2012Metric",
  "VCS|Output Board|1.1|C8": "100nF|C_0805_2012Metric",

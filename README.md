@@ -179,7 +179,7 @@ Each revision carries one of three labels:
 | Flash Helper | 1.1 | **Proven design** | J1's reference resized and the logo moved; silkscreen only. |
 | Input Board | 1.1 | **Proven design** | Silkscreen text only. |
 | Main Board | 1.1 | **Proven design** | 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted. |
-| Output Board | 1.1 | **Proven design** | `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; ordinary sockets in place of ZIF, on the ACE's footprints; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them. |
+| Output Board | 1.1 | **Proven design** | `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; a second RCA jack beside J2, on the same signal, as on the ACE; ordinary sockets in place of ZIF, on the ACE's footprints; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them. |
 | ROM Cart | 1.1 | **Proven design** | Either ROM chip through two solder jumpers, each setting a tested board's wiring; a ROM bank option, not fitted, whose pull-up reads the half Rev 1.0 reads; capacitor pitch; the bare card edge and the shell's holes at their nominal places. |
 <!-- End of which revision to make -->
 
