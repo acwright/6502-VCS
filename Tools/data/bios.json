@@ -1,0 +1,78 @@
+[
+ {
+  "repo": "VCS",
+  "board": "Main Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "category": "out of the box",
+  "reason": "The 65C02, RAM and the ROM that holds the BIOS. Rev 1.0 needs its power, clock and `HRDB` jumpers set, as the [Jumpers](#jumpers) table says; Rev 1.1 has them wired.",
+  "source": "Schematic; README [Jumpers](#jumpers)"
+ },
+ {
+  "repo": "VCS",
+  "board": "Input Board",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "category": "out of the box",
+  "reason": "Its 65C22 VIA answers in IO 6 (`$9400`), where the BIOS looks for the keyboard and joystick VIA.",
+  "source": "BIOS 1.x `Kernal.asm` `ProbeGPIO`"
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.0"
+  ],
+  "category": "after a step",
+  "reason": "Cut JP1, as its build note says: bridged, as made, it lets the pico9918 hold `IRQB` high, so the Input Board's interrupts don't reach the 65C02. Then the BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`).",
+  "source": "BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BOM.md build notes"
+ },
+ {
+  "repo": "VCS",
+  "board": "Output Board",
+  "revs": [
+   "1.1"
+  ],
+  "category": "out of the box",
+  "reason": "The BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). JP1 ships open.",
+  "source": "BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`"
+ },
+ {
+  "repo": "VCS",
+  "board": "ROM Cart",
+  "revs": [
+   "1.0a",
+   "1.0b",
+   "1.1"
+  ],
+  "category": "out of the box",
+  "reason": "A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`.",
+  "source": "README [Extra pins](#extra-pins-exp0exp3-and-hrdb)"
+ },
+ {
+  "repo": "VCS",
+  "board": "Flash Cart",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "category": "out of the box",
+  "reason": "A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`.",
+  "source": "README [Extra pins](#extra-pins-exp0exp3-and-hrdb); bench, 2026-11-09"
+ },
+ {
+  "repo": "VCS",
+  "board": "Flash Helper",
+  "revs": [
+   "1.0",
+   "1.1"
+  ],
+  "category": "nothing to support",
+  "reason": "A programmer for the Flash Cart, on an Arduino Mega: it's never in a machine.",
+  "source": "Schematic"
+ }
+]
