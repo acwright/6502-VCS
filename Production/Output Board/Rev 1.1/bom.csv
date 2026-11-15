@@ -8,6 +8,6 @@ J6,PinHeader_1x03_P2.54mm_Vertical,1,INT Select,
 J7,PinHeader_2x08_P2.54mm_Vertical,1,IO SELECT,
 J8,6502 Bus Connector,1,6502 Bus,
 R1,0805,1,1k,C17513
-U1,DIP_Socket-40_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_240-1280-00-0602J,1,Pico9918A,
-U2,DIP_Socket-28_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_228-1277-00-0602J,1,ARMSID,
+U1,DIP-40_W15.24mm_Socket_LongPads,1,Pico9918A,
+U2,DIP-28_W15.24mm_Socket_LongPads,1,ARMSID,
 "U3, U4",SOIC-16_3.9x9.9mm_P1.27mm,2,74HC138,C5602

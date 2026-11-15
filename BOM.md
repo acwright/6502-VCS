@@ -32,7 +32,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
 | [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |
+| [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; ordinary sockets in place of ZIF, on the ACE's footprints; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |
 | [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
 | [ROM Cart](#rom-cart) | 1.0b | Rev 1.0. U1's label tells them apart: AT27C256 is Rev 1.0b | Made, tested | **Tested**: built and tested. Takes an AT27C256 EPROM |
 | [ROM Cart](#rom-cart) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: either ROM chip through two solder jumpers, each setting a tested board's wiring; a ROM bank option, not fitted, whose pull-up reads the half Rev 1.0 reads; capacitor pitch; the bare card edge and the shell's holes at their nominal places |
@@ -108,7 +108,7 @@ Rev 1.1's other changes need nothing on a built board: its silkscreen, the parts
 
 **Output Board**
 
-**Building a Rev 1.0: cut JP1.** The pico9918 drives its `/INT` high as well as low. D1 is meant to let it only pull `IRQB` (or `NMIB`, through J6) low, but JP1, a solder jumper bridged on the board as made, shorts across D1. With JP1 bridged, the pico9918 holds `IRQB` high against the Input Board's VIA, so the VIA's interrupts don't reach the 65C02. Cut the trace between JP1's pads, and check with a meter that they no longer connect; Rev 1.1 ships JP1 open. Rev 1.1's other changes, its silkscreen and the `VDD` header it drops, need nothing on a built board: the ARMSID needs nothing at U2 pin 28. Leave JP2 and JP3 as shipped: Rev 1.1 drops them and is wired the way they ship.
+**Building a Rev 1.0: cut JP1.** The pico9918 drives its `/INT` high as well as low. D1 is meant to let it only pull `IRQB` (or `NMIB`, through J6) low, but JP1, a solder jumper bridged on the board as made, shorts across D1. With JP1 bridged, the pico9918 holds `IRQB` high against the Input Board's VIA, so the VIA's interrupts don't reach the 65C02. Cut the trace between JP1's pads, and check with a meter that they no longer connect; Rev 1.1 ships JP1 open. Rev 1.1's other changes need nothing on a built board: its silkscreen; the `VDD` header it drops, since the ARMSID needs nothing at U2 pin 28; and its ordinary sockets for U1 and U2, where a Rev 1.0 takes the ZIF sockets in its parts list, or ordinary ones, which fit the same holes. Leave JP2 and JP3 as shipped: Rev 1.1 drops them and is wired the way they ship.
 
 **Optional, for BIOS 2.x on a Rev 1.0: wire `A1` to the pico9918's `MODE1`.** Rev 1.1 joins `A1` to U1 pin 11 (`MODE1`), as the VGA Card 1.1 and the ACE do, which opens the pico9918's second port pair; with a PICO9918 PRO running 6502-PICOVDP, a VCS can then run BIOS 2.x. A Rev 1.0's U1 pin 11 connects to nothing, but `A1` already reaches the SID. On the back, solder an insulated wire from U2 pin 10, the SID's `A1`, to U1 pin 11. With the power off, check with a meter that U1 pin 11 beeps to U2 pin 10, and to neither U1 pin 10 nor pin 12. On the PICO9918 PRO, solder a header pin into its `MDE1` pad, as the [ACE's video card](https://github.com/acwright/6502-ACE#video-card) has, so `MODE1` reaches the module, and cut JP1 as above. Without the wire, a VCS with a Rev 1.0 runs BIOS 1.x. This wire hasn't been tried on a board yet.
 
@@ -342,7 +342,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Output Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them.
+Drawn, not made yet. **Proven design**: `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; ordinary sockets in place of ZIF, on the ACE's footprints; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them.
 
 Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Output%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Output%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Output%20Board/Rev%201.1/mouser-through-hole.csv)
 
@@ -357,11 +357,11 @@ Cart files: [digikey.csv](BOM/Output%20Board/Rev%201.1/digikey.csv), [mouser.csv
 | J7 | 1 | IO SELECT | Pin header 2×8, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
 | J8 | 1 | 6502 Bus | Würth Elektronik 61204021621 | [732-5401-ND](https://www.digikey.com/en/products/filter?keywords=732-5401-ND) | [710-61204021621](https://www.mouser.com/ProductDetail/710-61204021621) |  | |
 | R1 | 1 | 1k | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
-| U1 | 1 | Pico9918A | Pico9918A, DIP_Socket-40_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_240-1280-00-0602J |  |  | [Tindie](https://www.tindie.com/products/visrealm/pico9918-pro/) | |
+| U1 | 1 | Pico9918A | Pico9918A, DIP-40_W15.24mm |  |  | [Tindie](https://www.tindie.com/products/visrealm/pico9918-pro/) | |
 | U2 | 1 | ARMSID | Retrocomp ARMSID |  |  | [Retrocomp](https://retrocomp.cz/produkt?id=2) | |
 | U3, U4 | 2 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |
-| U1 | 1 | Socket | 40-pin ZIF socket, or an ordinary 40-pin socket | [3M4002-ND](https://www.digikey.com/en/products/filter?keywords=3M4002-ND) | [517-240-1280-00](https://www.mouser.com/ProductDetail/517-240-1280-00) | | |
-| U2 | 1 | Socket | 28-pin ZIF socket, or an ordinary 28-pin socket | [3M2802-ND](https://www.digikey.com/en/products/filter?keywords=3M2802-ND) | [517-228-1277-00](https://www.mouser.com/ProductDetail/517-228-1277-00) | | |
+| U2 | 1 | Socket | IC socket, 28-pin, 0.6 in | [3M5481-ND](https://www.digikey.com/en/products/filter?keywords=3M5481-ND) | [517-4828-6004-CP](https://www.mouser.com/ProductDetail/517-4828-6004-CP) | | |
+| U1 | 1 | Socket | IC socket, 40-pin, 0.6 in | [3M5471-ND](https://www.digikey.com/en/products/filter?keywords=3M5471-ND) | [517-4840-6000-CP](https://www.mouser.com/ProductDetail/517-4840-6000-CP) | | |
 | J6, J7 | 3 | | Shunt, 2.54 mm | [S9337-ND](https://www.digikey.com/en/products/filter?keywords=S9337-ND) |  |  | |
 
 Pin headers are cut from strips, and the cart files count whole strips.
