@@ -753,6 +753,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15625)
 			(net "Net-(U2-CAP1A)")
+			(pinfunction "CAP1A_1")
+			(pintype "input")
 			(uuid "d10dce17-5124-4515-9633-dc349fd4bd5e")
 		)
 		(pad "2" thru_hole oval
@@ -762,6 +764,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2-CAP1B)")
+			(pinfunction "CAP1B_2")
+			(pintype "input")
 			(uuid "346f6dad-827a-4308-a970-1d3a16dbd5b0")
 		)
 		(pad "3" thru_hole oval
@@ -771,6 +775,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2-CAP2A)")
+			(pinfunction "CAP2A_3")
+			(pintype "input")
 			(uuid "5694d925-c18b-4dd7-99f8-db6fa8a389fa")
 		)
 		(pad "4" thru_hole oval
@@ -780,6 +786,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2-CAP2B)")
+			(pinfunction "CAP2B_4")
+			(pintype "input")
 			(uuid "9a1db5e2-a538-4226-a71c-50a55ac58531")
 		)
 		(pad "5" thru_hole oval
@@ -789,6 +797,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "RESB")
+			(pinfunction "~{RESET}_5")
+			(pintype "input")
 			(uuid "208f17e8-29f0-4f2f-991b-0884338bbbb8")
 		)
 		(pad "6" thru_hole oval
@@ -798,6 +808,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "PHI2")
+			(pinfunction "PHI2_6")
+			(pintype "input")
 			(uuid "457a25d1-4521-47d8-bf04-20693932aa55")
 		)
 		(pad "7" thru_hole oval
@@ -807,6 +819,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "RWB")
+			(pinfunction "R/~{W}_7")
+			(pintype "input")
 			(uuid "d92adb6b-ee6f-40fe-9259-edc7fcfc6ebc")
 		)
 		(pad "8" thru_hole oval
@@ -816,6 +830,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "CSBA")
+			(pinfunction "~{CS}_8")
+			(pintype "input")
 			(uuid "69bcc314-96dc-467f-a7a1-db89e008a8f9")
 		)
 		(pad "9" thru_hole oval
@@ -825,6 +841,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A0")
+			(pinfunction "A0_9")
+			(pintype "input")
 			(uuid "75bb3cc1-7d1f-4e8c-b9c7-93241dab2638")
 		)
 		(pad "10" thru_hole oval
@@ -834,6 +852,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A1")
+			(pinfunction "A1_10")
+			(pintype "input")
 			(uuid "0d795af5-38a2-4711-a16b-896c8cece9c4")
 		)
 		(pad "11" thru_hole oval
@@ -843,6 +863,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A2")
+			(pinfunction "A2_11")
+			(pintype "input")
 			(uuid "3c5e12eb-bd2c-4e41-be37-ed7438d4e1ed")
 		)
 		(pad "12" thru_hole oval
@@ -852,6 +874,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A3")
+			(pinfunction "A3_12")
+			(pintype "input")
 			(uuid "d9d11541-5fb7-4bab-bc3c-92ad23dc2828")
 		)
 		(pad "13" thru_hole oval
@@ -861,6 +885,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A4")
+			(pinfunction "A4_13")
+			(pintype "input")
 			(uuid "10dc9410-7a61-4f71-a299-ecccac58ed7c")
 		)
 		(pad "14" thru_hole oval
@@ -870,6 +896,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "GND_14")
+			(pintype "power_in")
 			(uuid "81c83fcc-ad03-401f-8f9c-c3a415bf8e15")
 		)
 		(pad "15" thru_hole oval
@@ -879,6 +907,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D0")
+			(pinfunction "D0_15")
+			(pintype "bidirectional")
 			(uuid "e072d354-b4ae-457a-8086-742cdf9ea4f1")
 		)
 		(pad "16" thru_hole oval
@@ -888,6 +918,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D1")
+			(pinfunction "D1_16")
+			(pintype "bidirectional")
 			(uuid "64f1ceac-d21e-4f0b-87dd-de8fc2ffa4f9")
 		)
 		(pad "17" thru_hole oval
@@ -897,6 +929,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D2")
+			(pinfunction "D2_17")
+			(pintype "bidirectional")
 			(uuid "39d48730-0ecb-4f3c-b351-6fd90058b5d3")
 		)
 		(pad "18" thru_hole oval
@@ -906,6 +940,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D3")
+			(pinfunction "D3_18")
+			(pintype "bidirectional")
 			(uuid "b17764a4-2565-40cc-bf8e-10cf827b07e4")
 		)
 		(pad "19" thru_hole oval
@@ -915,6 +951,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D4")
+			(pinfunction "D4_19")
+			(pintype "bidirectional")
 			(uuid "39b03c80-aaa4-474a-8153-8798e5b29e9d")
 		)
 		(pad "20" thru_hole oval
@@ -924,6 +962,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D5")
+			(pinfunction "D5_20")
+			(pintype "bidirectional")
 			(uuid "f615018d-02f1-4422-8b7b-3a404bf2552f")
 		)
 		(pad "21" thru_hole oval
@@ -933,6 +973,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D6")
+			(pinfunction "D6_21")
+			(pintype "bidirectional")
 			(uuid "5872b8b2-bf58-4ee7-b934-4ff0f7044e94")
 		)
 		(pad "22" thru_hole oval
@@ -942,6 +984,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D7")
+			(pinfunction "D7_22")
+			(pintype "bidirectional")
 			(uuid "b5033cbd-134a-4402-b273-f8d580c73b8f")
 		)
 		(pad "23" thru_hole oval
@@ -951,6 +995,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U2-POTY-Pad23)")
+			(pinfunction "POTY_23")
+			(pintype "input+no_connect")
 			(uuid "bb1451fe-bc96-4daf-9e98-97555b540976")
 		)
 		(pad "24" thru_hole oval
@@ -960,6 +1006,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U2-POTX-Pad24)")
+			(pinfunction "POTX_24")
+			(pintype "input+no_connect")
 			(uuid "c5a67176-6edf-4642-a19f-d10e67701128")
 		)
 		(pad "25" thru_hole oval
@@ -969,6 +1017,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VCC")
+			(pinfunction "VCC_25")
+			(pintype "power_in")
 			(uuid "52b68715-6273-46c0-969b-975224e47250")
 		)
 		(pad "26" thru_hole oval
@@ -978,6 +1028,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U2-IN-Pad26)")
+			(pinfunction "IN_26")
+			(pintype "passive+no_connect")
 			(uuid "52d92d5a-5d03-490a-b56e-71faae8af5ef")
 		)
 		(pad "27" thru_hole oval
@@ -987,6 +1039,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "AUDIO")
+			(pinfunction "OUT_27")
+			(pintype "passive")
 			(uuid "a9bc51e8-2f16-493a-9e4a-c4c8944906d0")
 		)
 		(pad "28" thru_hole oval
@@ -996,6 +1050,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U2-VDD-Pad28)")
+			(pinfunction "VDD_28")
+			(pintype "power_in+no_connect")
 			(uuid "b374ddaa-0c3c-4d4f-9952-71264767d4e6")
 		)
 		(embedded_fonts no)
@@ -8212,6 +8268,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.15625)
 			(net "unconnected-(U1-NC-Pad1)")
+			(pinfunction "NC_1")
+			(pintype "no_connect")
 			(uuid "586cc27d-8675-4ac3-b388-d71e2ad401ef")
 		)
 		(pad "2" thru_hole oval
@@ -8221,6 +8279,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad2)")
+			(pinfunction "NC_2")
+			(pintype "no_connect")
 			(uuid "ead5b2ed-0fca-4cd3-a117-8d30971777c6")
 		)
 		(pad "3" thru_hole oval
@@ -8230,6 +8290,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad3)")
+			(pinfunction "NC_3")
+			(pintype "no_connect")
 			(uuid "e8b2b3c6-ba5f-4e93-aee0-0ad3c60301dd")
 		)
 		(pad "4" thru_hole oval
@@ -8239,6 +8301,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad4)")
+			(pinfunction "NC_4")
+			(pintype "no_connect")
 			(uuid "fab2b3a2-a62c-43c3-9bbf-c404d993e01e")
 		)
 		(pad "5" thru_hole oval
@@ -8248,6 +8312,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad5)")
+			(pinfunction "NC_5")
+			(pintype "no_connect")
 			(uuid "559eab66-9d1b-4c0d-96d4-db9b3672516e")
 		)
 		(pad "6" thru_hole oval
@@ -8257,6 +8323,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad6)")
+			(pinfunction "NC_6")
+			(pintype "no_connect")
 			(uuid "9ccdece3-e443-47c8-b2f8-ec9caca53bd4")
 		)
 		(pad "7" thru_hole oval
@@ -8266,6 +8334,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad7)")
+			(pinfunction "NC_7")
+			(pintype "no_connect")
 			(uuid "098c3fd1-e14e-45c0-bb97-0a495155f6cc")
 		)
 		(pad "8" thru_hole oval
@@ -8275,6 +8345,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad8)")
+			(pinfunction "NC_8")
+			(pintype "no_connect")
 			(uuid "faf3b028-d57a-4111-bdc4-ee2e8b95b21a")
 		)
 		(pad "9" thru_hole oval
@@ -8284,6 +8356,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad9)")
+			(pinfunction "NC_9")
+			(pintype "no_connect")
 			(uuid "fae4a225-0877-4f43-a753-e2023ae8143e")
 		)
 		(pad "10" thru_hole oval
@@ -8293,6 +8367,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad10)")
+			(pinfunction "NC_10")
+			(pintype "no_connect")
 			(uuid "6d984768-fbfe-41df-bb98-9cf55886d2fa")
 		)
 		(pad "11" thru_hole oval
@@ -8302,6 +8378,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A1")
+			(pinfunction "MODE1_11")
+			(pintype "input")
 			(uuid "86262cdf-8da4-49db-b962-6608a4136ce5")
 		)
 		(pad "12" thru_hole oval
@@ -8311,6 +8389,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "VSS_12")
+			(pintype "power_in")
 			(uuid "fb851cfb-c056-4809-89c6-1daa9cf88d97")
 		)
 		(pad "13" thru_hole oval
@@ -8320,6 +8400,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "A0")
+			(pinfunction "MODE0_13")
+			(pintype "input")
 			(uuid "35e207c8-4c33-476f-b95d-7350110551b1")
 		)
 		(pad "14" thru_hole oval
@@ -8329,6 +8411,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "WB")
+			(pinfunction "~{CSW}_14")
+			(pintype "input")
 			(uuid "db1584b7-adde-48a7-9af0-4bdd2da1381b")
 		)
 		(pad "15" thru_hole oval
@@ -8338,6 +8422,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "RB")
+			(pinfunction "~{CSR}_15")
+			(pintype "input")
 			(uuid "e6829913-dfbe-4174-8948-be58938ccf56")
 		)
 		(pad "16" thru_hole oval
@@ -8347,6 +8433,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "INTB")
+			(pinfunction "~{INT}_16")
+			(pintype "output")
 			(uuid "7d9caced-7855-4ab0-a921-262c2316f7ed")
 		)
 		(pad "17" thru_hole oval
@@ -8356,6 +8444,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D0")
+			(pinfunction "CD7_17")
+			(pintype "bidirectional")
 			(uuid "88b79b3b-d029-47fd-a610-b56db0aa1336")
 		)
 		(pad "18" thru_hole oval
@@ -8365,6 +8455,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D1")
+			(pinfunction "CD6_18")
+			(pintype "bidirectional")
 			(uuid "39999f2e-b29a-46d6-a295-efa86272642e")
 		)
 		(pad "19" thru_hole oval
@@ -8374,6 +8466,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D2")
+			(pinfunction "CD5_19")
+			(pintype "bidirectional")
 			(uuid "9582e8a8-9df1-488d-ae8e-6dcbbccd22a1")
 		)
 		(pad "20" thru_hole oval
@@ -8383,6 +8477,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D3")
+			(pinfunction "CD4_20")
+			(pintype "bidirectional")
 			(uuid "a3e777b4-f41c-422a-b2a8-19cfb1094ef5")
 		)
 		(pad "21" thru_hole oval
@@ -8392,6 +8488,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D4")
+			(pinfunction "CD3_21")
+			(pintype "bidirectional")
 			(uuid "58e4779b-a322-4499-83be-bc19ce14b6b0")
 		)
 		(pad "22" thru_hole oval
@@ -8401,6 +8499,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D5")
+			(pinfunction "CD2_22")
+			(pintype "bidirectional")
 			(uuid "cc2157b5-e328-4234-951b-f6e6b985ee01")
 		)
 		(pad "23" thru_hole oval
@@ -8410,6 +8510,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D6")
+			(pinfunction "CD1_23")
+			(pintype "bidirectional")
 			(uuid "050986c5-b2ea-4081-86e8-124200ebd2c0")
 		)
 		(pad "24" thru_hole oval
@@ -8419,6 +8521,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "D7")
+			(pinfunction "CD0_24")
+			(pintype "bidirectional")
 			(uuid "b8a3b502-fc37-4efc-b05b-7aa50b2020b3")
 		)
 		(pad "25" thru_hole oval
@@ -8428,6 +8532,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad25)")
+			(pinfunction "NC_25")
+			(pintype "no_connect")
 			(uuid "5b10abf6-ba23-402f-b4ea-c4eff4a3bc29")
 		)
 		(pad "26" thru_hole oval
@@ -8437,6 +8543,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad26)")
+			(pinfunction "NC_26")
+			(pintype "no_connect")
 			(uuid "e4215123-fc8a-44c0-b05b-f25fe3248839")
 		)
 		(pad "27" thru_hole oval
@@ -8446,6 +8554,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad27)")
+			(pinfunction "NC_27")
+			(pintype "no_connect")
 			(uuid "431b3a6c-3ed0-4b31-b39a-ccd44abb9e02")
 		)
 		(pad "28" thru_hole oval
@@ -8455,6 +8565,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad28)")
+			(pinfunction "NC_28")
+			(pintype "no_connect")
 			(uuid "d6d09930-1355-4116-bdb0-bbb264561f8f")
 		)
 		(pad "29" thru_hole oval
@@ -8464,6 +8576,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad29)")
+			(pinfunction "NC_29")
+			(pintype "no_connect")
 			(uuid "5af5f88e-1b99-489d-9dae-8f4de0610616")
 		)
 		(pad "30" thru_hole oval
@@ -8473,6 +8587,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad30)")
+			(pinfunction "NC_30")
+			(pintype "no_connect")
 			(uuid "3cfc7b55-a5b4-4944-aea7-1e46fb09c68a")
 		)
 		(pad "31" thru_hole oval
@@ -8482,6 +8598,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad31)")
+			(pinfunction "NC_31")
+			(pintype "no_connect")
 			(uuid "b81a956d-d9a2-48ae-b45f-b6d23ffc0dab")
 		)
 		(pad "32" thru_hole oval
@@ -8491,6 +8609,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad32)")
+			(pinfunction "NC_32")
+			(pintype "no_connect")
 			(uuid "141dc02f-e63f-443e-885b-ae29385fdfdb")
 		)
 		(pad "33" thru_hole oval
@@ -8500,6 +8620,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VCC")
+			(pinfunction "VCC_33")
+			(pintype "input")
 			(uuid "b68d301e-a090-4233-a63c-e96c93d37669")
 		)
 		(pad "34" thru_hole oval
@@ -8509,6 +8631,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "RESB")
+			(pinfunction "~{RESET}/SYNC_34")
+			(pintype "input")
 			(uuid "59f5022e-ead4-4b2e-8723-1908162666e1")
 		)
 		(pad "35" thru_hole oval
@@ -8518,6 +8642,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad35)")
+			(pinfunction "NC_35")
+			(pintype "no_connect")
 			(uuid "a7463f0b-15e8-4def-8a2f-4065d8fd3a22")
 		)
 		(pad "36" thru_hole oval
@@ -8527,6 +8653,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad36)")
+			(pinfunction "NC_36")
+			(pintype "no_connect")
 			(uuid "b9b4caf9-b049-4c68-872e-d7fd30ef9d2b")
 		)
 		(pad "37" thru_hole oval
@@ -8536,6 +8664,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-GROMCLK-Pad37)")
+			(pinfunction "GROMCLK_37")
+			(pintype "output+no_connect")
 			(uuid "41e6838b-21fe-45e1-bc05-db97274e740f")
 		)
 		(pad "38" thru_hole oval
@@ -8545,6 +8675,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-CPUCLK-Pad38)")
+			(pinfunction "CPUCLK_38")
+			(pintype "output+no_connect")
 			(uuid "53c5c4c7-8d9e-4eb2-874b-0a81e7a39bdf")
 		)
 		(pad "39" thru_hole oval
@@ -8554,6 +8686,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad39)")
+			(pinfunction "NC_39")
+			(pintype "no_connect")
 			(uuid "d26646ea-5148-4b2d-8b05-4d9b016db2af")
 		)
 		(pad "40" thru_hole oval
@@ -8563,6 +8697,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(U1-NC-Pad40)")
+			(pinfunction "NC_40")
+			(pintype "no_connect")
 			(uuid "9938a3da-01ee-4000-9889-23dffc1ceb9d")
 		)
 		(embedded_fonts no)
