@@ -28,7 +28,7 @@
    "1.0"
   ],
   "category": "after a step",
-  "reason": "Cut JP1, as its build note says: bridged, as made, it lets the pico9918 hold `IRQB` high, so the Input Board's interrupts don't reach the 65C02. Then the BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`).",
+  "reason": "Cut JP1, as its build note says: bridged, as made, it lets the pico9918 hold `IRQB` high, so the Input Board's interrupts don't reach the 65C02. Then the BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). For BIOS 2.x, the build note also has an optional wire from `A1` to the pico9918's `MODE1`.",
   "source": "BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BOM.md build notes"
  },
  {
@@ -38,7 +38,7 @@
    "1.1"
   ],
   "category": "out of the box",
-  "reason": "The BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). JP1 ships open. Rev 1.1 also lets a VCS run BIOS 2.x: `A1` reaches the pico9918's `MODE1`, so a PICO9918 PRO running 6502-PICOVDP answers on both its port pairs, as on the ACE. Not yet built: its label is **Untested**.",
+  "reason": "The BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). JP1 ships open. Rev 1.1 also lets a VCS run BIOS 2.x: `A1` reaches the pico9918's `MODE1`, so a PICO9918 PRO running 6502-PICOVDP answers on both its port pairs, as on the ACE.",
   "source": "BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BIOS 2.x `Kernal.asm` `ProbeVideo`"
  },
  {
