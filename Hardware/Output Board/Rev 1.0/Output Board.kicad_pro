@@ -754,11 +754,11 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "Prototype Card.net",
+      "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../Assets/PCB Models/Output Board/Rev 1.0/Output Board.step",
+      "step": "../../../CAD/Models/Output Board/Rev 1.0/Output Board.step",
       "svg": "",
       "vrml": ""
     },

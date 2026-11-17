@@ -744,11 +744,11 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "Memory Card.net",
+      "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../Assets/PCB Models/Flash Cart/Rev 1.0/Flash Cart.step",
+      "step": "../../../CAD/Models/Flash Cart/Rev 1.0/Flash Cart.step",
       "svg": "",
       "vrml": ""
     },

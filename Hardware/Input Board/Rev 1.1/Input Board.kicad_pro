@@ -728,11 +728,11 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "Prototype Card.net",
+      "netlist": "",
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../Assets/PCB Models/Input Board/Rev 1.0/Input Board.step",
+      "step": "../../../CAD/Models/Input Board/Rev 1.1/Input Board.step",
       "svg": "",
       "vrml": ""
     },
@@ -888,7 +888,7 @@
     },
     "net_format_name": "Pcbnew",
     "page_layout_descr_file": "",
-    "plot_directory": "../../../Schematics/Input Board/Rev 1.0/",
+    "plot_directory": "../../../Schematics/Input Board/Rev 1.1/",
     "reuse_designators": true,
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,
