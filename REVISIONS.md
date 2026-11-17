@@ -145,8 +145,9 @@ What changed in each revision of each board, newest first. The table above has t
 - The jumpers for experimenting are gone, because the VCS is the family's game console: plug in USB power and a cartridge, and it runs (owner, 2026-11-06). The COB keeps them, as the experimenter's build.
   - J7 and JP5, the jumper for an original 6502. VPB (U6 pin 1) is left unconnected, as on the ACE and the KIM.
   - J2, JP1 and R1, the ROM write-enable jumper. The ROM's `/WE` is tied to VCC, as on the ACE and the KIM.
-  - J1 (`POWER SW`) and JP2. USB power reaches D1 directly, so the board powers on when it is plugged in. Rev 1.0 needs a switch on J1 or JP2 bridged.
+  - J1 (`POWER SW`) and JP2. USB power reaches `VCC` directly, so the board powers on when it is plugged in. Rev 1.0 needs a switch on J1 or JP2 bridged.
   - J6 (`CLOCK ENBL SW`) and JP6. The oscillator drives `PHI2` directly. Rev 1.0 needs a switch on J6 or JP6 bridged.
+- D1, the 1N5819 between the USB-C port (J3) and `VCC`, is gone (owner, 2026-11-16): `VBUS` goes straight to `VCC`, so the board runs at the full 5 V where Rev 1.0 sits near 4.6 V.
 - The silk that named the removed parts goes with them: `6502`, `CLOCK ENBL`, `POWER SW`, `HI ROM DISABLE` and `IC2 RAM`.
 - The joins are routed by hand (owner, 2026-11-06). One new via, 0.6/0.3 mm at (118.25, 112.25), stitches a ground island around C9 to the rest of `GND`; a standard 0.8/0.4 via has no room there except inside C9's pad.
 - The top panel loses its windows over J1, J2, J6, J7 and J8, and its notch over J5.
