@@ -168,7 +168,7 @@ exist yet.
 Each revision carries one of three labels:
 
 - **Tested:** This revision was built and tested.
-- **Proven design:** Not built at this revision, but its circuit is a tested revision's. The only changes are silkscreen text, part values, mounting holes, outline clean-up, parts moved a fraction of a millimetre onto their grid, capacitor pitch, socket outlines, a footprint swap with the same holes, a solder jumper's default, the solder mask or paste at a card edge, or tracks rerouted or pours refilled with DRC and the netlist check passing. A builder can treat it as tested.
+- **Proven design:** Not built at this revision, but its circuit is proven. Either it is a tested revision's circuit, or each change copies a circuit built and tested on another board or on the bench, or is a textbook circuit that leaves everything the tested revision does as it was. Any other change is silkscreen text, part values, mounting holes, outline clean-up, parts moved a fraction of a millimetre onto their grid, capacitor pitch, socket outlines, a footprint swap with the same holes, a solder jumper's default, the solder mask or paste at a card edge, or tracks rerouted or pours refilled with DRC and the netlist check passing. A builder can treat it as tested.
 - **Untested:** The circuit, the power path or the layout changed in a way that only a built board proves, or the board has never been built at all.
 
 [BOM.md](BOM.md) has the parts for every revision, and its known issues.
@@ -188,20 +188,20 @@ Each revision carries one of three labels:
 
 Whether each board works with the stock BIOS, and what it takes if not. The stock BIOS for the VCS is **BIOS 1.x**, from the `v1.x` branch of [6502-BIOS](https://github.com/acwright/6502-BIOS). The ACE runs BIOS 2.x, for a 6502-PICOVDP. A VCS can also run BIOS 2.x with an Output Board 1.1, or an Output Board 1.0 with the optional wire in its build note, carrying a PICO9918 PRO running 6502-PICOVDP, set up as the [ACE's video card](https://github.com/acwright/6502-ACE#video-card) is. Today's VCSs, built with an Output Board 1.0, stay on BIOS 1.x. The BIOS looks for each card in its own 1 KB window at boot, and uses only what it finds.
 
-- **Out of the box:** the BIOS finds the board and uses it, built from its parts list with the jumpers the [Jumpers](#jumpers) table gives. A card counts only on the window the BIOS expects; on another window it's the builder's experiment.
+- **Compatible:** the BIOS finds the board and uses it, built from its parts list with the jumpers the [Jumpers](#jumpers) table gives. A card counts only on the window the BIOS expects; on another window it's the builder's experiment.
 - **After a step:** it works once the builder does what the entry names, beyond the parts list and the jumpers.
 - **Not used by the BIOS:** safe beside it, but your own software drives it.
 - **Nothing to support:** the board has no registers for the BIOS to find, such as a backplane, a helper behind a card, or a cartridge's programmer.
 
 | Board | Rev | Stock BIOS | Why | Source |
 |---|---|---|---|---|
-| Flash Cart | 1.0, 1.1 | **Out of the box** | A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`. | README [Extra pins](#extra-pins-exp0exp3-and-hrdb); bench, 2026-11-09 |
+| Flash Cart | 1.0, 1.1 | **Compatible** | A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`. | README [Extra pins](#extra-pins-exp0exp3-and-hrdb); bench, 2026-11-09 |
 | Flash Helper | 1.0, 1.1 | **Nothing to support** | A programmer for the Flash Cart, on an Arduino Mega: it's never in a machine. | Schematic |
-| Input Board | 1.0, 1.1 | **Out of the box** | Its 65C22 VIA answers in IO 6 (`$9400`), where the BIOS looks for the keyboard and joystick VIA. | BIOS 1.x `Kernal.asm` `ProbeGPIO` |
-| Main Board | 1.0, 1.1 | **Out of the box** | The 65C02, RAM and the ROM that holds the BIOS. Rev 1.0 needs its power, clock and `HRDB` jumpers set, as the [Jumpers](#jumpers) table says; Rev 1.1 has them wired. | Schematic; README [Jumpers](#jumpers) |
+| Input Board | 1.0, 1.1 | **Compatible** | Its 65C22 VIA answers in IO 6 (`$9400`), where the BIOS looks for the keyboard and joystick VIA. | BIOS 1.x `Kernal.asm` `ProbeGPIO` |
+| Main Board | 1.0, 1.1 | **Compatible** | The 65C02, RAM and the ROM that holds the BIOS. Rev 1.0 needs its power, clock and `HRDB` jumpers set, as the [Jumpers](#jumpers) table says; Rev 1.1 has them wired. | Schematic; README [Jumpers](#jumpers) |
 | Output Board | 1.0 | **After a step** | Cut JP1, as its build note says: bridged, as made, it lets the pico9918 hold `IRQB` high, so the Input Board's interrupts don't reach the 65C02. Then the BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). For BIOS 2.x, the build note also has an optional wire from `A1` to the pico9918's `MODE1`. | BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BOM.md build notes |
-| Output Board | 1.1 | **Out of the box** | The BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). JP1 ships open. Rev 1.1 also lets a VCS run BIOS 2.x: `A1` reaches the pico9918's `MODE1`, so a PICO9918 PRO running 6502-PICOVDP answers on both its port pairs, as on the ACE. | BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BIOS 2.x `Kernal.asm` `ProbeVideo` |
-| ROM Cart | 1.0a, 1.0b, 1.1 | **Out of the box** | A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`. | README [Extra pins](#extra-pins-exp0exp3-and-hrdb) |
+| Output Board | 1.1 | **Compatible** | The BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). JP1 ships open. Rev 1.1 also lets a VCS run BIOS 2.x: `A1` reaches the pico9918's `MODE1`, so a PICO9918 PRO running 6502-PICOVDP answers on both its port pairs, as on the ACE. | BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BIOS 2.x `Kernal.asm` `ProbeVideo` |
+| ROM Cart | 1.0a, 1.0b, 1.1 | **Compatible** | A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`. | README [Extra pins](#extra-pins-exp0exp3-and-hrdb) |
 
 <!-- End of stock BIOS -->
 

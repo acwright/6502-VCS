@@ -6,7 +6,7 @@
    "1.0",
    "1.1"
   ],
-  "category": "out of the box",
+  "category": "compatible",
   "reason": "The 65C02, RAM and the ROM that holds the BIOS. Rev 1.0 needs its power, clock and `HRDB` jumpers set, as the [Jumpers](#jumpers) table says; Rev 1.1 has them wired.",
   "source": "Schematic; README [Jumpers](#jumpers)"
  },
@@ -17,7 +17,7 @@
    "1.0",
    "1.1"
   ],
-  "category": "out of the box",
+  "category": "compatible",
   "reason": "Its 65C22 VIA answers in IO 6 (`$9400`), where the BIOS looks for the keyboard and joystick VIA.",
   "source": "BIOS 1.x `Kernal.asm` `ProbeGPIO`"
  },
@@ -37,7 +37,7 @@
   "revs": [
    "1.1"
   ],
-  "category": "out of the box",
+  "category": "compatible",
   "reason": "The BIOS finds the SID in IO 7 (`$9800`) and the pico9918, a TMS9918A to BIOS 1.x, in IO 8 (`$9C00`). JP1 ships open. Rev 1.1 also lets a VCS run BIOS 2.x: `A1` reaches the pico9918's `MODE1`, so a PICO9918 PRO running 6502-PICOVDP answers on both its port pairs, as on the ACE.",
   "source": "BIOS 1.x `Kernal.asm` `ProbeSID`, `ProbeVideo`; BIOS 2.x `Kernal.asm` `ProbeVideo`"
  },
@@ -49,7 +49,7 @@
    "1.0b",
    "1.1"
   ],
-  "category": "out of the box",
+  "category": "compatible",
   "reason": "A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`.",
   "source": "README [Extra pins](#extra-pins-exp0exp3-and-hrdb)"
  },
@@ -60,7 +60,7 @@
    "1.0",
    "1.1"
   ],
-  "category": "out of the box",
+  "category": "compatible",
   "reason": "A cartridge: with one in, `HRDB` gives it `$C000`–`$FFFF` and the reset vector, and its program calls the BIOS's Kernal, which stays at `$A000`–`$B7FF`.",
   "source": "README [Extra pins](#extra-pins-exp0exp3-and-hrdb); bench, 2026-11-09"
  },
