@@ -111,6 +111,16 @@ joystick state to the 6502 as control bytes over the keyboard channel instead;
 that could not report a held button on the port it was reporting over, and was
 abandoned.
 
+A matrix sweep interrupted by a joystick read resumes from the row it stopped on
+when the encoder is enabled again. Earlier builds restarted the sweep on every
+re-enable, so a program that reads a joystick back to back never finished a
+sweep and the matrix keyboard sent nothing while it ran. The same change was
+tested on the ACE's AB Controller (2026-11-21); **it has not yet been tried on a
+VCS.** That session also found, on the ACE, that a key typed while joystick 1
+holds a direction arrives with that line's bit cleared, since the stick grounds
+the PORT B line the encoder drives the key code onto. This firmware drives its
+ports the same way; whether a VCS shows it hasn't been checked.
+
 A cartridge that wants its own matrix scan, its own key repeat, or polling
 faster than the encoder's rate can use the identical mechanism directly:
 `KBDisable`, own the sixteen pins for as long as it likes, `KBEnable` when
