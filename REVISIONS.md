@@ -25,7 +25,7 @@ Every revision of every board in this repository, and what is known about each. 
 | Flash Helper | 1.0 | Made, matches order | **Tested** | Y98 | 2026-09-20 | `3680cff` | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Flash Helper | 1.1 | Drawn | **Proven design**: J1's reference resized and the logo moved; silkscreen only |  |  |  | — | in footprint | — | — | — | symbol has pins the footprint lacks: Arduino Mega pads with no symbol pin |
 | Input Board | 1.0 | Made, matches order | **Tested** | Y86 | 2026-03-13 | `6502-COB 0b0efc6` | — | 100×100 | 6 mm | yes | — |  |
-| Input Board | 1.1 | Drawn | **Proven design**: silkscreen text only |  |  |  | — | 100×100 | 6 mm | yes | — |  |
+| Input Board | 1.1 | Drawn | **Proven design**: silkscreen text, and 10k pull-ups on the PS/2 lines, a textbook circuit not yet tried on these lines |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Main Board | 1.0 | Made, matches order | **Tested** | Y38 | 2024-06-08 | `6502-COB 7d050b0` | — | 100×100 | 6 mm | yes | — | symbol has pins the footprint lacks: J3 shield pads; ordered when this board lived in the COB project |
 | Main Board | 1.1 | Drawn | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |  |  |  | — | 100×100 | 6 mm | yes | — |  |
 | Output Board | 1.0 | Made, matches order | **Tested** | Y85 | 2026-01-14 | `6502-COB 379abb8` | — | 100×100 | 6 mm | yes | — |  |
@@ -62,7 +62,8 @@ What changed in each revision of each board, newest first. The table above has t
 
 **Rev 1.1** (drawn, not yet made)
 
-- The silkscreen says `ATmega1284` at U2, the part the BOM lists. Rev 1.0's says `ATmega1284-P`. C2 and C4 stay 22 pF as on Rev 1.0, the value every made board was built and tested with (2026-11-11). Rev 1.1 was drawn with 20 pF from 2026-11-04 to 2026-11-11, and never made that way. Nothing else changed: the copper, mask, holes and outline are Rev 1.0's, so Rev 1.0's top panel fits.
+- The silkscreen says `ATmega1284` at U2, the part the BOM lists. Rev 1.0's says `ATmega1284-P`. C2 and C4 stay 22 pF as on Rev 1.0, the value every made board was built and tested with (2026-11-11). Rev 1.1 was drawn with 20 pF from 2026-11-04 to 2026-11-11, and never made that way.
+- Adds `R2` and `R3`, 10kΩ 0805 pull-ups from `PS2CLK` and `PS2DATA` to `VCC` beside the PS/2 socket, `J3` (2026-11-22). Rev 1.0's PS/2 lines rest on the ATmega's internal pull-ups alone (about 20–50 kΩ), so a spike coupled from elsewhere on the board can cross the input threshold as a false clock edge and corrupt a key. The IB Controller firmware ignores such edges, and the resistors make the lines stiff enough that few spikes reach it. With the internal pull-up in parallel, each line sees about 7.5 kΩ, within a PS/2 host's usual range. They are surface-mount, as `R1` is. The holes and outline are Rev 1.0's, so Rev 1.0's top panel fits.
 
 **Rev 1.0**
 

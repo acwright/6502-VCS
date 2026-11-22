@@ -7102,7 +7102,7 @@
 		(uuid "366ad040-9ac1-4d7a-8be5-2bf820a1c81a")
 	)
 	(no_connect
-		(at 222.25 109.22)
+		(at 212.09 109.22)
 		(uuid "43766d83-9ed2-48c0-b234-9b32c8b9db78")
 	)
 	(no_connect
@@ -7126,7 +7126,7 @@
 		(uuid "c74de61d-8471-453d-af3b-4be52e212a92")
 	)
 	(no_connect
-		(at 222.25 104.14)
+		(at 212.09 104.14)
 		(uuid "d60c852f-53e4-4051-a4a6-57a9e752c176")
 	)
 	(no_connect
@@ -7155,7 +7155,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 104.14) (xy 242.57 104.14)
+			(xy 227.33 104.14) (xy 234.95 104.14)
 		)
 		(stroke
 			(width 0)
@@ -7345,7 +7345,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 106.68) (xy 222.25 106.68)
+			(xy 208.28 106.68) (xy 212.09 106.68)
 		)
 		(stroke
 			(width 0)
@@ -7585,7 +7585,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 111.76) (xy 240.03 106.68)
+			(xy 229.87 111.76) (xy 229.87 106.68)
 		)
 		(stroke
 			(width 0)
@@ -7785,7 +7785,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 101.6) (xy 218.44 106.68)
+			(xy 208.28 101.6) (xy 208.28 106.68)
 		)
 		(stroke
 			(width 0)
@@ -8535,7 +8535,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 109.22) (xy 242.57 109.22)
+			(xy 227.33 109.22) (xy 242.57 109.22)
 		)
 		(stroke
 			(width 0)
@@ -8865,7 +8865,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 106.68) (xy 237.49 106.68)
+			(xy 229.87 106.68) (xy 227.33 106.68)
 		)
 		(stroke
 			(width 0)
@@ -9305,7 +9305,7 @@
 	)
 	(global_label "PS2DATA"
 		(shape bidirectional)
-		(at 242.57 109.22 0)
+		(at 247.65 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9314,7 +9314,7 @@
 		)
 		(uuid "00b82520-bf0f-42b4-a9e8-cdf294b8f077")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.57 109.22 90)
+			(at 247.65 109.22 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9727,7 +9727,7 @@
 	)
 	(global_label "VCC"
 		(shape passive)
-		(at 218.44 101.6 90)
+		(at 208.28 101.6 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9736,7 +9736,7 @@
 		)
 		(uuid "212d9447-f556-4379-86c1-a696a2e8b23b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.44 101.6 90)
+			(at 208.28 101.6 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11879,7 +11879,7 @@
 	)
 	(global_label "PS2CLK"
 		(shape output)
-		(at 242.57 104.14 0)
+		(at 247.65 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11888,7 +11888,7 @@
 		)
 		(uuid "f172b4ef-d85c-43c6-a0b8-46130c4c14ed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.57 104.14 90)
+			(at 247.65 104.14 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15030,7 +15030,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Mini-DIN-6")
-		(at 229.87 106.68 0)
+		(at 219.71 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15041,7 +15041,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7bb589c-32d5-42ab-852d-4fde75eedb18")
 		(property "Reference" "J3"
-			(at 229.8877 96.52 0)
+			(at 219.7277 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15051,7 +15051,7 @@
 			)
 		)
 		(property "Value" "PS/2 KEYBOARD"
-			(at 229.8877 99.06 0)
+			(at 219.7277 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15061,7 +15061,7 @@
 			)
 		)
 		(property "Footprint" "6502 Parts:PS2 Jack"
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15072,7 +15072,7 @@
 			)
 		)
 		(property "Datasheet" "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf"
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15083,7 +15083,7 @@
 			)
 		)
 		(property "Description" "6-pin Mini-DIN connector"
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15094,7 +15094,7 @@
 			)
 		)
 		(property "Other" ""
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15105,7 +15105,7 @@
 			)
 		)
 		(property "Mouser" "806-KMDGX-6S-BS"
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15116,7 +15116,7 @@
 			)
 		)
 		(property "Digikey" "2092-KMDGX-6S-BS-ND"
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15127,7 +15127,7 @@
 			)
 		)
 		(property "Jameco" ""
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15138,7 +15138,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 229.87 106.68 0)
+			(at 219.71 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15313,7 +15313,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 111.76 0)
+		(at 229.87 111.76 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15324,7 +15324,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb8fa818-7e6b-43dc-aaaa-262f4eb715f4")
 		(property "Reference" "#PWR04"
-			(at 240.03 118.11 0)
+			(at 229.87 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15335,7 +15335,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 115.57 0)
+			(at 229.87 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15345,7 +15345,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 111.76 0)
+			(at 229.87 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15356,7 +15356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 111.76 0)
+			(at 229.87 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15367,7 +15367,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 111.76 0)
+			(at 229.87 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17074,6 +17074,394 @@
 			(type default)
 		)
 		(uuid "edcf4fd9-d930-5301-a8ed-77c03b90ed24")
+	)
+	(junction
+		(at 234.95 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d27b591-1cfa-4ace-8a78-e8d917c912c6")
+	)
+	(wire
+		(pts
+			(xy 234.95 104.14) (xy 247.65 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17987210-f379-451b-b304-1d1c7d5d3515")
+	)
+	(wire
+		(pts
+			(xy 234.95 104.14) (xy 234.95 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39419385-102a-4103-b8ba-f4d95d8742cd")
+	)
+	(junction
+		(at 242.57 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cc6c61f-9143-45d8-91cf-ec3ec2869c6b")
+	)
+	(wire
+		(pts
+			(xy 242.57 109.22) (xy 247.65 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21150270-a110-488b-b3e6-48fe2f2b7a67")
+	)
+	(wire
+		(pts
+			(xy 242.57 109.22) (xy 242.57 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e8a5b90-c3ca-4207-ab57-c40e0103c3ad")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 234.95 97.79 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0915ad15-7196-41dc-86ed-d069234d12f9")
+		(property "Reference" "R2"
+			(at 238.76 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 238.76 98.6536 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 236.728 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "311-10.0KCRCT-ND"
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "603-RC0805FR-0710KL"
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17414"
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 234.95 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4562a26a-d8f2-4900-b00f-e068cd8a2787")
+		)
+		(pin "2"
+			(uuid "1719f019-86d2-49de-9ebc-5fee7211c61f")
+		)
+		(instances
+			(project "Input Board"
+				(path "/1eb588e8-a8a6-45d4-8449-ed494748d485"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 242.57 97.79 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0f55b3ac-300b-4be9-8dd7-9943791af615")
+		(property "Reference" "R3"
+			(at 246.38 96.3422 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 246.38 98.6536 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 244.348 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "311-10.0KCRCT-ND"
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" "603-RC0805FR-0710KL"
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Jameco" ""
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17414"
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Other" ""
+			(at 242.57 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90198dff-132f-4c83-913a-4e334515e02f")
+		)
+		(pin "2"
+			(uuid "5ef2b150-9e47-4254-8a8a-44f39df9c968")
+		)
+		(instances
+			(project "Input Board"
+				(path "/1eb588e8-a8a6-45d4-8449-ed494748d485"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 234.95 93.98) (xy 234.95 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cea0a96-876d-4bcc-bb24-496501370c4f")
+	)
+	(wire
+		(pts
+			(xy 242.57 93.98) (xy 242.57 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2bdd7f3-96e2-42b0-922d-c6248a4fda08")
+	)
+	(wire
+		(pts
+			(xy 234.95 91.44) (xy 242.57 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28978ccb-4c22-4c6a-909c-17f0986e9d96")
+	)
+	(wire
+		(pts
+			(xy 234.95 91.44) (xy 234.95 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "969f7ac3-e046-406a-847f-dae60947dd16")
+	)
+	(junction
+		(at 234.95 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62dc6679-520a-4aa4-bb62-522532ff776e")
+	)
+	(global_label "VCC"
+		(shape passive)
+		(at 234.95 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "59e521c2-15cf-494d-b476-daeacbb9b2e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 234.95 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(sheet_instances
 		(path "/"

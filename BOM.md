@@ -28,7 +28,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Flash Helper](#flash-helper) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Flash Helper](#flash-helper) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: J1's reference resized and the logo moved; silkscreen only |
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text only |
+| [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, and 10k pull-ups on the PS/2 lines, a textbook circuit not yet tried on these lines |
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
 | [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
@@ -59,7 +59,7 @@ How to build each board, where it needs more than its parts list.
 
 > **Joysticks**: there is no DB-9 in this BOM because the board does not carry one. The joysticks share the VIA ports with the keyboard encoder and connect through the `J1` PORT B and `J2` PORT A box headers, using a helper board from the [6502-COB](https://github.com/acwright/6502-COB) project — the **GPIO Helper** for a direct box-header connection, or the **Joystick Helper** to convert a port to a DB-9 with pull-ups fitted. Budget for one helper per stick.
 
-**Building a Rev 1.0:** nothing to do. Rev 1.1 changes only the silkscreen: `ATmega1284` at U2, the part both parts lists order, where a Rev 1.0's says `ATmega1284-P`. C2 and C4 are 22 pF on both revisions.
+**Building a Rev 1.0:** nothing to do. Rev 1.1's silkscreen says `ATmega1284` at U2, the part both parts lists order, where a Rev 1.0's says `ATmega1284-P`. C2 and C4 are 22 pF on both revisions. Rev 1.1 adds `R2` and `R3`, 10kΩ 0805 pull-ups from `PS2CLK` and `PS2DATA` to VCC; a Rev 1.0 needs nothing with the IB Controller firmware from this repository, which ignores the false clock edges they guard against. To add them anyway, solder an axial 10kΩ (YAGEO MFR-12FTF52-10K) on the underside across J3's pins 5 and 4 (`PS2CLK` to VCC) and another across pins 1 and 4 (`PS2DATA` to VCC), the same circuit; untried.
 
 **Flash Cart**
 
@@ -197,7 +197,7 @@ Cart files: [digikey.csv](BOM/Flash%20Helper/Rev%201.0/digikey.csv), [mouser.csv
 
 ### Input Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: silkscreen text only.
+Drawn, not made yet. **Proven design**: silkscreen text, and 10k pull-ups on the PS/2 lines, a textbook circuit not yet tried on these lines.
 
 Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Input%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Input%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Input%20Board/Rev%201.1/mouser-through-hole.csv)
 
@@ -213,6 +213,7 @@ Cart files: [digikey.csv](BOM/Input%20Board/Rev%201.1/digikey.csv), [mouser.csv]
 | J5 | 1 | KEYBOARD | Amphenol D25P33E4GX00LF | [609-1505-ND](https://www.digikey.com/en/products/filter?keywords=609-1505-ND) | [649-D25P33E4GX00LF](https://www.mouser.com/ProductDetail/649-D25P33E4GX00LF) |  | |
 | J6 | 1 | IO SELECT | Pin header 2×8, 2.54 mm, cut from a strip | [S2011EC-40-ND](https://www.digikey.com/en/products/filter?keywords=S2011EC-40-ND) | [649-67996-140HLF](https://www.mouser.com/ProductDetail/649-67996-140HLF) |  | |
 | R1 | 1 | 1K | YAGEO RC0805FR-071KL | [311-1.00KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-1.00KCRCT-ND) | [603-RC0805FR-071KL](https://www.mouser.com/ProductDetail/603-RC0805FR-071KL) | LCSC [C17513](https://www.lcsc.com/search?q=C17513) | Yes |
+| R2, R3 | 2 | 10k | YAGEO RC0805FR-0710KL | [311-10.0KCRCT-ND](https://www.digikey.com/en/products/filter?keywords=311-10.0KCRCT-ND) | [603-RC0805FR-0710KL](https://www.mouser.com/ProductDetail/603-RC0805FR-0710KL) | LCSC [C17414](https://www.lcsc.com/search?q=C17414) | Yes |
 | U1 | 1 | 65C22 | Western Design Center (WDC) W65C22N6TPG-14 |  | [955-W65C22N6TPG-14](https://www.mouser.com/ProductDetail/955-W65C22N6TPG-14) |  | |
 | U2 | 1 | ATmega1284 | Microchip Technology ATMEGA1284-PU | [ATMEGA1284-PU-ND](https://www.digikey.com/en/products/filter?keywords=ATMEGA1284-PU-ND) | [556-ATMEGA1284-PU](https://www.mouser.com/ProductDetail/556-ATMEGA1284-PU) |  | |
 | U3 | 1 | 74HC138 | Nexperia USA Inc. 74HC138D,653 | [1727-2781-1-ND](https://www.digikey.com/en/products/filter?keywords=1727-2781-1-ND) | [771-74HC138D-T](https://www.mouser.com/ProductDetail/771-74HC138D-T) | LCSC [C5602](https://www.lcsc.com/search?q=C5602) | Yes |

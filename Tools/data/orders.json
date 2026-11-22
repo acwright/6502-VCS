@@ -74,7 +74,7 @@
   ],
   "VCS|Input Board|1.1": [
    "Proven design",
-   "Silkscreen text only"
+   "Silkscreen text, and 10k pull-ups on the PS/2 lines, a textbook circuit not yet tried on these lines"
   ],
   "VCS|Main Board|1.1": [
    "Proven design",

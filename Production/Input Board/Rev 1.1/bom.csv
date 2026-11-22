@@ -9,6 +9,7 @@ J4,6502 Bus Connector,1,6502 Bus,
 J5,DSUB-25_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,1,KEYBOARD,
 J6,PinHeader_2x08_P2.54mm_Vertical,1,IO SELECT,
 R1,0805,1,1K,C17513
+"R2, R3",0805,2,10k,C17414
 U1,DIP-40_W15.24mm_Socket_LongPads,1,65C22,
 U2,DIP-40_W15.24mm_Socket_LongPads,1,ATmega1284,
 U3,SOIC-16_3.9x9.9mm_P1.27mm,1,74HC138,C5602

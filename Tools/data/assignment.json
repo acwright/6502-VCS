@@ -217,5 +217,7 @@
  "VCS|ROM Cart|1.1|J2": "pinheader-1x03-2.54-vertical",
  "VCS|ROM Cart|1.1|R1": "10k|axial",
  "VCS|Flash Helper|1.1|A1": "Arduino Mega2560 R3 Shield|Arduino Mega2560 R3 Shield",
- "VCS|Flash Helper|1.1|J1": "conn-card-edge"
+ "VCS|Flash Helper|1.1|J1": "conn-card-edge",
+ "VCS|Input Board|1.1|R2": "10k|R_0805_2012Metric",
+ "VCS|Input Board|1.1|R3": "10k|R_0805_2012Metric"
 }
