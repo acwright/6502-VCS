@@ -30,7 +30,7 @@ Look on the board: the silk prints the revision next to the copyright line. [REV
 | [Input Board](#input-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Input Board](#input-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: silkscreen text, and 10k pull-ups on the PS/2 lines, a textbook circuit not yet tried on these lines |
 | [Main Board](#main-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
-| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
+| [Main Board](#main-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: 10k pull-ups, small part moves and tracks rerouted, a 74HCT00 at U5, and the RAM's output enable from inverted `RWB`, tested on an ACE. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted |
 | [Output Board](#output-board) | 1.0 | Rev 1.0 | Made, tested | **Tested** |
 | [Output Board](#output-board) | 1.1 | Rev 1.1 | Drawn, not made yet | **Proven design**: `A1` wired to the pico9918's `MODE1`, so the VCS can run BIOS 2.x, as the tested ACE is wired; a second RCA jack beside J2, on the same signal, as on the ACE; ordinary sockets in place of ZIF, on the ACE's footprints; silkscreen text, the `VDD` header removed, JP1 ships open, and JP2 and JP3 removed and wired as Rev 1.0 ships them |
 | [ROM Cart](#rom-cart) | 1.0a | Rev 1.0. U1's label tells them apart: AT28C256 is Rev 1.0a | Made, tested | **Tested**: built and tested. Takes an AT28C256 EEPROM |
@@ -47,7 +47,6 @@ These change what you buy or fit. The boards themselves stay as they were made.
 | Main Board | 1.0 | R4, R10–R14 | Fit 10k, not 1k. If your board came with 1k soldered here, replace it. See the build notes. |
 | Main Board | 1.0 | J10 | Fit a box header for a ribbon cable. The silk shows a plain header, but the holes are the same. Pin 1 is the square pad, and the notch faces the even-numbered pins. |
 | Main Board | 1.0 | U2 | Under a heavy load, such as the 1 MB Flash Cart, or at 2 MHz, this AS6C62256 can return a wrong byte from RAM: it lets go of the data bus too early at the end of a read, and the CPU can read a 0 bit as 1. Programs then crash or misbehave. The supply voltage decides how often. In tests, a board with 5.0 V at the RAM read clean, and one with 5.1 V or more failed, so measure the voltage at the board if you see this. A Hitachi HM62256LP-70, no longer made, does not have the problem. |
-| Main Board | 1.1 | U2 | Under a heavy load, such as the 1 MB Flash Cart, or at 2 MHz, this AS6C62256 can return a wrong byte from RAM: it lets go of the data bus too early at the end of a read, and the CPU can read a 0 bit as 1. Programs then crash or misbehave. The supply voltage decides how often. In tests, a board with 5.0 V at the RAM read clean, and one with 5.1 V or more failed, so measure the voltage at the board if you see this. A Hitachi HM62256LP-70, no longer made, does not have the problem. |
 | Output Board | 1.0 | J1 | `VDD` is the supply for a real SID at pin 28: 12 V for a 6581, 9 V for an 8580. The standard build does not provide it, and it has never been tested. Leave it unconnected with an ARMSID. |
 | Output Board | 1.0 | U2 | The silk says 6581; fit an ARMSID. |
 
@@ -261,7 +260,7 @@ Pin headers are cut from strips, and the cart files count whole strips.
 
 ### Main Board Rev 1.1
 
-Drawn, not made yet. **Proven design**: 10k pull-ups, small part moves and tracks rerouted, and a 74HCT00 at U5. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted.
+Drawn, not made yet. **Proven design**: 10k pull-ups, small part moves and tracks rerouted, a 74HCT00 at U5, and the RAM's output enable from inverted `RWB`, tested on an ACE. The jumpers are gone, and `HRDB` is wired as it is on the tested Rev 1.0 with them fitted.
 
 Cart files: [digikey.csv](BOM/Main%20Board/Rev%201.1/digikey.csv), [mouser.csv](BOM/Main%20Board/Rev%201.1/mouser.csv), [digikey-through-hole.csv](BOM/Main%20Board/Rev%201.1/digikey-through-hole.csv), [mouser-through-hole.csv](BOM/Main%20Board/Rev%201.1/mouser-through-hole.csv)
 
